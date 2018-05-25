@@ -28,7 +28,6 @@ INDEX VERSION 1.130+/Users/yunseokjeon/git/khProjectJuly/test/.metadata/.plugins
 1271342938.index
 799556979.index
 288112982.index
-1326622508.index
 3249352908.index
 4101167580.index
 1330372398.index
