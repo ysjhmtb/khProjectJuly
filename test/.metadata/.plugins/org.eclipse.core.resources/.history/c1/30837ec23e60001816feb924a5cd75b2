@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="khHomework">
+        <property name="context-root" value="khHomework"/>
+        <property name="java-output-path" value="/khHomework/build/classes"/>
+    </wb-module>
+</project-modules>
