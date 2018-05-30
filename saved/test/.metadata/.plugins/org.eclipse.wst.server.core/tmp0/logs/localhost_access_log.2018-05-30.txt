@@ -1,0 +1,3 @@
+127.0.0.1 - - [30/May/2018:13:40:51 +0900] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [30/May/2018:13:40:52 +0900] "GET /khHomework/views/requestSong.html HTTP/1.1" 200 897
+0:0:0:0:0:0:0:1 - - [30/May/2018:13:41:00 +0900] "GET /khHomework/requestSong.do?userid=Test&useremail=test%40test&content=Test HTTP/1.1" 200 568

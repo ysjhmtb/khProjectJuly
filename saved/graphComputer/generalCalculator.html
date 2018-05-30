@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style type="text/css">
+        .mybtn {
+            width: 50px;
+            height: 30px;
+            border: 1px solid #9A9A9A;
+            background-color: #515151;
+            color: #9A9A9A;
+            vertical-align: middle;
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+    <script>
+        sum = 0;
+        btnCount = 0;
+        operand1 = 0;
+        operand2 = 0;
+        operator = null;
+
+
+        function calReset() {
+            sum = 0;
+            btnCount = 0;
+            operand1 = 0;
+            oeprand2 = 0;
+            operator = null;
+            $("#expr").empty();
+        }
+
+
+        function operandFunc(btn) {
+            if (btnCount == 0) {
+                btnCount++;
+                operand1 = parseFloat(btn.value);
+            } else if (btnCount == 2) {
+                btnCount++;
+                operand2 = parseFloat(btn.value);
+            }
+        }
+
+        function operatorFunc(btn) {
+
+
+            if (btnCount == 1) {
+                btnCount++;
+                console.log(btn.value);
+                operator = btn.value;
+
+            } else if (btnCount == 3) {
+
+                if (operator == '+') {
+                    sum = operand1 + operand2;
+                    $('#expr').append(sum);
+                    console.log(sum);
+                } else if (operator == '-') {
+                    sum = operand1 - operand2;
+                    $('#expr').append(sum);
+                    console.log(sum);
+                } else if (operator == '*') {
+                    sum = operand1 * operand2;
+                    $('#expr').append(sum);
+                    console.log(sum);
+                } else if (operator == '/') {
+                    sum = operand1 / operand2;
+                    $('#expr').append(sum);
+                    console.log(sum);
+                }
+
+            }
+        }
+
+
+    </script>
+
+
+</head>
+
+<!--http://zsoo.net/105 에서 HTML 참조 -->
+
+<body>
+<div class="cal_content">
+
+    <input onclick="calReset()" type="button" id="calReset" class="mybtn" value="reset">
+
+    <div class="calrow" style="display: block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number7" value="7"
+               style="display: inline-block; opacity: 1;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number8" value="8"
+               style="display: inline-block; opacity: 1;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number9" value="9"
+               style="display: inline-block; opacity: 1;"></div>
+
+    <div class="calrow" style="display: block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number4" value="4"
+               style="display: inline-block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number5" value="5"
+               style="display: inline-block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number6" value="6"
+               style="display: inline-block;"></div>
+
+    <div class="calrow" style="display: block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number1" value="1"
+               style="display: inline-block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number2" value="2"
+               style="display: inline-block;">
+        <input onclick="operandFunc(this)" type="button" class="mybtn" id="number3" value="3"
+               style="display: inline-block;"></div>
+
+    <div class="calrow" style="display: block;">
+        <inputv onclick="operandFunc(this)" type="button" class="mybtn" id="number0" value="0"
+                style="display: inline-block; opacity: 1;">
+    </div>
+
+    <div class="calrow" style="display: block;">
+        <input onclick="operatorFunc(this)" type="button" class="mybtn" id="plus" value="+"
+               style="display: inline-block; opacity: 1;">
+        <input onclick="operatorFunc(this)" type="button" class="mybtn" id="minus" value="-"
+               style="display: inline-block;">
+        <input onclick="operatorFunc(this)" type="button" class="mybtn" id="multiple" value="*"
+               style="display: inline-block;">
+        <input onclick="operatorFunc(this)" type="button" class="mybtn" id="divide" value="/"
+               style="display: inline-block;">
+        <input onclick="operatorFunc(this)" type="button" class="mybtn" id="equal" value="="
+               style="display: inline-block; opacity: 1;"></div>
+
+    <div class="calrow" style="display: block;">
+        <div id="expr" rows="2" cols="50">
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
