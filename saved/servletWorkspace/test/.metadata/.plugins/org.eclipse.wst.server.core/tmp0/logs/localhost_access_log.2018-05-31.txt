@@ -1,0 +1,2 @@
+127.0.0.1 - - [31/May/2018:01:26:21 +0900] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [31/May/2018:01:26:21 +0900] "GET /khHomework/WEB-INF/classes/kh/com/java/TestDBAccess.java HTTP/1.1" 404 992

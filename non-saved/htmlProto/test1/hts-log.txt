@@ -1,0 +1,64 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 25 May 2018 00:03:55 at http://edge-sample17.firstmall.kr +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://edge-sample17.firstmall.kr -O1 "C:\My Web Sites\test1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+00:03:55	Warning: 	Moved Permanently for edge-sample17.firstmall.kr/
+00:03:55	Warning: 	File has moved from edge-sample17.firstmall.kr/ to http://edge-sample17.firstmall.kr/main/index
+00:07:18	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr//data/icon/favicon/favicon1497244551.ico (from edge-sample17.firstmall.kr/main/index)
+00:08:15	Warning: 	file not stored in cache due to bogus state (broken size, expected 1997416 got 625947): edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/images/design/fruits_bg.jpg
+00:09:06	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0001 not scanned (follow robots meta tag)
+00:09:07	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0006 not scanned (follow robots meta tag)
+00:09:07	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0003 not scanned (follow robots meta tag)
+00:09:07	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00030001 not scanned (follow robots meta tag)
+00:09:07	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00030003 not scanned (follow robots meta tag)
+00:09:07	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00030002 not scanned (follow robots meta tag)
+00:09:07	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0009 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00090001 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00090002 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00090003 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00090004 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0004 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00040001 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00040002 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00040003 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=00040004 not scanned (follow robots meta tag)
+00:09:08	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0005 not scanned (follow robots meta tag)
+00:09:09	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0007 not scanned (follow robots meta tag)
+00:09:09	Warning: 	Link edge-sample17.firstmall.kr/goods/catalog?code=0008 not scanned (follow robots meta tag)
+00:09:09	Warning: 	Link edge-sample17.firstmall.kr/board/?id=goods_review not scanned (follow robots meta tag)
+00:09:15	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=13 not scanned (follow robots meta tag)
+00:09:15	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=18 not scanned (follow robots meta tag)
+00:09:15	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=2 not scanned (follow robots meta tag)
+00:09:15	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=11 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=17 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=16 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=20 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=8 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=19 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=12 not scanned (follow robots meta tag)
+00:09:16	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=15 not scanned (follow robots meta tag)
+00:09:17	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=10 not scanned (follow robots meta tag)
+00:09:17	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=9 not scanned (follow robots meta tag)
+00:09:17	Warning: 	Link edge-sample17.firstmall.kr/goods/view?no=5 not scanned (follow robots meta tag)
+00:09:24	Warning: 	Retry after error -4 (Incorrect length (625947 Bytes, 1997416 expected)) at link edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/images/design/fruits_bg.jpg (from edge-sample17.firstmall.kr/main/index)
+00:10:08	Warning: 	Link edge-sample17.firstmall.kr/board/?id=notice not scanned (follow robots meta tag)
+00:10:08	Warning: 	Link edge-sample17.firstmall.kr/board/?id=goods_qna not scanned (follow robots meta tag)
+00:11:09	Warning: 	Link edge-sample17.firstmall.kr/board/?id=faq not scanned (follow robots meta tag)
+00:11:09	Warning: 	Link edge-sample17.firstmall.kr/board/?id=bulkorder not scanned (follow robots meta tag)
+00:11:10	Warning: 	Link edge-sample17.firstmall.kr/board/view?id=notice&seq=4 not scanned (follow robots meta tag)
+00:11:10	Warning: 	Link edge-sample17.firstmall.kr/board/view?id=notice&seq=3 not scanned (follow robots meta tag)
+00:11:10	Warning: 	Link edge-sample17.firstmall.kr/board/view?id=notice&seq=2 not scanned (follow robots meta tag)
+00:11:10	Warning: 	Link edge-sample17.firstmall.kr/board/view?id=notice&seq=1 not scanned (follow robots meta tag)
+00:11:44	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr/data/skin/images/design/tbl_th_bg.gif (from edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/css/board.css)
+00:11:45	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr/data/images/design/tbl_th_bg.gif (from edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/css/board.css)
+00:11:45	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/images/common/th_bg_popup.gif (from edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/css/board.css)
+00:11:45	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/images/common/select_bg_back.png (from edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/css/buttons.css)
+00:11:45	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/images/design/tab_arr.png (from edge-sample17.firstmall.kr/data/skin/fruit_puro_gls/css/user.css)
+00:12:06	Error: 	"Not Found" (404) at link edge-sample17.firstmall.kr/data/icon/favicon/m_icon1469592327.ico (from edge-sample17.firstmall.kr/prints/form_print_estimate?code=cart)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 24 seconds : 594 links scanned, 584 files written (21314855 bytes overall) [14153382 bytes received at 25094 bytes/sec], 8916322 bytes transferred using HTTP compression in 81 files, ratio 16%, 6.9 requests per connection
+(7 errors, 46 warnings, 0 messages)
