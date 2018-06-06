@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/saved/Maps_API_Udacity_Course/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/saved/Maps_API_Udacity_Course/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -37,8 +35,8 @@
       <file leaf-file-name="beingStylish.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="216" column="73" lean-forward="true" selection-start-line="216" selection-start-column="73" selection-end-line="216" selection-end-column="73" />
+            <state relative-caret-position="2399">
+              <caret line="149" column="41" lean-forward="true" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -81,8 +79,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="287" />
-    <option name="y" value="22" />
+    <option name="x" value="117" />
+    <option name="y" value="60" />
     <option name="width" value="1739" />
     <option name="height" value="938" />
   </component>
@@ -158,18 +156,18 @@
       <option name="presentableId" value="Default" />
       <updated>1527415065236</updated>
       <workItem from="1527415067197" duration="1014000" />
-      <workItem from="1528016330044" duration="6720000" />
+      <workItem from="1528016330044" duration="7000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7734000" />
+    <option name="totallyTimeSpent" value="8014000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="64" width="1739" height="938" extended-state="0" />
+    <frame x="117" y="60" width="1739" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12823462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12823462" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -179,7 +177,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39930555" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3414352" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -224,8 +222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="216" column="73" lean-forward="true" selection-start-line="216" selection-start-column="73" selection-end-line="216" selection-end-column="73" />
+        <state relative-caret-position="2399">
+          <caret line="149" column="41" lean-forward="true" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
         </state>
       </provider>
     </entry>
