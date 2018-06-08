@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/saved/myTask/MAP TABLE.md" beforeDir="false" afterPath="$PROJECT_DIR$/saved/myTask/MAP TABLE.md" afterDir="false" />
-    </list>
+    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="windowShopping.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="82" column="40" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="40" />
+            <state relative-caret-position="455">
+              <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -63,8 +61,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-364" />
-    <option name="y" value="34" />
+    <option name="x" value="89" />
+    <option name="y" value="22" />
     <option name="width" value="1739" />
     <option name="height" value="938" />
   </component>
@@ -156,15 +154,15 @@
       <updated>1527415065236</updated>
       <workItem from="1527415067197" duration="1014000" />
       <workItem from="1528016330044" duration="7000000" />
-      <workItem from="1528486849295" duration="217000" />
+      <workItem from="1528486849295" duration="1736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8231000" />
+    <option name="totallyTimeSpent" value="9750000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-364" y="34" width="1739" height="938" extended-state="0" />
+    <frame x="89" y="22" width="1739" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12823462" />
@@ -211,8 +209,8 @@
     <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html" />
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="40" />
+        <state relative-caret-position="455">
+          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
         </state>
       </provider>
     </entry>
