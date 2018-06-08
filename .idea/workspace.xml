@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="" />
+    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/saved/myTask/MAP TABLE.md" beforeDir="false" afterPath="$PROJECT_DIR$/saved/myTask/MAP TABLE.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,29 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/index.html">
+      <file leaf-file-name="windowShopping.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="84" column="13" selection-start-line="82" selection-start-column="3" selection-end-line="84" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="windowShopping.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/windowShopping.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beingStylish.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2399">
-              <caret line="149" column="41" lean-forward="true" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
+            <state relative-caret-position="397">
+              <caret line="82" column="40" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -79,8 +63,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="117" />
-    <option name="y" value="60" />
+    <option name="x" value="-364" />
+    <option name="y" value="34" />
     <option name="width" value="1739" />
     <option name="height" value="938" />
   </component>
@@ -92,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,12 +92,28 @@
               <item name="khProjectJuly" type="b2602c69:ProjectViewProjectNode" />
               <item name="khProjectJuly" type="462c0819:PsiDirectoryNode" />
               <item name="saved" type="462c0819:PsiDirectoryNode" />
+              <item name="myTask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="khProjectJuly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="khProjectJuly" type="462c0819:PsiDirectoryNode" />
+              <item name="saved" type="462c0819:PsiDirectoryNode" />
+              <item name="myTask" type="462c0819:PsiDirectoryNode" />
+              <item name="APILearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="khProjectJuly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="khProjectJuly" type="462c0819:PsiDirectoryNode" />
+              <item name="saved" type="462c0819:PsiDirectoryNode" />
+              <item name="myTask" type="462c0819:PsiDirectoryNode" />
+              <item name="APILearning" type="462c0819:PsiDirectoryNode" />
               <item name="Maps_API_Udacity_Course" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,21 +156,21 @@
       <updated>1527415065236</updated>
       <workItem from="1527415067197" duration="1014000" />
       <workItem from="1528016330044" duration="7000000" />
+      <workItem from="1528486849295" duration="217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8014000" />
+    <option name="totallyTimeSpent" value="8231000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="117" y="60" width="1739" height="938" extended-state="0" />
+    <frame x="-364" y="34" width="1739" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12823462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12823462" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32976654" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -184,6 +183,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32976654" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,24 +206,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/index.html">
+    <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/index.html" />
+    <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/windowShopping.html" />
+    <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html" />
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="84" column="13" selection-start-line="82" selection-start-column="3" selection-end-line="84" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/windowShopping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2399">
-          <caret line="149" column="41" lean-forward="true" selection-start-line="149" selection-start-column="41" selection-end-line="149" selection-end-column="41" />
+        <state relative-caret-position="397">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="40" />
         </state>
       </provider>
     </entry>
