@@ -10,6 +10,8 @@
 
 <br>
 
+전윤석 
+
 ```plsql
 CREATE TABLE MARLOC(
   MARNAME VARCHAR2(300) PRIMARY KEY NOT NULL,
@@ -36,6 +38,8 @@ COMMIT;
 ```
 
 <br>
+
+장건희
 
 ```plsql
 CREATE TABLE NOTICE (
