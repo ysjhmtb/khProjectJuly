@@ -14,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="windowShopping.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="windowShopping.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
+            <state relative-caret-position="1955">
               <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beingStylish.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="695">
+              <caret line="46" column="12" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="46" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -155,11 +164,12 @@
       <workItem from="1527415067197" duration="1014000" />
       <workItem from="1528016330044" duration="7000000" />
       <workItem from="1528486849295" duration="1736000" />
+      <workItem from="1528611192149" duration="410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9750000" />
+    <option name="totallyTimeSpent" value="10160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="22" width="1739" height="938" extended-state="0" />
@@ -196,6 +206,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Maps_API_Udacity_Course/index.html" />
     <entry file="file://$PROJECT_DIR$/non-saved/htmlProto/NYC_template_ver1/nycProject/board/indexff36.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -209,8 +226,15 @@
     <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html" />
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
+        <state relative-caret-position="1955">
           <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="46" column="12" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="46" selection-end-column="12" />
         </state>
       </provider>
     </entry>
