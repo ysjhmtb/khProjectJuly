@@ -169,7 +169,7 @@
 	        	%>
 	        	
 	        	if(locations.length < <%= list.size() - 1 %>){
-	        		locations.push( %= temp %> + ",");
+	        		locations.push( <%= temp %> + ",");
 	        		
 	        	}else{
 	        		locations.push(<%= temp %>);
