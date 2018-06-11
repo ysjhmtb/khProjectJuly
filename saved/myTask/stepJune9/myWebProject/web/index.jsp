@@ -8,6 +8,9 @@
 </head>
 <body>
 	
+	<form method="get" action="/mwp/mapList.do">
+		<button>map</button>
+	</form>
 
 </body>
 </html>

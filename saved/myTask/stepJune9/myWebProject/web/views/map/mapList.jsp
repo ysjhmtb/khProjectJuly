@@ -57,7 +57,7 @@
 <body>
 		<div class="container">
 	    <div class="options-box">
-	        <h1>Find Your New NYC Home</h1>
+	        <h1>Your Free Market</h1>
 	        <div>
 	            <input id="show-listings" type="button" value="Show Listings">
 	            <input id="hide-listings" type="button" value="Hide Listings">
@@ -164,12 +164,12 @@
 	        	<% 
 	        		String temp = "{title: '" + m.getMarketName() 
 	        					+ "', location : {lat: " + m.getMarketLat()
-	        					+ "', lng : " + m.getMarketLng()
+	        					+ ", lng: " + m.getMarketLng()
 	        					+ "}}";
 	        	%>
 	        	
 	        	if(locations.length < <%= list.size() - 1 %>){
-	        		locations.push( <%= temp %> + ",");
+	        		locations.push( <%= temp + "," %> );
 	        		
 	        	}else{
 	        		locations.push(<%= temp %>);

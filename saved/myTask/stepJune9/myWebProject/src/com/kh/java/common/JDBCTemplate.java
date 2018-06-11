@@ -53,7 +53,9 @@ public class JDBCTemplate {
 		
 		try {
 			if(con != null && !con.isClosed()) {
+				System.out.println("test");
 				con.close();
+				
 				
 			}
 		} catch (SQLException e) {
