@@ -1,6 +1,7 @@
 package com.kh.java.map.model.dao;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -29,8 +30,9 @@ public class MapDao {
 				double marketLat = rs.getDouble("LAT");
 				double marketLng = rs.getDouble("LNG");
 				String marketExpl = rs.getString("EXPL");
+				Date startDay = rs.getDate("STARTDAY");
 				
-				temp = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl);
+				temp = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl, startDay);
 				result.add(temp);
 			}
 			
