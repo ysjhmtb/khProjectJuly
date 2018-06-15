@@ -42,17 +42,12 @@ public class MapListServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		request.setCharacterEncoding("UTF-8");
-
 		response.setContentType("text/html;UTF-8");
-
-		
 
 		List<MapVo> list = new MapService().getMapList();
 
 		for(MapVo vo : list) {
-
 			System.out.println(vo.toString());
-
 		}
 
 		
@@ -60,22 +55,13 @@ public class MapListServlet extends HttpServlet {
 		RequestDispatcher view = null;
 
 		if(list.size() != 0) {
-
 			request.setAttribute("list", list);
-
-			view = request.getRequestDispatcher("views/map/mapList.jsp");
-
-					
+			view = request.getRequestDispatcher("views/map/mapList.jsp");			
 
 		}else {
-
 			view = request.getRequestDispatcher("views/common/errorPage.jsp");
-
 			request.setAttribute("msg", "failed in caliing map");
-
 		}
-
-		
 
 		view.forward(request, response);
 

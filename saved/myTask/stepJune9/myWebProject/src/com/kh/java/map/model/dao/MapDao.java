@@ -20,7 +20,7 @@ public class MapDao {
 		
 		try {
 			stmt = con.createStatement();
-			String query = "SELECT * FROM MARLOC";
+			String query = "SELECT MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY FROM MARLOC";
 			rs = stmt.executeQuery(query);
 			
 			MapVo temp = null;
