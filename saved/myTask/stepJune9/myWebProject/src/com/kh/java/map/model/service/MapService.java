@@ -17,5 +17,19 @@ public class MapService {
 		return list;
 	}
 	
-	
+	public int insertMap(String marketName, double marketLat, double marketLng, 
+			String marketExpl, String startDay) {
+		Connection con = JDBCTemplate.getConnection();
+		
+		int result = new MapDao().insertMap(con, marketName, marketLat, marketLng, marketExpl, startDay);
+		
+		if(0 < result) {
+			JDBCTemplate.commit(con);
+		}else {
+			JDBCTemplate.rollback(con);
+		}
+		
+		JDBCTemplate.close(con);
+		return result;
+	}
 }

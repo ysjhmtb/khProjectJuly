@@ -13,5 +13,19 @@ public class MapServiceTest {
 		MapService testService = new MapService();
 		assertNotNull(testService.getMapList());
 	}
+	
+	@Test
+	public void testInsertMap() {
+		MapService testService = new MapService();
+		
+		String marketName = "kh프리마켓";
+		double marketLat = 37.498993;
+		double marketLng = 127.032909;
+		String marketExpl = "kh info";
+		String startDay = "20180815";
+		
+		assertEquals(testService.insertMap(marketName, marketLat, marketLng, marketExpl, startDay),1);
+		
+	}
 
 }

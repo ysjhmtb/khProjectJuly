@@ -16,7 +16,8 @@ public class MapVo {
 	public MapVo() {
 		
 	}
-
+	
+	
 	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl) {
 		super();
 		this.marketName = marketName;
