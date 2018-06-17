@@ -2,6 +2,7 @@ package com.kh.java.map.model.dao;
 
 import java.sql.Connection;
 import java.sql.Date;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -46,4 +47,46 @@ public class MapDao {
 		
 		return result;
 	}
+	
+	
+	public int insertMap(Connection con, String marketName, double marketLat, double marketLng, 
+			String marketExpl, String startDay) {
+		PreparedStatement pstmt = null;
+		
+		
+		String query = "INSERT INTO MARLOC " + 
+				"VALUES(?,SEQ_NNO.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'))";
+		int result = -1;
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			
+			pstmt.setString(1, marketName);
+			pstmt.setDouble(2, marketLat);
+			pstmt.setDouble(3, marketLng);
+			pstmt.setString(4, marketExpl);
+			pstmt.setString(5, startDay);
+			
+			result = pstmt.executeUpdate();
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			JDBCTemplate.close(pstmt);
+		}
+		
+		return result;
+		
+	}
 }
+
+
+
+
+
+
+
+
+

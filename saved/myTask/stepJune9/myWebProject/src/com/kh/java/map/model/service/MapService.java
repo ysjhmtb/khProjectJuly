@@ -16,4 +16,6 @@ public class MapService {
 		JDBCTemplate.close(con);
 		return list;
 	}
+	
+	
 }
