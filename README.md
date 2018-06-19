@@ -15,3 +15,13 @@
 <br>
 
 <hr>
+
+팀 프로젝트에서 담당한 영역 중 하나로 구글 맵 API의 사용 부분이 있었고, 이를 위해 Udacity에서 [Google Maps APIs](https://www.udacity.com/course/google-maps-apis--ud864) 를 수강하였으며, 학습한 내용을 다음과 같이 기록하였다.
+
+<br>
+
+
+
+<br>
+
+<hr>

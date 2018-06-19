@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="windowShopping.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
-              <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+            <state relative-caret-position="596">
+              <caret line="163" column="9" lean-forward="true" selection-start-line="161" selection-end-line="163" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -28,8 +28,8 @@
       <file leaf-file-name="beingStylish.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="279" column="9" lean-forward="true" selection-start-line="277" selection-end-line="279" selection-end-column="9" />
+            <state relative-caret-position="6417">
+              <caret line="279" column="9" selection-start-line="277" selection-end-line="279" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -37,17 +37,26 @@
       <file leaf-file-name="StaticMapsAndStreetViewImagery.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/StaticMapsAndStreetViewImagery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="211" column="28" lean-forward="true" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+            <state relative-caret-position="4853">
+              <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drawing.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Drawing.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/Drawing.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakingYourMark.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/MakingYourMark.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -82,6 +91,7 @@
         <option value="$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html" />
         <option value="$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/StaticMapsAndStreetViewImagery.html" />
         <option value="$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/Drawing.html" />
+        <option value="$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/MakingYourMark.html" />
       </list>
     </option>
   </component>
@@ -108,7 +118,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,10 +151,18 @@
               <item name="APILearning" type="462c0819:PsiDirectoryNode" />
               <item name="Maps_API_Udacity_Course" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="khProjectJuly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="khProjectJuly" type="462c0819:PsiDirectoryNode" />
+              <item name="saved" type="462c0819:PsiDirectoryNode" />
+              <item name="myTask" type="462c0819:PsiDirectoryNode" />
+              <item name="stepJune9" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,11 +208,12 @@
       <workItem from="1528486849295" duration="1736000" />
       <workItem from="1528611192149" duration="722000" />
       <workItem from="1528622378332" duration="1843000" />
+      <workItem from="1529423258729" duration="247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12315000" />
+    <option name="totallyTimeSpent" value="12562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="22" width="1739" height="938" extended-state="0" />
@@ -241,6 +259,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6417">
+          <caret line="279" column="9" lean-forward="true" selection-start-line="277" selection-end-line="279" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/StaticMapsAndStreetViewImagery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4853">
+          <caret line="211" column="28" lean-forward="true" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/Drawing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5911">
           <caret line="257" column="9" selection-start-line="257" selection-start-column="9" selection-end-line="257" selection-end-column="9" />
         </state>
@@ -264,31 +310,38 @@
     <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/index.html" />
     <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/windowShopping.html" />
     <entry file="file://$PROJECT_DIR$/saved/Maps_API_Udacity_Course/beingStylish.html" />
-    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/StaticMapsAndStreetViewImagery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="211" column="28" lean-forward="true" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+        <state relative-caret-position="4853">
+          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="279" column="9" lean-forward="true" selection-start-line="277" selection-end-line="279" selection-end-column="9" />
+        <state relative-caret-position="6417">
+          <caret line="279" column="9" selection-start-line="277" selection-end-line="279" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/Drawing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/windowShopping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="163" column="9" lean-forward="true" selection-start-line="161" selection-end-line="163" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/MakingYourMark.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
         </state>
       </provider>
     </entry>
