@@ -26,8 +26,8 @@
       <file leaf-file-name="beingStylish.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="163" column="11" lean-forward="true" selection-start-line="155" selection-start-column="8" selection-end-line="163" selection-end-column="11" />
+            <state relative-caret-position="48">
+              <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -206,12 +206,12 @@
       <workItem from="1528486849295" duration="1736000" />
       <workItem from="1528611192149" duration="722000" />
       <workItem from="1528622378332" duration="1843000" />
-      <workItem from="1529423258729" duration="985000" />
+      <workItem from="1529423258729" duration="1403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13300000" />
+    <option name="totallyTimeSpent" value="13718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="22" width="1739" height="938" extended-state="0" />
@@ -338,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/APILearning/Maps_API_Udacity_Course/beingStylish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="163" column="11" lean-forward="true" selection-start-line="155" selection-start-column="8" selection-end-line="163" selection-end-column="11" />
+        <state relative-caret-position="48">
+          <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
         </state>
       </provider>
     </entry>
