@@ -26,13 +26,15 @@ public class MapDaoTest {
 		Connection con = JDBCTemplate.getConnection();
 		
 		
-		String marketName = "kh프리마켓";
-		double marketLat = 37.498993;
-		double marketLng = 127.032909;
-		String marketExpl = "kh info";
+		String marketName = "kh프리마켓2";
+		double marketLat = 38.498993;
+		double marketLng = 117.032909;
+		String marketExpl = "kh info2";
 		String startDay = "20180815";
+		String endDay = "20180819";
 		
-		assertNotNull(daoTest.insertMap(con, marketName, marketLat, marketLng, marketExpl, startDay));
+		assertNotNull(daoTest.insertMap(con, marketName, marketLat, marketLng, 
+				marketExpl, startDay, endDay));
 		
 		
 		

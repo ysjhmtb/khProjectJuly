@@ -21,7 +21,7 @@ public class MapDao {
 		
 		try {
 			stmt = con.createStatement();
-			String query = "SELECT MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY FROM MARLOC";
+			String query = "SELECT MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY FROM MARLOC";
 			rs = stmt.executeQuery(query);
 			
 			MapVo temp = null;
@@ -32,8 +32,9 @@ public class MapDao {
 				double marketLng = rs.getDouble("LNG");
 				String marketExpl = rs.getString("EXPL");
 				Date startDay = rs.getDate("STARTDAY");
+				Date endDay = rs.getDate("ENDDAY");
 				
-				temp = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl, startDay);
+				temp = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl, startDay, endDay);
 				result.add(temp);
 			}
 			
@@ -50,12 +51,12 @@ public class MapDao {
 	
 	
 	public int insertMap(Connection con, String marketName, double marketLat, double marketLng, 
-			String marketExpl, String startDay) {
+			String marketExpl, String startDay, String endDay) {
 		PreparedStatement pstmt = null;
 		
 		
 		String query = "INSERT INTO MARLOC " + 
-				"VALUES(?,SEQ_NNO.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'))";
+				"VALUES(?,SEQ_NNO.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'),TO_DATE(?,'YYYYMMDD'))";
 		int result = -1;
 		
 		try {
@@ -66,6 +67,7 @@ public class MapDao {
 			pstmt.setDouble(3, marketLng);
 			pstmt.setString(4, marketExpl);
 			pstmt.setString(5, startDay);
+			pstmt.setString(6, endDay);
 			
 			result = pstmt.executeUpdate();
 			

@@ -18,37 +18,28 @@ import com.kh.java.map.model.service.MapService;
 public class InsertMapServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+
     public InsertMapServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		
-		/*
-		 String marketName = "kh프리마켓";
-		double marketLat = 37.498993;
-		double marketLng = 127.032909;
-		String marketExpl = "kh info";
-		String startDay = "20180815"; 
-		 
-		 */
+		
 		
 		String marketName = request.getParameter("marketName");
 		double marketLat = Double.parseDouble(request.getParameter("marketLat"));
 		double marketLng = Double.parseDouble(request.getParameter("marketLng"));
 		String marketExpl = request.getParameter("marketExpl");
 		String startDay = request.getParameter("startDay");
+		String endDay = request.getParameter("endDay");
 		
-		int result = new MapService().insertMap(marketName, marketLat, marketLng, marketExpl, startDay);
+		int result = new MapService().insertMap(marketName, marketLat, marketLng, 
+				marketExpl, startDay, endDay);
 		
 		RequestDispatcher view = null;
 		
@@ -61,9 +52,7 @@ public class InsertMapServlet extends HttpServlet {
 		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

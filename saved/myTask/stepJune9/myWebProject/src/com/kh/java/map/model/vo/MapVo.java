@@ -12,12 +12,28 @@ public class MapVo {
 	private double marketLng;
 	private String marketExpl;
 	private Date startDay;
+	private Date endDay;
 	
 	public MapVo() {
 		
 	}
 	
 	
+	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl, Date startDay,
+			Date endDay) {
+		super();
+		this.marketName = marketName;
+		this.marketNo = marketNo;
+		this.marketLat = marketLat;
+		this.marketLng = marketLng;
+		this.marketExpl = marketExpl;
+		this.startDay = startDay;
+		this.endDay = endDay;
+	}
+
+
+
+
 	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl) {
 		super();
 		this.marketName = marketName;
@@ -88,11 +104,31 @@ public class MapVo {
 		this.startDay = startDay;
 	}
 
+
+
+
+	public Date getEndDay() {
+		return endDay;
+	}
+
+
+
+
+	public void setEndDay(Date endDay) {
+		this.endDay = endDay;
+	}
+
+
+
+
 	@Override
 	public String toString() {
 		return "MapVo [marketName=" + marketName + ", marketNo=" + marketNo + ", marketLat=" + marketLat
-				+ ", marketLng=" + marketLng + ", marketExpl=" + marketExpl + ", startDay=" + startDay + "]";
+				+ ", marketLng=" + marketLng + ", marketExpl=" + marketExpl + ", startDay=" + startDay + ", endDay="
+				+ endDay + "]";
 	}
+
+	
 
 	
 	

@@ -18,10 +18,11 @@ public class MapService {
 	}
 	
 	public int insertMap(String marketName, double marketLat, double marketLng, 
-			String marketExpl, String startDay) {
+			String marketExpl, String startDay, String endDay) {
 		Connection con = JDBCTemplate.getConnection();
 		
-		int result = new MapDao().insertMap(con, marketName, marketLat, marketLng, marketExpl, startDay);
+		int result = new MapDao().insertMap(con, marketName, marketLat, 
+				marketLng, marketExpl, startDay, endDay);
 		
 		if(0 < result) {
 			JDBCTemplate.commit(con);
