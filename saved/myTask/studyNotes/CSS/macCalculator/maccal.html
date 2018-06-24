@@ -344,10 +344,10 @@
                     let testRegex = /(\d)+[.](\d)+/;
 
                     if (!testRegex.test(operand1)) {
-                        operand1 = (10 * parsetInt(operand1)) + parseInt(this.text());
+                        operand1 = (10 * parseInt(operand1)) + parseInt(this.val());
 
                     } else {
-                        operand1 = (10 * parseFloat(operand1)) + parsetFloat(this.text());
+                        operand1 = (10 * parseFloat(operand1)) + parseFloat(this.val());
                     }
 
                     $(".results").text(operand1);
@@ -359,10 +359,10 @@
                     let testRegex = /(\d)+[.](\d)+/;
 
                     if(!testRegex.test(operand2)){
-                        operand2 = (10 * parseInt(operand2)) + parsetInt(this.text());
+                        operand2 = (10 * parseInt(operand2)) + parseInt(this.val());
 
                     }else{
-                        operand2 = (10 * parsetFloat(operand2)) + parseFloat(this.text());
+                        operand2 = (10 * parseFloat(operand2)) + parseFloat(this.val());
                     }
 
                     $(".results").text(operand2);
@@ -423,13 +423,13 @@
 
     <div class="secondRow">
         <div class="seven gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">7</div>
+            <div value="7" class="numBtn textCentered textBlack">7</div>
         </div>
         <div class="eight gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">8</div>
+            <div value="8" class="numBtn textCentered textBlack">8</div>
         </div>
         <div class="nine gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">9</div>
+            <div value="9" class="numBtn textCentered textBlack">9</div>
         </div>
         <div class="multiplier operator orangeBox btnBorder">
             <div class="textCentered textWhite">x</div>
@@ -440,13 +440,13 @@
 
     <div class="thirdRow">
         <div class="four gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">4</div>
+            <div value="4" class="numBtn textCentered textBlack">4</div>
         </div>
         <div class="five gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">5</div>
+            <div value="5" class="numBtn textCentered textBlack">5</div>
         </div>
         <div class="six gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">6</div>
+            <div value="6" class="numBtn textCentered textBlack">6</div>
         </div>
         <div class="minus operator orangeBox btnBorder">
             <div class="textCentered textWhite">-</div>
@@ -457,13 +457,13 @@
 
     <div class="fourthRow">
         <div class="one gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">1</div>
+            <div value="1" class="numBtn textCentered textBlack">1</div>
         </div>
         <div class="two gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">2</div>
+            <div value="2" class="numBtn textCentered textBlack">2</div>
         </div>
         <div class="three gray2 btnBorder">
-            <div class="numBtn textCentered textBlack">3</div>
+            <div value="3" class="numBtn textCentered textBlack">3</div>
         </div>
         <div class="plus operator orangeBox btnBorder">
             <div class="textCentered textWhite">+</div>
@@ -474,7 +474,7 @@
 
     <div class="fifthRow">
         <div class="zero gray2 btnBorder">
-            <div class="numBtn textBlack"> &nbsp; &nbsp; &nbsp; &nbsp; 0</div>
+            <div value="0" class="numBtn textBlack"> &nbsp; &nbsp; &nbsp; &nbsp; 0</div>
         </div>
 
         <div class="dot gray2 btnBorder">
