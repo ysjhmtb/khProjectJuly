@@ -29,5 +29,12 @@ public class MapServiceTest {
 				marketExpl, startDay, endDay),1);
 		
 	}
+	
+	@Test
+	public void testGetStartDayForCountdown() {
+		MapService testService = new MapService();
+		assertNotNull(testService.getStartDayForCountdown());
+		
+	}
 
 }

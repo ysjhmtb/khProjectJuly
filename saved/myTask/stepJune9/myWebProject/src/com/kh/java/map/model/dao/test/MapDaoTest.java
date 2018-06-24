@@ -39,5 +39,13 @@ public class MapDaoTest {
 		
 		
 	}
+	
+	@Test
+	public void testGetStartDayForCountdown() {
+		MapDao daoTest = new MapDao();
+		Connection con = JDBCTemplate.getConnection();
+		
+		assertNotNull(daoTest.getStartDayForCountdown(con));
+	}
 
 }

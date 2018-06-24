@@ -82,6 +82,49 @@ public class MapDao {
 		return result;
 		
 	}
+	
+	public MapVo getStartDayForCountdown(Connection con) {
+		Statement stmt = null;
+		ResultSet rs = null;
+		MapVo result = null;
+		
+		try {
+			stmt = con.createStatement();
+			String query = "SELECT ROWNUM, MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY " + 
+					"FROM( " + 
+					"  SELECT ROWNUM, MARNAME, MARNO, LAT, LNG, " + 
+					"          EXPL, STARTDAY, ENDDAY " + 
+					"  FROM MARLOC ORDER BY STARTDAY " + 
+					") " + 
+					"WHERE ROWNUM = 1";
+			
+			rs = stmt.executeQuery(query);
+			
+			while(rs.next()) {
+				String marketName = rs.getString("MARNAME");
+				int marketNo = rs.getInt("MARNO");
+				double marketLat = rs.getDouble("LAT");
+				double marketLng = rs.getDouble("LNG");
+				String marketExpl = rs.getString("EXPL");
+				Date startDay = rs.getDate("STARTDAY");
+				Date endDay = rs.getDate("ENDDAY");
+				
+				result = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl, startDay, endDay);
+			}
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			JDBCTemplate.close(rs);
+			JDBCTemplate.close(stmt);
+		}
+		
+		return result;
+	}
+	
+	
 }
 
 

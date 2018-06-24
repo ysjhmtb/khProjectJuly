@@ -33,4 +33,12 @@ public class MapService {
 		JDBCTemplate.close(con);
 		return result;
 	}
+	
+	
+	public MapVo getStartDayForCountdown() {
+		Connection con = JDBCTemplate.getConnection();
+		MapVo result = new MapDao().getStartDayForCountdown(con);
+		JDBCTemplate.close(con);
+		return result;
+	}
 }
