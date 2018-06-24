@@ -19,12 +19,13 @@
       <file leaf-file-name="calculator.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/calculator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="153" column="24" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
+            <state relative-caret-position="3743">
+              <caret line="356" column="33" selection-start-line="356" selection-start-column="33" selection-end-line="356" selection-end-column="33" />
               <folding>
-                <element signature="e#7581#7587#0" expanded="true" />
-                <element signature="e#7588#7594#0" expanded="true" />
-                <element signature="e#7595#7601#0" expanded="true" />
+                <element signature="e#7615#7621#0" expanded="true" />
+                <element signature="e#7622#7628#0" expanded="true" />
+                <element signature="e#7629#7635#0" expanded="true" />
+                <element signature="e#7591#7597#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +79,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="230" />
-    <option name="y" value="187" />
+    <option name="x" value="43" />
+    <option name="y" value="61" />
     <option name="width" value="1739" />
     <option name="height" value="938" />
   </component>
@@ -91,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,7 +161,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,14 +221,15 @@
       <workItem from="1529423258729" duration="1403000" />
       <workItem from="1529505183685" duration="10384000" />
       <workItem from="1529606958117" duration="8781000" />
+      <workItem from="1529820819089" duration="4243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32883000" />
+    <option name="totallyTimeSpent" value="37126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="230" y="187" width="1739" height="938" extended-state="0" />
+    <frame x="43" y="61" width="1739" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21104082" />
@@ -263,12 +265,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/calculator.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3519">
+          <caret line="153" column="24" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
+          <folding>
+            <element signature="e#7615#7621#0" expanded="true" />
+            <element signature="e#7622#7628#0" expanded="true" />
+            <element signature="e#7629#7635#0" expanded="true" />
+            <element signature="e#7591#7597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
-            <element signature="e#7581#7587#0" expanded="true" />
-            <element signature="e#7588#7594#0" expanded="true" />
-            <element signature="e#7595#7601#0" expanded="true" />
+            <element signature="e#7615#7621#0" expanded="true" />
+            <element signature="e#7622#7628#0" expanded="true" />
+            <element signature="e#7629#7635#0" expanded="true" />
+            <element signature="e#7591#7597#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -403,9 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/non-saved/www.common-ground.co.kr/eat.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/non-saved/www.common-ground.co.kr/_next/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9500" />
@@ -415,12 +428,13 @@
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/CG/menu/menu.html" />
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/calculator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="153" column="24" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
+        <state relative-caret-position="3743">
+          <caret line="356" column="33" selection-start-line="356" selection-start-column="33" selection-end-line="356" selection-end-column="33" />
           <folding>
-            <element signature="e#7581#7587#0" expanded="true" />
-            <element signature="e#7588#7594#0" expanded="true" />
-            <element signature="e#7595#7601#0" expanded="true" />
+            <element signature="e#7615#7621#0" expanded="true" />
+            <element signature="e#7622#7628#0" expanded="true" />
+            <element signature="e#7629#7635#0" expanded="true" />
+            <element signature="e#7591#7597#0" expanded="true" />
           </folding>
         </state>
       </provider>
