@@ -19,7 +19,8 @@
 	            padding: 0;
 	        }
 	        .container {
-	            height: 100%;
+	            height: 500px;
+	            /* height: 100%; */
 	            position: relative;
 	        }
 	        input {
@@ -55,6 +56,9 @@
     </style>
 </head>
 <body>
+
+		<%@ include file = "/views/common/header.jsp" %>
+
 		<div class="container">
 	    <div class="options-box">
 	        <h1>Your Free Market</h1>
@@ -282,6 +286,9 @@
 	<script async defer
 	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCezN1dD4T0wR_Scxh42dHLxqAmYFCTLKU&v=3&callback=initMap">
 	</script>
+	
+	
+	<%@ include file = "/views/common/footer.jsp" %>
 
 </body>
 </html>

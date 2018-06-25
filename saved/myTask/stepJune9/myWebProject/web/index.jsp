@@ -20,6 +20,8 @@
 
 </head>
 <body>
+
+	<%@ include file = "/views/common/header.jsp" %>
 	
 	<form method="get" action="/mwp/mapList.do">
 		<button>map</button>
@@ -28,6 +30,9 @@
 	<form method="get" action="/mwp/selectStartDay.do">
 		<button>countdown</button>
 	</form>
+	
+	
+	<%@ include file = "/views/common/footer.jsp" %>
 	
 	
 	

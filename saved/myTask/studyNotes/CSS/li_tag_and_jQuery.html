@@ -21,6 +21,12 @@
 </ul>
 
 
+<input type="checkbox" checked="checked" id="check_box" class="check_class" />
+
+
+<input type="text" id="text_field" class="text_class" readonly="readonly" disabled="disabled" />
+
+
 
 </body>
 <script>
@@ -30,5 +36,55 @@
         console.log($("#liid").val());
         console.log($("#liid").data("valuedata"));
     });
+
+
+
+    $(function(){
+        //checkbox의 아이디속성값
+        var prop_id = $(":checkbox").prop("id");
+        //checkbox의 클래스속성값
+        var prop_class = $(":checkbox").prop("class");
+        //checkbox 체크유무(true/false)
+        var prop_checked = $(":checkbox").prop("checked");
+
+        //checkbox의 아이디속성값
+        var attr_id = $(":checkbox").attr("id");
+        //checkbox의 클래스속성값
+        var attr_class = $(":checkbox").attr("class");
+        //checkbox의 체크 속성값(checked/undefined)
+        var attr_checked = $(":checkbox").attr("checked");
+
+        console.log("id값 prop : " + prop_id + " , attr : " +  attr_id);
+        console.log("class값 prop : " + prop_class + " , attr : " +  attr_class);
+        console.log("checked값 prop : " + prop_checked + " , attr : " +  attr_checked);
+    });
+
+
+
+
+    $(function(){
+        var prop_id = $(":text").prop("id");
+        var prop_class = $(":text").prop("class");
+        var prop_readonly = $(":text").prop("readonly");
+        var prop_disabled = $(":text").prop("disabled");
+
+        var attr_id = $(":text").attr("id");
+        var attr_class = $(":text").attr("class");
+        var attr_readonly = $(":text").attr("readonly");
+        var attr_disabled = $(":text").attr("disabled");
+
+        console.log("id값 prop : " + prop_id + " , attr : " +  attr_id);
+        console.log("class값 prop : " + prop_class + " , attr : " +  attr_class);
+        console.log("readonly값 prop : " + prop_readonly + " , attr : " +  attr_readonly);
+        console.log("disabled값 prop : " + prop_disabled + " , attr : " +  attr_disabled);
+    });
+
+
+
+
+
+
+
+
 </script>
 </html>
