@@ -20,7 +20,9 @@ CREATE TABLE MARLOC(
   LNG NUMBER NOT NULL,
   EXPL VARCHAR2(300),
   STARTDAY DATE,
-  ENDDAY DATE);
+  ENDDAY DATE,
+  URL VARCHAR2(300)
+);
 
 
 
@@ -29,19 +31,27 @@ INSERT INTO MARLOC
 VALUES('홍대앞예술시장프리마켓',SEQ_NNO.NEXTVAL,
        37.552291,126.923397,'예술시장',
        TO_DATE('20180720','YYYYMMDD'),
-       TO_DATE('20180722','YYYYMMDD'));
+       TO_DATE('20180722','YYYYMMDD'),
+       'http://tour.pcs21.net/main/main.kh'
+      );
+       
+       
 
 INSERT INTO MARLOC
 VALUES('올림픽공원 프리마켓',SEQ_NNO.NEXTVAL,
        37.5182654,127.11531860000002,'평화의 문',
        TO_DATE('20180730','YYYYMMDD'),
-       TO_DATE('20180804','YYYYMMDD'));
+       TO_DATE('20180804','YYYYMMDD'),
+       'http://tour.pcs21.net/main/main.kh'
+      );
 
 INSERT INTO MARLOC
 VALUES('kh프리마켓',SEQ_NNO.NEXTVAL,
        37.49899300000001,127.03290900000002,'KH_INFO',
        TO_DATE('20180801','YYYYMMDD'),
-       TO_DATE('20180810','YYYYMMDD'));
+       TO_DATE('20180810','YYYYMMDD'),
+       'http://tour.pcs21.net/main/main.kh'
+      );
 
 
 SELECT * FROM MARLOC;

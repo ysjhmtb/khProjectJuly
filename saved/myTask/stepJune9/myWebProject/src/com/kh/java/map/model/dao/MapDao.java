@@ -21,7 +21,7 @@ public class MapDao {
 		
 		try {
 			stmt = con.createStatement();
-			String query = "SELECT MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY FROM MARLOC";
+			String query = "SELECT MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY, URL, COLOR, COLORTEXT FROM MARLOC";
 			rs = stmt.executeQuery(query);
 			
 			MapVo temp = null;
@@ -33,8 +33,13 @@ public class MapDao {
 				String marketExpl = rs.getString("EXPL");
 				Date startDay = rs.getDate("STARTDAY");
 				Date endDay = rs.getDate("ENDDAY");
+				String url = rs.getString("URL");
+				String color = rs.getString("color");
+				String colortext = rs.getString("colortext");
 				
-				temp = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl, startDay, endDay);
+				temp = new MapVo(marketName, marketNo, marketLat, marketLng, 
+						marketExpl, startDay, endDay, url, color, colortext);
+				
 				result.add(temp);
 			}
 			
@@ -51,12 +56,13 @@ public class MapDao {
 	
 	
 	public int insertMap(Connection con, String marketName, double marketLat, double marketLng, 
-			String marketExpl, String startDay, String endDay) {
+			String marketExpl, String startDay, String endDay, String url, String color,
+			String colortext) {
 		PreparedStatement pstmt = null;
 		
 		
 		String query = "INSERT INTO MARLOC " + 
-				"VALUES(?,SEQ_NNO.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'),TO_DATE(?,'YYYYMMDD'))";
+				"VALUES(?,SEQ_NNO.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'),TO_DATE(?,'YYYYMMDD'),?,?,?)";
 		int result = -1;
 		
 		try {
@@ -68,6 +74,9 @@ public class MapDao {
 			pstmt.setString(4, marketExpl);
 			pstmt.setString(5, startDay);
 			pstmt.setString(6, endDay);
+			pstmt.setString(7, url);
+			pstmt.setString(8, color);
+			pstmt.setString(9, colortext);
 			
 			result = pstmt.executeUpdate();
 			
@@ -90,13 +99,13 @@ public class MapDao {
 		
 		try {
 			stmt = con.createStatement();
-			String query = "SELECT ROWNUM, MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY " + 
-					"FROM( " + 
-					"  SELECT ROWNUM, MARNAME, MARNO, LAT, LNG, " + 
-					"          EXPL, STARTDAY, ENDDAY " + 
-					"  FROM MARLOC ORDER BY STARTDAY " + 
-					") " + 
-					"WHERE ROWNUM = 1";
+			String query = "SELECT ROWNUM, MARNAME, MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY, URL, COLOR, COLORTEXT" + 
+					" FROM(" + 
+					" SELECT ROWNUM, MARNAME, MARNO, LAT, LNG," + 
+					" EXPL, STARTDAY, ENDDAY, URL, COLOR, COLORTEXT" + 
+					" FROM MARLOC ORDER BY STARTDAY" + 
+					" ) " + 
+					" WHERE ROWNUM = 1";
 			
 			rs = stmt.executeQuery(query);
 			
@@ -108,8 +117,12 @@ public class MapDao {
 				String marketExpl = rs.getString("EXPL");
 				Date startDay = rs.getDate("STARTDAY");
 				Date endDay = rs.getDate("ENDDAY");
+				String url = rs.getString("URL");
+				String color = rs.getString("COLOR");
+				String colortext = rs.getString("COLORTEXT");
 				
-				result = new MapVo(marketName, marketNo, marketLat, marketLng, marketExpl, startDay, endDay);
+				result = new MapVo(marketName, marketNo, marketLat, marketLng, 
+						marketExpl, startDay, endDay, url, color, colortext);
 			}
 			
 			

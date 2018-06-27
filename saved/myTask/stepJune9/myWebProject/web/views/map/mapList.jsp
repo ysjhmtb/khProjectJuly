@@ -19,7 +19,7 @@
 	            padding: 0;
 	        }
 	        .container {
-	            height: 500px;
+	            height: 800px;
 	            /* height: 100%; */
 	            position: relative;
 	        }

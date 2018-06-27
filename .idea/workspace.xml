@@ -29,7 +29,7 @@
       <file leaf-file-name="maccal.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1813">
+            <state relative-caret-position="-1">
               <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
               <folding>
                 <element signature="e#9993#9999#0" expanded="true" />
@@ -232,12 +232,12 @@
       <workItem from="1529911885193" duration="1312000" />
       <workItem from="1529922225647" duration="190000" />
       <workItem from="1529928503514" duration="1674000" />
-      <workItem from="1529935505084" duration="751000" />
+      <workItem from="1529935505084" duration="870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43292000" />
+    <option name="totallyTimeSpent" value="43411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="978" extended-state="6" />
@@ -565,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1813">
+        <state relative-caret-position="-1">
           <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
           <folding>
             <element signature="e#9993#9999#0" expanded="true" />

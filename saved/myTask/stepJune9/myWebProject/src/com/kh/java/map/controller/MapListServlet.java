@@ -63,6 +63,7 @@ public class MapListServlet extends HttpServlet {
 			request.setAttribute("msg", "failed in caliing map");
 		}
 
+		System.out.println("maplist servlet");
 		view.forward(request, response);
 
 	}

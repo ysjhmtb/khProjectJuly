@@ -13,14 +13,23 @@ public class MapVo {
 	private String marketExpl;
 	private Date startDay;
 	private Date endDay;
+	private String url;
+	private String color;
+	private String colortext;
 	
 	public MapVo() {
 		
 	}
 	
 	
+	
+	
+	
+	
+	
+
 	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl, Date startDay,
-			Date endDay) {
+			Date endDay, String url, String color, String colortext) {
 		super();
 		this.marketName = marketName;
 		this.marketNo = marketNo;
@@ -29,32 +38,17 @@ public class MapVo {
 		this.marketExpl = marketExpl;
 		this.startDay = startDay;
 		this.endDay = endDay;
+		this.url = url;
+		this.color = color;
+		this.colortext = colortext;
 	}
 
 
 
 
-	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl) {
-		super();
-		this.marketName = marketName;
-		this.marketNo = marketNo;
-		this.marketLat = marketLat;
-		this.marketLng = marketLng;
-		this.marketExpl = marketExpl;
-	}
-	
-	
 
-	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl,
-			Date startDay) {
-		super();
-		this.marketName = marketName;
-		this.marketNo = marketNo;
-		this.marketLat = marketLat;
-		this.marketLng = marketLng;
-		this.marketExpl = marketExpl;
-		this.startDay = startDay;
-	}
+
+
 
 	public String getMarketName() {
 		return marketName;
@@ -119,14 +113,54 @@ public class MapVo {
 	}
 
 
+	public String getUrl() {
+		return url;
+	}
+
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+	public String getColortext() {
+		return colortext;
+	}
+
+
+	public void setColortext(String colortext) {
+		this.colortext = colortext;
+	}
+
+
+
 
 
 	@Override
 	public String toString() {
 		return "MapVo [marketName=" + marketName + ", marketNo=" + marketNo + ", marketLat=" + marketLat
 				+ ", marketLng=" + marketLng + ", marketExpl=" + marketExpl + ", startDay=" + startDay + ", endDay="
-				+ endDay + "]";
+				+ endDay + ", url=" + url + ", color=" + color + ", colortext=" + colortext + "]";
 	}
+
+
+	
+	
+	
+
+
+
+
 
 	
 

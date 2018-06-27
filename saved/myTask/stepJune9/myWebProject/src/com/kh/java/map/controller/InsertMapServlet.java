@@ -37,9 +37,12 @@ public class InsertMapServlet extends HttpServlet {
 		String marketExpl = request.getParameter("marketExpl");
 		String startDay = request.getParameter("startDay");
 		String endDay = request.getParameter("endDay");
+		String url = request.getParameter("url");
+		String color = request.getParameter("color");
+		String colortext = request.getParameter("colortext");
 		
 		int result = new MapService().insertMap(marketName, marketLat, marketLng, 
-				marketExpl, startDay, endDay);
+				marketExpl, startDay, endDay, url, color, colortext);
 		
 		RequestDispatcher view = null;
 		
