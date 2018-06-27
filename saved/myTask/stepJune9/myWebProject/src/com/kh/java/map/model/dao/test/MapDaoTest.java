@@ -32,9 +32,13 @@ public class MapDaoTest {
 		String marketExpl = "kh info2";
 		String startDay = "20180815";
 		String endDay = "20180819";
+		String url = "www.naver.com";
+		String color = "#FFEEDD";
+		String colortext = "BLACK";
+		
 		
 		assertNotNull(daoTest.insertMap(con, marketName, marketLat, marketLng, 
-				marketExpl, startDay, endDay));
+				marketExpl, startDay, endDay, url, color, colortext));
 		
 		
 		

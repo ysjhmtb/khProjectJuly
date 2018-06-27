@@ -31,6 +31,11 @@
 		<button>countdown</button>
 	</form>
 	
+	<form method="get" action="/mwp/views/map/insertMap.jsp">
+		<button>맵 정보 입력</button>
+	
+	</form>
+	
 	
 	<%@ include file = "/views/common/footer.jsp" %>
 	

@@ -18,15 +18,21 @@ public class MapServiceTest {
 	public void testInsertMap() {
 		MapService testService = new MapService();
 		
+		
 		String marketName = "kh프리마켓2";
 		double marketLat = 38.498993;
 		double marketLng = 117.032909;
 		String marketExpl = "kh info2";
 		String startDay = "20180815";
 		String endDay = "20180819";
+		String url = "www.naver.com";
+		String color = "#FFEEDD";
+		String colortext = "BLACK";
+		
+	
 		
 		assertEquals(testService.insertMap(marketName, marketLat, marketLng, 
-				marketExpl, startDay, endDay),1);
+				marketExpl, startDay, endDay, url, color, colortext),1);
 		
 	}
 	

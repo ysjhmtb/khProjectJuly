@@ -49,6 +49,9 @@ public class InsertMapServlet extends HttpServlet {
 		if(0 < result) {
 			view = request.getRequestDispatcher("index.jsp");
 			request.setAttribute("msg", "inserting map succeeded");
+		}else {
+			view = request.getRequestDispatcher("views/common/errorPage.jsp");
+			request.setAttribute("msg", "error occured");
 		}
 		
 		view.forward(request, response);
