@@ -28,11 +28,12 @@ public class MapServiceTest {
 		String url = "www.naver.com";
 		String color = "#FFEEDD";
 		String colortext = "BLACK";
+		String attachedFile = "NONE FILE";
 		
 	
 		
 		assertEquals(testService.insertMap(marketName, marketLat, marketLng, 
-				marketExpl, startDay, endDay, url, color, colortext),1);
+				marketExpl, startDay, endDay, url, color, colortext, attachedFile),1);
 		
 	}
 	

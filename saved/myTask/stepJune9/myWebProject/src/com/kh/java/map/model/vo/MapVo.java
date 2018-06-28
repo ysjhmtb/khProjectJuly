@@ -16,20 +16,15 @@ public class MapVo {
 	private String url;
 	private String color;
 	private String colortext;
+	private String attachedFile;
 	
 	public MapVo() {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
 
 	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl, Date startDay,
-			Date endDay, String url, String color, String colortext) {
+			Date endDay, String url, String color, String colortext, String attachedFile) {
 		super();
 		this.marketName = marketName;
 		this.marketNo = marketNo;
@@ -41,11 +36,8 @@ public class MapVo {
 		this.url = url;
 		this.color = color;
 		this.colortext = colortext;
+		this.attachedFile = attachedFile;
 	}
-
-
-
-
 
 
 
@@ -143,15 +135,30 @@ public class MapVo {
 	}
 
 
+	public String getAttachedFile() {
+		return attachedFile;
+	}
 
+
+	public void setAttachedFile(String attachedFile) {
+		this.attachedFile = attachedFile;
+	}
 
 
 	@Override
 	public String toString() {
 		return "MapVo [marketName=" + marketName + ", marketNo=" + marketNo + ", marketLat=" + marketLat
 				+ ", marketLng=" + marketLng + ", marketExpl=" + marketExpl + ", startDay=" + startDay + ", endDay="
-				+ endDay + ", url=" + url + ", color=" + color + ", colortext=" + colortext + "]";
+				+ endDay + ", url=" + url + ", color=" + color + ", colortext=" + colortext + ", attachedFile="
+				+ attachedFile + "]";
 	}
+
+
+	
+
+
+
+	
 
 
 	

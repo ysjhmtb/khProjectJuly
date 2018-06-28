@@ -35,10 +35,11 @@ public class MapDaoTest {
 		String url = "www.naver.com";
 		String color = "#FFEEDD";
 		String colortext = "BLACK";
+		String attachedFile = "NONE FILE";
 		
 		
 		assertNotNull(daoTest.insertMap(con, marketName, marketLat, marketLng, 
-				marketExpl, startDay, endDay, url, color, colortext));
+				marketExpl, startDay, endDay, url, color, colortext, attachedFile));
 		
 		
 		
