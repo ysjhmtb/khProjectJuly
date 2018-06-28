@@ -62,69 +62,69 @@ public ArrayList<MapVo> getMapList(Connection con){
 	
 	
 	
-	public ArrayList<MapPlusAtmtVo> selectMapList(Connection con){
-		
-		Statement stmt = null;
-		ResultSet rs = null;
-		ArrayList<MapPlusAtmtVo> result = new ArrayList<>();
-		
-		
-		try {
-			stmt = con.createStatement();
-			String query = "SELECT MARNAME, MARLOC.MARNO  AS MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY," + 
-					"  URL, COLOR, COLORTEXT, FNO, ORIGIN_NAME, CHANGE_NAME," + 
-					"  FILE_PATH, UPLOAD_DATE, FILE_LEVEL, DOWNLOAD_COUNT" + 
-					"  FROM MARLOC" + 
-					"  JOIN ATTACHMENTMAP on MARLOC.MARNO = ATTACHMENTMAP.MARNO";
-			rs = stmt.executeQuery(query);
-			
-			MapPlusAtmtVo sumVo = null;
-			MapVo temp = null;
-			AttachmentMapVo temp2 = null;
-			
-			while(rs.next()) {
-				String marketName = rs.getString("MARNAME");
-				int marketNo = rs.getInt("MARNO");
-				double marketLat = rs.getDouble("LAT");
-				double marketLng = rs.getDouble("LNG");
-				String marketExpl = rs.getString("EXPL");
-				Date startDay = rs.getDate("STARTDAY");
-				Date endDay = rs.getDate("ENDDAY");
-				String url = rs.getString("URL");
-				String color = rs.getString("COLOR");
-				String colortext = rs.getString("COLORTEXT");
-				
-				int fno = rs.getInt("FNO");
-				int attachMarNo = rs.getInt("MARNO");
-				String originName = rs.getString("ORIGIN_NAME");
-				String changeName = rs.getString("CHANGE_NAME");
-				String filePath = rs.getString("FILE_PATH");
-				Date uploadDate = rs.getDate("UPLOAD_DATE");
-				int fileLevel = rs.getInt("FILE_LEVEL");
-				int downloadCount = rs.getInt("DOWNLOAD_COUNT");
-				
-				
-				temp = new MapVo(marketName, marketNo, marketLat, marketLng, 
-						marketExpl, startDay, endDay, url, color, colortext);
-				
-				temp2 = new AttachmentMapVo(fno, attachMarNo, originName, changeName, 
-						filePath, uploadDate, fileLevel, downloadCount);
-				
-				sumVo = new MapPlusAtmtVo(temp,temp2);
-				
-				result.add(sumVo);
-			}
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally {
-			JDBCTemplate.close(rs);
-			JDBCTemplate.close(stmt);
-		}
-		
-		return result;
-	}
+//	public ArrayList<MapPlusAtmtVo> selectMapList(Connection con){
+//		
+//		Statement stmt = null;
+//		ResultSet rs = null;
+//		ArrayList<MapPlusAtmtVo> result = new ArrayList<>();
+//		
+//		
+//		try {
+//			stmt = con.createStatement();
+//			String query = "SELECT MARNAME, MARLOC.MARNO  AS MARNO, LAT, LNG, EXPL, STARTDAY, ENDDAY," + 
+//					"  URL, COLOR, COLORTEXT, FNO, ORIGIN_NAME, CHANGE_NAME," + 
+//					"  FILE_PATH, UPLOAD_DATE, FILE_LEVEL, DOWNLOAD_COUNT" + 
+//					"  FROM MARLOC" + 
+//					"  JOIN ATTACHMENTMAP on MARLOC.MARNO = ATTACHMENTMAP.MARNO";
+//			rs = stmt.executeQuery(query);
+//			
+//			MapPlusAtmtVo sumVo = null;
+//			MapVo temp = null;
+//			AttachmentMapVo temp2 = null;
+//			
+//			while(rs.next()) {
+//				String marketName = rs.getString("MARNAME");
+//				int marketNo = rs.getInt("MARNO");
+//				double marketLat = rs.getDouble("LAT");
+//				double marketLng = rs.getDouble("LNG");
+//				String marketExpl = rs.getString("EXPL");
+//				Date startDay = rs.getDate("STARTDAY");
+//				Date endDay = rs.getDate("ENDDAY");
+//				String url = rs.getString("URL");
+//				String color = rs.getString("COLOR");
+//				String colortext = rs.getString("COLORTEXT");
+//				
+//				int fno = rs.getInt("FNO");
+//				int attachMarNo = rs.getInt("MARNO");
+//				String originName = rs.getString("ORIGIN_NAME");
+//				String changeName = rs.getString("CHANGE_NAME");
+//				String filePath = rs.getString("FILE_PATH");
+//				Date uploadDate = rs.getDate("UPLOAD_DATE");
+//				int fileLevel = rs.getInt("FILE_LEVEL");
+//				int downloadCount = rs.getInt("DOWNLOAD_COUNT");
+//				
+//				
+//				temp = new MapVo(marketName, marketNo, marketLat, marketLng, 
+//						marketExpl, startDay, endDay, url, color, colortext);
+//				
+//				temp2 = new AttachmentMapVo(fno, attachMarNo, originName, changeName, 
+//						filePath, uploadDate, fileLevel, downloadCount);
+//				
+//				sumVo = new MapPlusAtmtVo(temp,temp2);
+//				
+//				result.add(sumVo);
+//			}
+//			
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}finally {
+//			JDBCTemplate.close(rs);
+//			JDBCTemplate.close(stmt);
+//		}
+//		
+//		return result;
+//	}
 	
 	
 	
@@ -298,13 +298,6 @@ public ArrayList<MapVo> getMapList(Connection con){
 		return result;
 		
 		
-	
-		
-		
-		
-		
-		
-		return 0;
 	}
 	
 	

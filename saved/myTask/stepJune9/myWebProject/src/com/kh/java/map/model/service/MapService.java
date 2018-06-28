@@ -21,12 +21,12 @@ public class MapService {
 	
 	
 
-	public ArrayList<MapPlusAtmtVo> selectMapList(){
-		Connection con = JDBCTemplate.getConnection();
-		ArrayList<MapPlusAtmtVo> list = new MapDao().selectMapList(con);
-		JDBCTemplate.close(con);
-		return list;
-	}
+//	public ArrayList<MapPlusAtmtVo> selectMapList(){
+//		Connection con = JDBCTemplate.getConnection();
+//		ArrayList<MapPlusAtmtVo> list = new MapDao().selectMapList(con);
+//		JDBCTemplate.close(con);
+//		return list;
+//	}
 	
 	
 	

@@ -208,6 +208,12 @@ pageEncoding="UTF-8"%>
                 
                 <div class="elevenInFifth nameDiv">마켓 사진</div>
                 
+                <div id="fileArea">
+                	<input type="file" id="ha>
+                
+                
+                </div>
+                
                 
 
             </div>
