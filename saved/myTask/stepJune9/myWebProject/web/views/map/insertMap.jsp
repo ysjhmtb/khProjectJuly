@@ -138,8 +138,9 @@ pageEncoding="UTF-8"%>
     <div align="center" style="font-size:25px; margin-bottom:23px;">프리마켓 등록</div>
 </div>
 <div align="center">
-    <form id="proInfo" method="post" action="/mwp/insertMap.do">
-
+    <form id="proInfo" method="post" action="/mwp/insertMap.do" enctypt="multipart/form-data">
+    
+    	<input type="hidden" name="writer" value="admin">
 
         <div class="outerBox">
 
@@ -204,6 +205,9 @@ pageEncoding="UTF-8"%>
                 <div class="tenInFifth dataDiv">
                 	<input type="text" class="infoText dataBox" name="url" id="url" placeholder="http://tour.pcs21.net/main/main.kh">
                 </div>
+                
+                <div class="elevenInFifth nameDiv">마켓 사진</div>
+                
                 
 
             </div>

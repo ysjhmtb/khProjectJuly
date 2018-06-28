@@ -11,7 +11,7 @@ public class MapServiceTest {
 	@Test
 	public void testGetMapList() {
 		MapService testService = new MapService();
-		assertNotNull(testService.getMapList());
+		assertNotNull(testService.selectMapList());
 	}
 	
 	@Test

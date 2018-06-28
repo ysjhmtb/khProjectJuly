@@ -1,6 +1,7 @@
 package com.kh.java.map.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -11,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.kh.java.map.model.service.MapService;
+import com.kh.java.map.model.vo.AttachmentMapVo;
+import com.kh.java.map.model.vo.MapPlusAtmtVo;
 import com.kh.java.map.model.vo.MapVo;
 
 /**
@@ -50,7 +53,6 @@ public class MapListServlet extends HttpServlet {
 			System.out.println(vo.toString());
 		}
 
-		
 
 		RequestDispatcher view = null;
 
