@@ -1,6 +1,7 @@
 package com.kh.java.map.model.service;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,19 +20,10 @@ public class MapService {
 		return list;
 	}
 	
-	
 
-//	public ArrayList<MapPlusAtmtVo> selectMapList(){
-//		Connection con = JDBCTemplate.getConnection();
-//		ArrayList<MapPlusAtmtVo> list = new MapDao().selectMapList(con);
-//		JDBCTemplate.close(con);
-//		return list;
-//	}
-	
-	
 	
 	//marNo는 지도가 들어간 결과물 
-	public int insertMap(String marketName, double marketLat, double marketLng, 
+	public int insertMap(String marketName, Double marketLat, Double marketLng, 
 			String marketExpl, String startDay, String endDay, 
 			String url, String color, String colortext, 
 			String originName, String changeName, String filePath, int fileLevel,
@@ -40,6 +32,13 @@ public class MapService {
 		
 		
 		Connection con = JDBCTemplate.getConnection();
+		
+		/*
+		 public int insertMap(Connection con, String marketName, double marketLat, 
+			double marketLng, 
+			String marketExpl, String startDay, String endDay, String url, 
+			String color, String colortext) 
+		 */
 		
 		int result = new MapDao().insertMap(con, marketName, marketLat, 
 				marketLng, marketExpl, startDay, endDay, url, color, colortext);
@@ -66,6 +65,8 @@ public class MapService {
 		JDBCTemplate.close(con);
 		return result;
 	}
+	
+	
 	
 	
 	public MapVo getStartDayForCountdown() {

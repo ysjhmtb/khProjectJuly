@@ -18,7 +18,32 @@ public class AttachmentMapVo {
 		 
 	 }
 
+	 public AttachmentMapVo(int marNo, String originName, 
+			 String changeName, String filePath, 
+				int fileLevel, int downloadCount) {
+			super();
 	
+			this.marNo = marNo;
+			this.originName = originName;
+			this.changeName = changeName;
+			this.filePath = filePath;
+			this.fileLevel = fileLevel;
+			this.downloadCount = downloadCount;
+		}
+	 
+	 public AttachmentMapVo(String originName, 
+			 String changeName, String filePath, 
+				int fileLevel, int downloadCount) {
+			super();
+	
+			this.marNo = marNo;
+			this.originName = originName;
+			this.changeName = changeName;
+			this.filePath = filePath;
+			this.fileLevel = fileLevel;
+			this.downloadCount = downloadCount;
+		}
+
 	 
 	 
 

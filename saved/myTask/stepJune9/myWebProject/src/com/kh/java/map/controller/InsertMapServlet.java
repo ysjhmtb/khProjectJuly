@@ -1,6 +1,8 @@
 package com.kh.java.map.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Enumeration;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 
+import com.kh.java.common.MyRenamePolicy;
 import com.kh.java.map.model.service.MapService;
+import com.kh.java.map.model.vo.AttachmentMapVo;
 import com.kh.java.map.model.vo.MapVo;
 import com.oreilly.servlet.MultipartRequest;
 
@@ -30,11 +34,55 @@ public class InsertMapServlet extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("insertMapServlet");
+		
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		
+		int maxSize = 1024 * 1024 * 10;
 		
-	
+		RequestDispatcher view = null;
+		
+		if(!ServletFileUpload.isMultipartContent(request)){
+			view = request.getRequestDispatcher("views/common/errorPage.jsp");
+			request.setAttribute("msg", "전송 데이터의 타입을 확인하십시오!!");
+			view.forward(request, response);
+		}
+		
+		String path = "/Users/yunseokjeon/git/khServlet/khWorkspace/myWebProject/web/upload";
+		
+		MultipartRequest mRequest = new MultipartRequest(request, path, maxSize
+				, "UTF-8", new MyRenamePolicy());
+		
+		String marketName = mRequest.getParameter("marketName");
+		double lat = Double.parseDouble(mRequest.getParameter("lat"));
+		double lng = Double.parseDouble(mRequest.getParameter("lng"));
+		String startDay = mRequest.getParameter("startDay");
+		String endDay = mRequest.getParameter("endDay");
+		String url = "#";
+		String color = "#FFEEDD";
+		String colorText = "BLACK";
+		String marketExpl = mRequest.getParameter("marketExpl");
+		
+		
+		String originName = mRequest.getOriginalFileName("primaryImg");
+		String changeName = mRequest.getFilesystemName("primaryImg");
+		
+		System.out.println(marketName + "/" + lat  + "/" + lng  + "/" + startDay
+				 + "/" + endDay + "/" + url + "/" + color + "/" + colorText
+				 + "/" + marketExpl + "/" + originName + "/" + changeName);
+		
+		
+		int result = new MapService().insertMap(marketName, lat, lng, 
+				marketExpl, startDay, endDay, url, color, colorText,
+				originName, changeName, path, 0, 0);
+		/*
+		 마켓/1.0/2.0/20180101/20181111/#/#FFEEDD/BLACK/
+		 <img alt="" src="http://localhost:8081/mwp/upload/forest15.PNG" 
+		 style="height:467px; width:698px" /><br /><br />
+		1234ㅅㄷㄴㅅ/forest1.PNG/201806290807542721.PNG
+		 */
+				
 		
 		
 	}

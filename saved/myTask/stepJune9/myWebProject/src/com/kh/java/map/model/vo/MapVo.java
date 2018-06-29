@@ -21,6 +21,26 @@ public class MapVo {
 	public MapVo() {
 		
 	}
+	
+	
+	
+	
+
+	
+	public MapVo(String marketName, double marketLat, double marketLng, 
+			String marketExpl, Date startDay,
+			Date endDay, String url, String color, String colortext) {
+		super();
+		this.marketName = marketName;
+		this.marketLat = marketLat;
+		this.marketLng = marketLng;
+		this.marketExpl = marketExpl;
+		this.startDay = startDay;
+		this.endDay = endDay;
+		this.url = url;
+		this.color = color;
+		this.colortext = colortext;
+	}
 
 
 	public MapVo(String marketName, int marketNo, double marketLat, double marketLng, String marketExpl, Date startDay,

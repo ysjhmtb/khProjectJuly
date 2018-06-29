@@ -47,7 +47,13 @@
         </div>
 
         <input type="file" multiple id="input_imgs"  name="galleryImage" onchange="printImage(this)">
+        <button>ㅇㅣ미지 추가</button>
+        <div style="display:none;">
+            <input type="file" name="file1"/>
 
+
+
+        </div>
 
     </form>
 
@@ -65,7 +71,6 @@
     3. 같은 사진이 두번 입력되는 문제.
      */
 
-
     function printImage(obj){
         if(obj.files && obj.files[0]){
             var reader = new FileReader();
@@ -73,8 +78,8 @@
             reader.onload = function (e) {
 
                 var img_html = "<img src =\"" + e.target.result + "\">";
-                $(".explDiv").append(img_html);
-                $(".explDiv").append("<br>");
+                $(".explDiv").html($(".explDiv").html() + img_html);
+                $(".explDiv").append($("<br>"));
                 // $(".explDiv").html(img_html);
 
 
