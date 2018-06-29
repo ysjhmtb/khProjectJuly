@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" beforeDir="false" afterPath="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,16 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maccal.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+      <file leaf-file-name="imageUploadTest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/imageUploadTest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
-              <folding>
-                <element signature="e#9993#9999#0" expanded="true" />
-                <element signature="e#10000#10006#0" expanded="true" />
-                <element signature="e#10007#10013#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/temp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="691">
+              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -66,6 +69,8 @@
       <find>image</find>
       <find>street</find>
       <find>btnBorder</find>
+      <find>&amp;gt;</find>
+      <find>&amp;lt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,6 +94,8 @@
         <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/test.html" />
         <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/li_tag_and_jQuery.html" />
         <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" />
+        <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/temp.html" />
+        <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/imageUploadTest.html" />
       </list>
     </option>
   </component>
@@ -102,9 +109,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="978" />
+    <option name="x" value="6" />
+    <option name="y" value="64" />
+    <option name="width" value="1881" />
+    <option name="height" value="936" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -153,8 +161,7 @@
               <item name="saved" type="462c0819:PsiDirectoryNode" />
               <item name="myTask" type="462c0819:PsiDirectoryNode" />
               <item name="studyNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="macCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="graphComputer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,26 +190,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.maccal.html">
+  <component name="RunManager" selected="JavaScript Debug.imageUploadTest.html">
     <configuration name="countdown.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/countdown.html" />
-    <configuration name="header.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/CG/header/header.html" />
+    <configuration name="imageUploadTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/imageUploadTest.html" />
     <configuration name="li_tag_and_jQuery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/li_tag_and_jQuery.html" />
     <configuration name="maccal.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" />
     <configuration name="menu.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/CG/menu/menu.html" />
     <list>
-      <item itemvalue="JavaScript Debug.header.html" />
       <item itemvalue="JavaScript Debug.menu.html" />
       <item itemvalue="JavaScript Debug.maccal.html" />
       <item itemvalue="JavaScript Debug.countdown.html" />
       <item itemvalue="JavaScript Debug.li_tag_and_jQuery.html" />
+      <item itemvalue="JavaScript Debug.imageUploadTest.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.imageUploadTest.html" />
         <item itemvalue="JavaScript Debug.maccal.html" />
         <item itemvalue="JavaScript Debug.li_tag_and_jQuery.html" />
         <item itemvalue="JavaScript Debug.countdown.html" />
         <item itemvalue="JavaScript Debug.menu.html" />
-        <item itemvalue="JavaScript Debug.header.html" />
       </list>
     </recent_temporary>
   </component>
@@ -233,17 +240,20 @@
       <workItem from="1529922225647" duration="190000" />
       <workItem from="1529928503514" duration="1674000" />
       <workItem from="1529935505084" duration="870000" />
+      <workItem from="1530202349745" duration="5504000" />
+      <workItem from="1530242161281" duration="2127000" />
+      <workItem from="1530247549391" duration="982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43411000" />
+    <option name="totallyTimeSpent" value="52024000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="978" extended-state="6" />
+    <frame x="6" y="64" width="1881" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21041666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21477938" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -252,7 +262,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3414352" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3573086" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -270,10 +280,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/imageUploadTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="82" column="11" lean-forward="true" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6555">
+          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/countdown.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -292,11 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#9993#9999#0" expanded="true" />
-            <element signature="e#10000#10006#0" expanded="true" />
-            <element signature="e#10007#10013#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,6 +568,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/CG/header/header.html" />
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/CG/menu/menu.html" />
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="45" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/countdown.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -563,15 +589,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/temp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
-          <folding>
-            <element signature="e#9993#9999#0" expanded="true" />
-            <element signature="e#10000#10006#0" expanded="true" />
-            <element signature="e#10007#10013#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="691">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/imageUploadTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
         </state>
       </provider>
     </entry>

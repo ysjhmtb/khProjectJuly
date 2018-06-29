@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .explDiv.after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="outer">
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" id="fileLevel" value="1">
+        <input type="hidden" id="downloadCount" value="0">
+
+        <input type="hidden" id="marNameDiv" value="market-title">
+        <input type="hidden" id="lat" value="37.5182600">
+        <input type="hidden" id="lng" value="127.11531860011002">
+        <input type="hidden" id="startDay" value="20181101">
+        <input type="hidden" id="endDay" value="20181105">
+        <input type="hidden" id="url" value="www.google.com">
+        <input type="hidden" id="color" value="#FFEEDD">
+        <input type="hidden" id="colortext" value="BLACK">
+
+
+        <div contenteditable="true"  class="explDiv" width="200px" height="500px">
+
+
+        </div>
+
+        <input type="file" multiple id="input_imgs"  name="galleryImage" onchange="printImage(this)">
+
+
+    </form>
+
+
+</div>
+
+<script>
+
+    /*
+    1. 글과 사진의 조합의 순서의 저장 및 읽기
+       텍스트와 이미지 태그를 모두 저장 여부.
+       이미지가 입력된 순서로 전송 여부.
+    2. console.log(e.target.result); 를 하면 원본 이미지의 제목이 나타나지 않음.
+        이 상태로 post 혹은 get으로 전송을 해도 서블릿에서 원본 파일의 이름을 식별하는 것이 가능한지 여부.
+    3. 같은 사진이 두번 입력되는 문제.
+     */
+
+
+    function printImage(obj){
+        if(obj.files && obj.files[0]){
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                var img_html = "<img src =\"" + e.target.result + "\">";
+                $(".explDiv").append(img_html);
+                $(".explDiv").append("<br>");
+                // $(".explDiv").html(img_html);
+
+
+
+                console.log(e.target.result);
+                console.log(e.target.value);
+
+            }
+            reader.readAsDataURL(obj.files[0]);
+        }
+    }
+
+
+
+
+
+    var sel_files = [];
+
+    $(document).ready(function () {
+        $("#input_imgs").on("change", handleImgsFilesSelect);
+
+    });
+
+    function handleImgsFilesSelect(e){
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+
+        filesArr.forEach(function(f){
+            // sel_files.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function(e){
+                var img_html = "<img src= \"" + e.target.result + "\" >";
+                $(".explDiv").append(img_html);
+
+                console.log(img_html);
+            }
+            reader.readAsDataURL(f);
+
+        });
+
+
+    }
+    
+
+    
+
+
+
+</script>
+
+</body>
+</html>

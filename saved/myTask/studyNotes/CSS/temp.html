@@ -1,0 +1,47 @@
+<html>
+
+<head>titleReading a file in JavaScript/title</head>
+
+
+<body>
+<input type="file" id="files" multiple/>
+<div id="fileContent"></div>
+
+
+<script>
+    function fileSelected(evt) {
+        var files = evt.target.files;
+
+        var fr = new FileReader();
+        fr.onload = function (event) {
+            document.getElementById('fileContent').innerHTML = event.target.result;
+        }
+
+        for (var i = 0, f; f = files[i]; i++) {
+
+//Gives name of file : f.name
+//Gives type of file : f.type e.g. text/plain or image/png etc
+//Gives size of file : f.size (in bytes)
+//Gives last modified date : f.lastModifiedDate
+
+            var fileCopy = f.slice(0, f.size); //i.e. read entire file
+
+//If we wish to read file from beginning to half lenght, then
+//var fileCopy = f.slice(0, f.size / 2); //i.e. read entire file
+
+            fr.readAsText(fileCopy); //on successful read, fr.onload function will be called and that will populate the result in fileContent container
+        }
+//document.getElementById('fileContent').innerHTML = str;
+    }
+
+    //attach change event of file control
+    document.getElementById('files').addEventListener('change', fileSelected, false);
+
+</script>
+
+
+</body>
+
+
+</html>
+
