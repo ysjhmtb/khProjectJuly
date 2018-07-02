@@ -60,6 +60,16 @@
 		 	<%= expl %>
 
 		 </div>
+		 
+		 <form action="/mwp/modifyMap.do">
+		 
+		 	<input type="hidden" name="marketNo" value="<%= map.getMarketNo() %>">
+		 	<input type="submit" value="수정/삭제">
+		 
+		 </form>
+		 
+		 
+		 
 			
 </div>
  
