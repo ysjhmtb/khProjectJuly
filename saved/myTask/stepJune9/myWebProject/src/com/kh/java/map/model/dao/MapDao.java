@@ -249,6 +249,109 @@ public ArrayList<MapVo> getMapList(Connection con){
 		
 		
 	}
+
+
+
+
+
+
+
+
+	public MapVo getAMapVo(Connection con, int marNo) {
+		
+		MapVo result = new MapVo();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = "SELECT MARNAME, MARNO, LAT, LNG, EXPl, " + 
+				"STARTDAY, ENDDAY, URL, COLOR, COLORTEXT " + 
+				"FROM MARLOC " + 
+				"WHERE MARNO = ?";
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			pstmt.setInt(1, marNo);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				result.setMarketName(rs.getString("MARNAME"));
+				result.setMarketNo(rs.getInt("MARNO"));
+				result.setMarketLat(rs.getDouble("LAT"));
+				result.setMarketLng(rs.getDouble("LNG"));
+				result.setMarketExpl(rs.getString("EXPL"));
+				result.setStartDay(rs.getDate("STARTDAY"));
+				result.setEndDay(rs.getDate("ENDDAY"));
+				result.setUrl(rs.getString("URL"));
+				result.setColor(rs.getString("COLOR"));
+				result.setColortext(rs.getString("COLORTEXT"));
+				
+				
+			}
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			JDBCTemplate.close(rs);
+			JDBCTemplate.close(pstmt);
+		}
+		
+		
+		
+		return result;
+	}
+
+
+	public AttachmentMapVo getAAttachmentMapVo(Connection con, int marNo) {
+		AttachmentMapVo result = new AttachmentMapVo();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		String query = "SELECT FNO, MARNO, ORIGIN_NAME, CHANGE_NAME, " + 
+				"FILE_PATH, UPLOAD_DATE, FILE_LEVEL, DOWNLOAD_COUNT " + 
+				"FROM ATTACHMENTMAP " + 
+				"WHERE MARNO = ?";
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			pstmt.setInt(1, marNo);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				
+				result.setFno(rs.getInt("FNO"));
+				result.setMarNo(rs.getInt("MARNO"));
+				result.setOriginName(rs.getString("ORIGIN_NAME"));
+				result.setChangeName(rs.getString("CHANGE_NAME"));
+				result.setFilePath(rs.getString("FILE_PATH"));
+				result.setUploadDate(rs.getDate("UPLOAD_DATE"));
+				result.setFileLevel(rs.getInt("FILE_LEVEL"));
+				result.setDownloadCount(rs.getInt("DOWNLOAD_COUNT"));
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			JDBCTemplate.close(rs);
+			JDBCTemplate.close(pstmt);
+		}
+		
+		
+		return result;
+		
+		
+	}
+
+
+
+
+
+
+
+
 	
 	
 }

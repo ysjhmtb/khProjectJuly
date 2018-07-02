@@ -77,6 +77,8 @@
 	        
 	        	$(function(){
 	        		
+	        		
+	        		
 	        		<% for(int i = 0; i < list.size(); i++) {%>
 			        	<% if(i < 5) { %>
 			        		
@@ -84,16 +86,35 @@
 			        		<% String temp = ".marketName" + idx;  %>
 			        		<% MapVo m = list.get(i);  %>
 			        		<% String marketNameTemp = m.getMarketName();	  %>
+			        		<% int marNo = m.getMarketNo(); %>
 			        		
 			        		
 			        		var tempClass = '<%=temp %>';
 			        		var tempName = '<%= marketNameTemp %>';
 			        		
+			        		$(tempClass).attr('name', <%= marNo %>)
+			        		console.log('name : ' + $(tempClass).attr('name'));
 			        		$(tempClass).text(tempName);
 			        	
 			        	<% } %>
 			        
 			        <% } %>
+			        
+			        
+			        $(".marketName").mouseover(function(){
+			        	$(this).fadeTo("fast",0.3);
+			        	
+			        	
+			        }).mouseout(function(){
+			        	$(this).fadeTo("fast",1.0);
+			        });
+			        
+			        $(".marketName").click(function(){
+			        	console.log($(this).attr('name'));
+			        	location.href = "/mwp/mapDetail.do?marNo=" + $(this).attr('name');  
+			        });
+			        
+			        
 	        		
 	        	});
 	        
@@ -103,11 +124,11 @@
 	        
 	        
 	        <div class="marketNameSet">
-	        	<div class="marketName1"></div>
-	        	<div class="marketName2"></div>
-	        	<div class="marketName3"></div>
-	        	<div class="marketName4"></div>
-	        	<div class="marketName5"></div>
+	        	<div class="marketName marketName1"></div>
+	        	<div class="marketName marketName2"></div>
+	        	<div class="marketName marketName3"></div>
+	        	<div class="marketName marketName4"></div>
+	        	<div class="marketName marketName5"></div>
 	        	
 	        </div>
 	        

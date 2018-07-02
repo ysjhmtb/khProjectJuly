@@ -11,6 +11,7 @@
 <head>
 <meta  charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
  <div>
  	<script>
  		<%
- 			String src = attach.getFilePath() + attach.getChangeName();
+ 			String src = "/mwp/upload/" + attach.getChangeName();
  		%>
  	</script>
  	<img src="<%= src %>">
@@ -39,7 +40,7 @@
  		<% String expl = map.getMarketExpl(); %>
  	
  		$(function(){
- 			$(".mapContent").html(<%= expl %>);
+ 			$(".mapContent").html('<%= expl %>');
  			
  		});
  	</script>

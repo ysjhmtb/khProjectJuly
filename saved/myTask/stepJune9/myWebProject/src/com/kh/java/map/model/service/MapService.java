@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.kh.java.common.JDBCTemplate;
 import com.kh.java.map.model.dao.MapDao;
+import com.kh.java.map.model.vo.AttachmentMapVo;
 import com.kh.java.map.model.vo.MapPlusAtmtVo;
 import com.kh.java.map.model.vo.MapVo;
 
@@ -73,6 +74,27 @@ public class MapService {
 		Connection con = JDBCTemplate.getConnection();
 		MapVo result = new MapDao().getStartDayForCountdown(con);
 		JDBCTemplate.close(con);
+		return result;
+	}
+
+
+
+	public MapVo getAMapVo(int marNo) {
+		
+		Connection con = JDBCTemplate.getConnection();
+		MapVo result = new MapDao().getAMapVo(con, marNo);
+		JDBCTemplate.close(con);
+		
+		return result;
+	}
+
+
+
+	public AttachmentMapVo getAAttachmentMapVo(int marNo) {
+		Connection con = JDBCTemplate.getConnection();
+		AttachmentMapVo result = new MapDao().getAAttachmentMapVo(con, marNo);
+		JDBCTemplate.close(con);
+		
 		return result;
 	}
 }
