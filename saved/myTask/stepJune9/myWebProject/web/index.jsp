@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -13,12 +14,9 @@
   crossorigin="anonymous"></script>
   
   
-
-
-
-
-
 </head>
+
+
 <body>
 
 	<%@ include file = "/views/common/header.jsp" %>
@@ -35,6 +33,7 @@
 		<button>맵 정보 입력</button>
 	
 	</form>
+	
 	
 	
 	<%@ include file = "/views/common/footer.jsp" %>

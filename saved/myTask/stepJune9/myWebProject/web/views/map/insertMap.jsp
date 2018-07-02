@@ -1,3 +1,6 @@
+
+//팀원인 하성미 씨와 장건희 씨의 도움으로 사용가능해진 에디터 
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html >

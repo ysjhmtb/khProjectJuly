@@ -49,7 +49,7 @@ public class InsertMapServlet extends HttpServlet {
 			view.forward(request, response);
 		}
 		
-		String path = "/Users/yunseokjeon/git/khServlet/khWorkspace/myWebProject/web/upload";
+		String path = "/Users/yunseokjeon/git/khProjectJuly/saved/myTask/stepJune9/myWebProject/web/upload";
 		
 		MultipartRequest mRequest = new MultipartRequest(request, path, maxSize
 				, "UTF-8", new MyRenamePolicy());

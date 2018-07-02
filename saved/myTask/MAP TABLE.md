@@ -109,5 +109,187 @@ SEQ_NNO.NEXTVAL, '[공지]서버 오픈', '서버가 오픈하였습니다. 많�
 
 <br>
 
+연제각
+
+```sql
+--------------------------------------------------------
+--  파일이 생성됨 - 목요일-6월-28-2018   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table BUYTB
+--------------------------------------------------------
+
+  CREATE TABLE "TEST"."BUYTB" 
+   (   "B_M_NAME" VARCHAR2(30 BYTE), 
+   "B_P_NAME" VARCHAR2(30 BYTE), 
+   "B_P_PRICE" NUMBER, 
+   "B_S_COUNT" NUMBER, 
+   "B_DATE" VARCHAR2(20 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table CART
+--------------------------------------------------------
+
+  CREATE TABLE "TEST"."CART" 
+   (   "SNO" NUMBER, 
+   "S_COUNT" NUMBER, 
+   "S_FK_PNO" NUMBER, 
+   "S_FK_MNO" NUMBER
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table MEMBER
+--------------------------------------------------------
+
+  CREATE TABLE "TEST"."MEMBER" 
+   (   "MNO" NUMBER, 
+   "M_ID" VARCHAR2(30 BYTE), 
+   "M_PW" VARCHAR2(100 BYTE), 
+   "M_NAME" VARCHAR2(30 BYTE), 
+   "M_GENDER" CHAR(1 BYTE), 
+   "M_AGE" NUMBER, 
+   "M_EMAIL" VARCHAR2(30 BYTE), 
+   "M_PHONE" VARCHAR2(15 BYTE), 
+   "M_ADDRESS" VARCHAR2(100 BYTE), 
+   "M_CATEGORY" VARCHAR2(20 BYTE), 
+   "M_ENTERDATE" DATE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Table PRODUCT
+--------------------------------------------------------
+
+  CREATE TABLE "TEST"."PRODUCT" 
+   (   "PNO" NUMBER, 
+   "P_NAME" VARCHAR2(30 BYTE), 
+   "P_CATEGORY" VARCHAR2(50 BYTE), 
+   "P_PRICE" NUMBER, 
+   "P_COMMENT" VARCHAR2(1000 BYTE), 
+   "P_URL" VARCHAR2(40 BYTE), 
+   "P_FK_WNO" NUMBER
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into TEST.BUYTB
+SET DEFINE OFF;
+REM INSERTING into TEST.CART
+SET DEFINE OFF;
+REM INSERTING into TEST.MEMBER
+SET DEFINE OFF;
+Insert into TEST.MEMBER (MNO,M_ID,M_PW,M_NAME,M_GENDER,M_AGE,M_EMAIL,M_PHONE,M_ADDRESS,M_CATEGORY,M_ENTERDATE) values (1,'test1','test1','테스트1','M',20,'test1@naver.com','01011111111','충북 청주시 서원구 개신동 아파트','일반',to_date('18/06/27','RR/MM/DD'));
+Insert into TEST.MEMBER (MNO,M_ID,M_PW,M_NAME,M_GENDER,M_AGE,M_EMAIL,M_PHONE,M_ADDRESS,M_CATEGORY,M_ENTERDATE) values (2,'writer1','writer1','작가1','M',20,'writer1@naver.com','01011111111','충북 청주시 서원구 개신동 아파트','작가',to_date('18/06/27','RR/MM/DD'));
+REM INSERTING into TEST.PRODUCT
+SET DEFINE OFF;
+Insert into TEST.PRODUCT (PNO,P_NAME,P_CATEGORY,P_PRICE,P_COMMENT,P_URL,P_FK_WNO) values (5,'신발4','패션잡화>수제화',66000,'신발4<br />
+신발4<br />
+신발4신발4신발4<br />
+<img alt="" src="http://localhost:8081/test2/upload/shoes4.jpg" style="height:225px; width:225px" />','Thumbnail/shoes4.jpg',2);
+Insert into TEST.PRODUCT (PNO,P_NAME,P_CATEGORY,P_PRICE,P_COMMENT,P_URL,P_FK_WNO) values (2,'신발1','패션잡화>수제화',40000,'신발1신발1신발1신발1<br />
+<img alt="" src="http://localhost:8081/test2/upload/shoes118.jpg" style="height:242px; width:300px" />','Thumbnail/shoes1.jpg',2);
+Insert into TEST.PRODUCT (PNO,P_NAME,P_CATEGORY,P_PRICE,P_COMMENT,P_URL,P_FK_WNO) values (3,'신발2','패션잡화>수제화',60000,'신발2신발2신발2<br />
+<img alt="" src="http://localhost:8081/test2/upload/shoes21.jpg" style="height:179px; width:282px" />','Thumbnail/shoes2.jpg',2);
+Insert into TEST.PRODUCT (PNO,P_NAME,P_CATEGORY,P_PRICE,P_COMMENT,P_URL,P_FK_WNO) values (4,'신발3','패션잡화>수제화',80000,'신발3신발3신발3신발3<br />
+<img alt="" src="http://localhost:8081/test2/upload/shoes3.jpg" style="height:300px; width:300px" />','Thumbnail/shoes3.jpg',2);
+Insert into TEST.PRODUCT (PNO,P_NAME,P_CATEGORY,P_PRICE,P_COMMENT,P_URL,P_FK_WNO) values (6,'신발5','패션잡화>수제화',37000,'신발5신발5신발5<br />
+신발5신발5<br />
+<br />
+<img alt="" src="http://localhost:8081/test2/upload/shoes41.jpg" style="height:225px; width:225px" />','Thumbnail/shoes5.jpg',2);
+Insert into TEST.PRODUCT (PNO,P_NAME,P_CATEGORY,P_PRICE,P_COMMENT,P_URL,P_FK_WNO) values (7,'신발6','패션잡화>수제화',92000,'<img alt="" src="http://localhost:8081/test2/upload/shoes6.jpg" style="height:201px; width:400px" /><br />
+신발6신발6신발6신발6<br />
+신으면 발 죽어~~','Thumbnail/shoes6.jpg',2);
+--------------------------------------------------------
+--  DDL for Index SYS_C007188
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TEST"."SYS_C007188" ON "TEST"."CART" ("SNO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007162
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TEST"."SYS_C007162" ON "TEST"."MEMBER" ("MNO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007182
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TEST"."SYS_C007182" ON "TEST"."PRODUCT" ("PNO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  Constraints for Table BUYTB
+--------------------------------------------------------
+
+  ALTER TABLE "TEST"."BUYTB" MODIFY ("B_DATE" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."BUYTB" MODIFY ("B_S_COUNT" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."BUYTB" MODIFY ("B_P_PRICE" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."BUYTB" MODIFY ("B_P_NAME" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."BUYTB" MODIFY ("B_M_NAME" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table CART
+--------------------------------------------------------
+
+  ALTER TABLE "TEST"."CART" ADD PRIMARY KEY ("SNO")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;
+  ALTER TABLE "TEST"."CART" MODIFY ("S_COUNT" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table MEMBER
+--------------------------------------------------------
+
+  ALTER TABLE "TEST"."MEMBER" ADD PRIMARY KEY ("MNO")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;
+  ALTER TABLE "TEST"."MEMBER" ADD CHECK (M_GENDER IN ('M','F')) ENABLE;
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_ENTERDATE" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_CATEGORY" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_ADDRESS" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_PHONE" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_EMAIL" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_NAME" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_PW" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."MEMBER" MODIFY ("M_ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  Constraints for Table PRODUCT
+--------------------------------------------------------
+
+  ALTER TABLE "TEST"."PRODUCT" ADD PRIMARY KEY ("PNO")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;
+  ALTER TABLE "TEST"."PRODUCT" MODIFY ("P_URL" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."PRODUCT" MODIFY ("P_COMMENT" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."PRODUCT" MODIFY ("P_PRICE" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."PRODUCT" MODIFY ("P_CATEGORY" NOT NULL ENABLE);
+  ALTER TABLE "TEST"."PRODUCT" MODIFY ("P_NAME" NOT NULL ENABLE);
+```
+
+
+
 
 

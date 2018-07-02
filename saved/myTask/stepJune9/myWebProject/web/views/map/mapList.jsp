@@ -7,8 +7,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>프리 마켓 맵</title>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	
 	<style>
 	        html,
@@ -66,6 +70,48 @@
 	            <input id="show-listings" type="button" value="Show Listings">
 	            <input id="hide-listings" type="button" value="Hide Listings">
 	        </div>
+	        
+	      
+	        
+	        <script>
+	        
+	        	$(function(){
+	        		
+	        		<% for(int i = 0; i < list.size(); i++) {%>
+			        	<% if(i < 5) { %>
+			        		
+			        		<% int idx = i + 1;%>
+			        		<% String temp = ".marketName" + idx;  %>
+			        		<% MapVo m = list.get(i);  %>
+			        		<% String marketNameTemp = m.getMarketName();	  %>
+			        		
+			        		
+			        		var tempClass = '<%=temp %>';
+			        		var tempName = '<%= marketNameTemp %>';
+			        		
+			        		$(tempClass).text(tempName);
+			        	
+			        	<% } %>
+			        
+			        <% } %>
+	        		
+	        	});
+	        
+		        
+		        
+	        </script>
+	        
+	        
+	        <div class="marketNameSet">
+	        	<div class="marketName1"></div>
+	        	<div class="marketName2"></div>
+	        	<div class="marketName3"></div>
+	        	<div class="marketName4"></div>
+	        	<div class="marketName5"></div>
+	        	
+	        </div>
+	        
+	        
 	    </div>
 	    <div id="map"></div>
 	</div>
