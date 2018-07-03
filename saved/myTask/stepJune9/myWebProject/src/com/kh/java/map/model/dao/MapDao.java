@@ -352,6 +352,111 @@ public ArrayList<MapVo> getMapList(Connection con){
 
 
 
+	public int realModifyMap(Connection con, int marNo, String marketName, double lat, 
+			double lng, String marketExpl,
+			String startDay, String endDay, String url, String color, String colorText) {
+		
+		
+		System.out.println("realModifyMap DAO : " + marNo + " / " + lat + " / " + 
+				lng + " / " + marketExpl + " / " + startDay + " / " + endDay + " / " + 
+						url + " / " + color + " / " + colorText);
+		
+		
+		PreparedStatement pstmt = null;
+		
+		String query = "UPDATE MARLOC "
+				+ "SET MARNAME = ?, LAT = ?, "
+				+ "LNG = ?, EXPL = ?, STARTDAY = TO_DATE(?,'YYYYMMDD'), "
+				+ "ENDDAY = TO_DATE(?,'YYYYMMDD'), URL = ?, "
+				+ "COLOR = DEFAULT, COLORTEXT = DEFAULT "
+				+ "WHERE MARNO = ?";
+		int result = -1;
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			
+			pstmt.setString(1, marketName);
+			pstmt.setDouble(2, lat);
+			pstmt.setDouble(3, lng);
+			pstmt.setString(4, marketExpl);
+			pstmt.setString(5, startDay);
+			pstmt.setString(6, endDay);
+			pstmt.setString(7, url);
+			//pstmt.setString(8, color);
+			//pstmt.setString(9, colorText);
+			pstmt.setInt(8, marNo);
+			
+			result = pstmt.executeUpdate();
+			
+			System.out.println("query : " + query);
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return result;
+	}
+
+
+
+
+
+
+
+
+	public int realModifyAttachment(Connection con, int marNo, String originName, 
+			String changeName, String path,
+			int fileLevel, int downloadCount) {
+		
+		System.out.println("realModifyAttachment : " + marNo + " / " + originName + " / " + 
+				changeName + " / " + path + " / " + fileLevel + " / " + downloadCount);
+		
+		PreparedStatement pstmt = null;
+		
+		String query = "UPDATE ATTACHMENTMAP "
+				+ "SET ORIGIN_NAME = ?, "
+				+ "CHANGE_NAME = ?, "
+				+ "FILE_PATH = ?,"
+				+ "UPLOAD_DATE = SYSDATE, "
+				+ "FILE_LEVEL = ?, "
+				+ "DOWNLOAD_COUNT = ? "
+				+ "WHERE MARNO = ?";
+
+		int result = -1;
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			
+			pstmt.setString(1, originName);
+			pstmt.setString(2, changeName);
+			pstmt.setString(3, path);
+			pstmt.setInt(4,  fileLevel);
+			pstmt.setInt(5,  downloadCount);
+			pstmt.setInt(6, marNo);
+			
+			
+			result = pstmt.executeUpdate();
+			
+			System.out.println("query : " + query);
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
+
+
+
+
+
+
+
+
 	
 	
 }

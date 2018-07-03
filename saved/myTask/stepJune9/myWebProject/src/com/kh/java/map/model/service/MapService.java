@@ -104,10 +104,29 @@ public class MapService {
 			String endDay, String url, String color, String colorText, String originName, String changeName,
 			String path, int fileLevel, int downloadCount) {
 		
+		System.out.println("realModifyMap SERVICE : " + marNo + " / " + lat + " / " + 
+		lng + " / " + marketExpl + " / " + startDay + " / " + endDay + " / " + 
+				url + " / " + color + " / " + colorText + " / " + originName + " / " + 
+		changeName + " / " + path + " / " + fileLevel + " / " + downloadCount);
 		
 		
+		Connection con = JDBCTemplate.getConnection();
+		int result = new MapDao().realModifyMap(con, marNo, marketName, lat, lng,
+				marketExpl, startDay, endDay, url, color, colorText);
 		
-		return 0;
+		int result2 = new MapDao().realModifyAttachment(con, marNo, originName,
+				changeName, path, fileLevel, downloadCount);
+		
+		if(0 < result && 0 < result2) {
+			JDBCTemplate.commit(con);
+			
+		}else {
+			JDBCTemplate.rollback(con);
+			result = 0;
+		}
+		
+		JDBCTemplate.close(con);
+		return result;
 	}
 
 

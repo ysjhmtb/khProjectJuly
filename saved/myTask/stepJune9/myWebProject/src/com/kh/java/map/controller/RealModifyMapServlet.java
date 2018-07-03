@@ -60,7 +60,7 @@ public class RealModifyMapServlet extends HttpServlet {
 		double lng = Double.parseDouble(mRequest.getParameter("lng"));
 		String startDay = mRequest.getParameter("startDay");
 		String endDay = mRequest.getParameter("endDay");
-		String url = "#";
+		String url = "url";
 		String color = "#FFEEDD";
 		String colorText = "BLACK";
 		String marketExpl = mRequest.getParameter("marketExpl");
@@ -92,7 +92,7 @@ public class RealModifyMapServlet extends HttpServlet {
 		
 		String gotoPage = "";
 		if(0 < result) {
-			gotoPage = "views/map/mapList.jsp";
+			gotoPage = "/mwp/index.jsp";
 			request.setAttribute("msg", "맵 수정에 성공하였습니다.");
 		}else {
 			gotoPage = "views/common/errorPage.jsp";
