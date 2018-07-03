@@ -131,6 +131,25 @@ public class MapService {
 
 
 
+	public int deleteMap(int marNo) {
+		
+		Connection con = JDBCTemplate.getConnection();
+		
+		int result = new MapDao().deleteMap(con, marNo);
+		
+		if(0 < result) {
+			JDBCTemplate.commit(con);
+		}else {
+			JDBCTemplate.rollback(con);
+			
+		}
+		
+		JDBCTemplate.close(con);		
+		return result;
+	}
+
+
+
 	
 }
 

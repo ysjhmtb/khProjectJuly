@@ -92,7 +92,7 @@ public class RealModifyMapServlet extends HttpServlet {
 		
 		String gotoPage = "";
 		if(0 < result) {
-			gotoPage = "/mwp/index.jsp";
+			gotoPage = "index.jsp";
 			request.setAttribute("msg", "맵 수정에 성공하였습니다.");
 		}else {
 			gotoPage = "views/common/errorPage.jsp";

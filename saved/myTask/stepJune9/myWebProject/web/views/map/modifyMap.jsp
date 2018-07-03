@@ -114,6 +114,11 @@ label{
 		});
 		
 		
+		$("#deleteBtn").click(function(){
+			$("#proInfo").attr('action','/mwp/realDeleteMap.do').submit();
+		});
+		
+		
 	});
 	
 	

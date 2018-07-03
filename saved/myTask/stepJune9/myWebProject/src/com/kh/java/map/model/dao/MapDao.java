@@ -457,6 +457,35 @@ public ArrayList<MapVo> getMapList(Connection con){
 
 
 
+	public int deleteMap(Connection con, int marNo) {
+		
+		PreparedStatement pstmt = null;
+		
+		String query = "DELETE FROM MARLOC WHERE MARNO = ?";
+		
+		int result = -1;
+		
+		try {
+			pstmt = con.prepareStatement(query);
+			pstmt.setInt(1, marNo);
+			
+			result = pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
+
+
+
+
+
+
+
+
 	
 	
 }
