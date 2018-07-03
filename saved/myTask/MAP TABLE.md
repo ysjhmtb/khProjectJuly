@@ -1,12 +1,4 @@
-<h2>MAP TABLE</h2>
-
-<br>
-
-<h2>MARLOC</h2>
-
-|        MARNAME         |    LAT    |    LNG     |   EXPL   |
-| :--------------------: | :-------: | :--------: | :------: |
-| 홍대앞예술시장프리마켓 | 37.552291 | 126.923397 | 예술시장 |
+<h2>2번 페이지 테이블</h2>
 
 <br>
 
@@ -112,23 +104,23 @@ SEQ_NNO.NEXTVAL, '[공지]서버 오픈', '서버가 오픈하였습니다. 많�
 
 CREATE TABLE REVIEW(
         VNO NUMBER PRIMARY KEY,
+        MARNO NUMBER,
         VTITLE VARCHAR2(100) NOT NULL,
         VCONTENT VARCHAR2(4000) NOT NULL,
         VWRITER VARCHAR2(30),
         VCOUNT NUMBER DEFAULT 0,
         VDATE DATE DEFAULT SYSDATE,
-        VMARKET VARCHAR2(100) ,
         CONSTRAINT RERVIEW_WRITER FOREIGN KEY (VWRITER)
         REFERENCES MEMBER(USERID) ON DELETE SET NULL,
-        CONSTRAINT REVIEW_MARKET FOREIGN KEY (VMARKET)
-        REFERENCES MARLOC(MARNAME)
+        CONSTRAINT REVIEW_MARKET FOREIGN KEY (MARNO)
+        REFERENCES MARLOC(MARNO)
 );
 
 
 CREATE SEQUENCE SEQ_REVIEW;
 
 INSERT INTO REVIEW VALUES( 
-SEQ_REVIEW.NEXTVAL, 'title', 'content', 'admin', DEFAULT,  DEFAULT ,'홍대앞예술시장프리마켓'
+SEQ_REVIEW.NEXTVAL, 61,'title', 'content', 'admin', DEFAULT,  DEFAULT 
 );
 
 
