@@ -38,8 +38,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
 <script src="/mwp/usedLib/ckeditor/ckeditor.js"></script>
 <script src="/mwp/usedLib/ckeditor/config.js"></script>
+
 <style>
 #topBar {
  	margin-bottom:15px; 
@@ -75,9 +79,54 @@ label{
 }
 
 </style>
+
+
 <script>
+	$(function(){
+
+		$("#marketName").val('<%= marName %>');
+		$("#marketLat").val('<%= lat %>');
+		$("#marketLng").val('<%= lng %>');
+		
+		$("#marketStartDay").val('<%= startDay %>');
+		$("#marketEndDay").val('<%= endDay %>');
+		
+		$('#hiddenThumbnail').val('<%= originName %>');
+		
+		//수정의 경우 대표 이미지에 사진이 추가된 경우 기존 첨부파일을 이것으로 대체한다.
+		//만약 입력이 되지 않았다면 기존 첨부파일을 보존한다.
+		
+		
+		console.log('<%= originName %>');
+		console.log($('#thumbnail').val());
+		$('#thumbnail').change(function(){
+			console.log($(this).val());
+			
+			
+		});
+		console.log('marketNo : ' + $("#hiddenMarketNo").val());
+		
+		
+		
+		$("#modifyBtn").click(function(){
+			$("#proInfo").attr('action','/mwp/realModifyMap.do').submit();
+			
+		});
+		
+		
+	});
+	
+	
+	
+	
+
+	
 
 </script>
+
+	
+
+
 </head>
 <body>
 
@@ -86,32 +135,38 @@ label{
 <div align="center" style="font-size:25px; margin-bottom:23px;">마켓 등록</div>
 </div> 
 <div align="center">
-<form id="proInfo" method="post" action="/mwp/insertMap.do" enctype="multipart/form-data">
+<form id="proInfo" method="post" action="" enctype="multipart/form-data">
+
+	<input type="hidden" id="hiddenMarketNo" value="<%= marNo %>" name="marketNo">
+	
+
 	<div class="info">
 		<label for="pr_name"><b>마켓이름</b></label>
-		<input type="text" class="typeText" placeholder="마켓이름" name="marketName" id="pr_name" size="65"/>
+		<input type="text" class="typeText" placeholder="마켓이름" name="marketName" id="marketName" size="65"/>
 	</div>
 	<div class="info">
 		<label for="pr_price""><b>마켓위도</b></label>
-		<input type="text" class="location" placeholder="마켓위도" name="lat" id="pr_price" size="65"/>&emsp;&emsp;
+		<input type="text" class="location" placeholder="마켓위도" name="lat" id="marketLat" size="65"/>&emsp;&emsp;
 		<label for="pr_price""><b>마켓경도</b></label>
-		<input type="text" class="location" placeholder="마켓경도" name="lng" id="pr_price" size="65"/>
+		<input type="text" class="location" placeholder="마켓경도" name="lng" id="marketLng" size="65"/>
 	</div>
 	<div class="info">
 		<label for="pr_name"><b>마켓시작일</b></label>
-		<input type="text" placeholder="20181201" class="typeText"  name="startDay" id="pr_name" size="65"/>
+		<input type="text" placeholder="20181201" class="typeText"  name="startDay" id="marketStartDay" size="65"/>
 	</div>
 	<div class="info">
 		<label for="pr_name"><b>마켓종료일</b></label>
-		<input type="text" placeholder="20181205" class="typeText"  name="endDay" id="pr_name" size="65"/>
+		<input type="text" placeholder="20181205" class="typeText"  name="endDay" id="marketEndDay" size="65"/>
 	</div>
 	<div class="info" align="left" style="margin-left:120px">
 		<label for="pr_img"><b>대표이미지</b></label>
-		<input type="file" class="typeText" placeholder="이미지" name="primaryImg" id="pr_img" size="65"/>
+		<input type="file" class="typeText" placeholder="이미지" name="primaryImg" id="thumbnail" size="65"/>
+		
+	
 	</div>
 	<div class="info" align="right" style="margin-right:95px;">
 		<h3 class = "explanation">마켓 설명</h3>
-		<textarea id="editor1" name="marketExpl"></textarea>
+		<textarea id="editor1" name="marketExpl"> <%= expl %> </textarea>
 		<script>
 			CKEDITOR.replace('editor1',{
 				filebrowserUploadUrl: '/mwp/ckeditorImageUpload.do',
@@ -123,9 +178,13 @@ label{
 			
 		</script>
 	</div>
-	<input type="submit" value="등록"/>
+	<input type="submit" id="modifyBtn" value="수정">
+	<input type="submit" id="deleteBtn" value="삭제">
+	
 </form>
 </div>
 <%@ include file = "/views/common/footer.jsp" %>
 </body>
 </html>
+
+

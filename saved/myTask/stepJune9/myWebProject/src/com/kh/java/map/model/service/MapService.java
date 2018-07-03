@@ -97,4 +97,31 @@ public class MapService {
 		
 		return result;
 	}
+
+
+
+	public int realModifyMap(int marNo, String marketName, double lat, double lng, String marketExpl, String startDay,
+			String endDay, String url, String color, String colorText, String originName, String changeName,
+			String path, int fileLevel, int downloadCount) {
+		
+		
+		
+		
+		return 0;
+	}
+
+
+
+	
 }
+
+
+
+
+
+
+
+
+
+
+
