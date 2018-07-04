@@ -93,7 +93,7 @@ label{
 			
 		</script>
 	</div>
-	<input type="submit" value="등록"/>
+	<input class="btn_sch" type="submit" value="등록"/>
 </form>
 </div>
 <%@ include file = "/views/common/footer.jsp" %>

@@ -183,8 +183,8 @@ label{
 			
 		</script>
 	</div>
-	<input type="submit" id="modifyBtn" value="수정">
-	<input type="submit" id="deleteBtn" value="삭제">
+	<input class="btn_sch" type="submit" id="modifyBtn" value="수정">
+	<input class="btn_sch" type="submit" id="deleteBtn" value="삭제">
 	
 </form>
 </div>

@@ -172,6 +172,10 @@
             text-align: center;
         }
 
+        .zeroInside{
+            padding-left: 20%;
+        }
+
 
         /*.btnBorder {*/
             /*border : 0.5px black solid;*/
@@ -213,14 +217,25 @@
             });
 
             //숫자가 입력되면 AC가 C로 변해야 한다.
+            //C에서 버튼이 눌리면 결과창의 숫자가 0이 되어야 한다. 변수도 초기화 해야 한다.
             $(function () {
-                if ($(".results").text() != 0) {
+                if ($(".results").text() != '0') {
                     $(".ACVal").text("C");
-                } else if ($(".results").text == 0) {
+                } else if ($(".results").text == '0') {
                     $(".ACVal").text("AC");
                 }
 
+                $(".ACVal").click(function(){
+                   if($(".results").text() != '0' ){
+                       $(".results").text('0');
+                   }
+                });
+
+
+
             });
+
+
 
             //숫자 버튼이 눌리면 이를 갱신해 가면서 저장해 두어야 한다.
             $(".numBtn").click(function () {
@@ -229,13 +244,14 @@
                 if (operator == null) {
 
                     //operand1의 소수점 이하가 존재하지 않는 경우.
-                    let testRegex = /(\d)+[.](\d)+/;
+                    let testRegex = /(\d)+[\.](\d)+/;
 
                     if (!testRegex.test(operand1)) {
-                        operand1 = (10 * parseInt(operand1)) + parseInt(this.val());
+
+                        operand1 = (10 * parseInt(operand1)) + parseInt($(this).attr('value'));
 
                     } else {
-                        operand1 = (10 * parseFloat(operand1)) + parseFloat(this.val());
+                        operand1 = (10 * parseFloat(operand1)) + parseFloat($(this).attr('value'));
                     }
 
                     $(".results").text(operand1);
@@ -244,13 +260,13 @@
                 }
                 //이미 입력된 연산자 존재.
                 else{
-                    let testRegex = /(\d)+[.](\d)+/;
+                    let testRegex = /(\d)+[\.](\d)+/;
 
                     if(!testRegex.test(operand2)){
-                        operand2 = (10 * parseInt(operand2)) + parseInt(this.val());
+                        operand2 = (10 * parseInt(operand2)) + parseInt($(this).attr('value'));
 
                     }else{
-                        operand2 = (10 * parseFloat(operand2)) + parseFloat(this.val());
+                        operand2 = (10 * parseFloat(operand2)) + parseFloat($(this).attr('value'));
                     }
 
                     $(".results").text(operand2);
@@ -259,10 +275,57 @@
                 }
 
 
-            })
+
+                //소수점이 입력되었을 때의 처리
+                $(".decimalPoint").click(function () {
+
+                    let testRegex = /(\d)+[\.](\d)+/;
+
+                    //입력된 연산자의 존재 여부
+                    if(operator == null){
+
+
+                        //operand1의 소수점 이하가 존재하지 않는 경우.
+                        if (!testRegex.test(operand1)){
+
+                           operand1 = operand1 + $(this).attr('value');
+
+                        }else{
+                            //어떤 연산도 불필요.
+
+                        }
+                    }
+                    //이미 입력된 연산자 존재.
+                    else{
+                        if(!testRegex.test(operand2)){
+
+                            operand2 = operand2 + $(this).attr('value');
+                        }else{
+                            //어떤 연산도 불필요.
+                        }
+                    }
+
+                });
+
+
+            });
+
+
+
+
+
+
+
+
+
+
 
 
         });
+
+
+
+
 
 
     </script>
@@ -294,6 +357,7 @@
     </div>
 
     <div class="firstRow">
+        <!--$(".AC.gray1 .ACVal")-->
         <div class="AC gray1 ">
             <div class="ACVal textCentered textBlack btnBorder">AC</div>
         </div>
@@ -362,11 +426,12 @@
 
     <div class="fifthRow">
         <div class="zero gray2 ">
-            <div value="0" class="numBtn textBlack btnBorder"> &nbsp; &nbsp; &nbsp; 0</div>
+            <div value="0" class="numBtn textBlack btnBorder zeroInside">0</div>
         </div>
 
         <div class="dot gray2 ">
-            <div class="textCentered textBlack btnBorder">.</div>
+            <div value="." class="textCentered textBlack btnBorder
+                                  decimalPoint">.</div>
         </div>
         <div class="equal operator orangeBox ">
             <div class="textCentered textWhite btnBorder">=</div>

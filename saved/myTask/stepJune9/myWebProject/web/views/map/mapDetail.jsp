@@ -104,7 +104,7 @@
 		 <form class="submitForm" action="/mwp/modifyMap.do">
 		 
 		 	<input type="hidden" name="marketNo" value="<%= map.getMarketNo() %>">
-		 	<input class="submitBtn" type="submit" value="수정/삭제">
+		 	<input class="btn_sch" class="submitBtn" type="submit" value="수정/삭제">
 		 
 		 </form>
 		 
