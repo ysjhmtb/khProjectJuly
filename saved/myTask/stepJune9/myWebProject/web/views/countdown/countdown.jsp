@@ -12,6 +12,22 @@
 <head>
     <meta charset="UTF-8">
     <title>countdown</title>
+    
+    
+    <style>
+    
+    
+    	#countDown{
+    		border-style:solid;
+    		font-size:30px;		
+    		
+    		width:18%;
+    		text-aligh:center;
+    	
+    	}
+    	
+    	
+    </style>
 </head>
 <body>
 
