@@ -16,23 +16,63 @@
 <style>
 	.total{
 		width:50%;
-		height:800px;
+		height:auto;
 		align:center;
 		magin-top:100px;
 		margin-left:450px;
+		border:solid;
+		boder-collapse:collapse;
+		border-width:thin;
 	}
 	
 	div{
 		text-align:center;
+		
+	}
+	
+	
+	.marketName{
+		font-size:40px;
+	}
+	
+	.thumbnailTitle{
+		font-size:20px;
+		margin-top:5%;
+		margin-bottom:1%;
+		
+	}
+	
+	.thumbnail{
+		margin-top:1%;
+		margin-bottom:5%;
+	}
+	
+	.marginContent{
+		margin:30px;
+		padding:20px;
+		font-size:40px;
 	}
 
+	.submitBtn{
+		margin-top:20px;
+		font-size:100px;
+		width:150px;
+		height:100%;
+	}
+	
+	.submitForm{
+		height:20%;
+		margin:10%;
+	}
+	
+	
 
 </style>
 
 </head>
 <body>
 
-<%-- <%@ include file = "/views/common/header.jsp" %> --%>
+ <%@ include file = "/views/common/header.jsp" %> 
 
 
 
@@ -61,10 +101,10 @@
 
 		 </div>
 		 
-		 <form action="/mwp/modifyMap.do">
+		 <form class="submitForm" action="/mwp/modifyMap.do">
 		 
 		 	<input type="hidden" name="marketNo" value="<%= map.getMarketNo() %>">
-		 	<input type="submit" value="수정/삭제">
+		 	<input class="submitBtn" type="submit" value="수정/삭제">
 		 
 		 </form>
 		 
@@ -74,7 +114,7 @@
 </div>
  
 
-	<%-- <%@ include file = "/views/common/footer.jsp" %> --%>
+	 <%@ include file = "/views/common/footer.jsp" %> 
 
 </body>
 </html>
