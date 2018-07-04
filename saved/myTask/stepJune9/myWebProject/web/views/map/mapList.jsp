@@ -65,58 +65,17 @@
 
 		<div class="container">
 	    <div class="options-box">
-	        <h1>Your Free Market</h1>
+	        <h1>프리마켓 확인</h1>
 	        <div>
-	            <input id="show-listings" type="button" value="Show Listings">
-	            <input id="hide-listings" type="button" value="Hide Listings">
+	            <input id="show-listings" type="button" value="위치 확인">
+	            <input id="hide-listings" type="button" value="취소">
 	        </div>
 	        
 	      
 	        
 	        <script>
 	        
-	        	$(function(){
-	        		
-	        		
-	        		
-	        		<% for(int i = 0; i < list.size(); i++) {%>
-			        	<% if(i < 5) { %>
-			        		
-			        		<% int idx = i + 1;%>
-			        		<% String temp = ".marketName" + idx;  %>
-			        		<% MapVo m = list.get(i);  %>
-			        		<% String marketNameTemp = m.getMarketName();	  %>
-			        		<% int marNo = m.getMarketNo(); %>
-			        		
-			        		
-			        		var tempClass = '<%=temp %>';
-			        		var tempName = '<%= marketNameTemp %>';
-			        		
-			        		$(tempClass).attr('name', <%= marNo %>)
-			        		console.log('name : ' + $(tempClass).attr('name'));
-			        		$(tempClass).text(tempName);
-			        	
-			        	<% } %>
-			        
-			        <% } %>
-			        
-			        
-			        $(".marketName").mouseover(function(){
-			        	$(this).fadeTo("fast",0.3);
-			        	
-			        	
-			        }).mouseout(function(){
-			        	$(this).fadeTo("fast",1.0);
-			        });
-			        
-			        $(".marketName").click(function(){
-			        	console.log($(this).attr('name'));
-			        	location.href = "/mwp/mapDetail.do?marNo=" + $(this).attr('name');  
-			        });
-			        
-			        
-	        		
-	        	});
+	        	
 	        
 		        
 		        
@@ -141,6 +100,18 @@
 	    // Create a new blank array for all the listing markers.
 	    var markers = [];
 	    function initMap() {
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
+	    	
 	
 	        // Create a styles array to use with the map.
 	        var styles = [
@@ -282,7 +253,10 @@
 	                animation: google.maps.Animation.DROP,
 	                icon: defaultIcon,
 	                id: i
+	               
 	            });
+	            
+	            console.log('marker : ' + marker.title + marker.id);
 	            // Push the marker to our array of markers.
 	            markers.push(marker);
 	            // Create an onclick event to open the large infowindow at each marker.
@@ -300,6 +274,40 @@
 	        }
 	        document.getElementById('show-listings').addEventListener('click', showListings);
 	        document.getElementById('hide-listings').addEventListener('click', hideListings);
+	        
+	        
+	        
+	        
+	        
+	        //시장목록에 대한 이벤트 
+	        
+	        $(".marketName").mouseover(function(){
+	        	$(this).fadeTo("fast",0.3);
+	        	
+	        	if($('#show-listings').data('clicked')){
+        			
+	        		var tempMarId = $(this).attr('id');	
+        			markers[parseInt(tempMarId)].setIcon(highlightedIcon);
+        		}
+	        	
+	        	
+	        	
+	        }).mouseout(function(){
+	        	$(this).fadeTo("fast",1.0);
+	        	
+	        	if($('#show-listings').data('clicked')){
+	        		var tempMarId = $(this).attr('id');		        		
+		        	markers[parseInt(tempMarId)].setIcon(defaultIcon);
+	        	}
+	        	
+	        	
+	        });
+	        
+	        
+	        
+	        
+	        
+	        
 	    }
 	    // This function populates the infowindow when the marker is clicked. We'll only allow
 	    // one infowindow which will open at the marker that is clicked, and populate based
@@ -348,6 +356,64 @@
 	            new google.maps.Size(21,34));
 	        return markerImage;
 	    }
+	    
+	    
+	    
+	    
+	    
+	    //시장 목록과 이벤트
+    	$(function(){
+        		
+       		//위치 확인 버튼의 클릭 여부 저장.
+       		$("#show-listings").click(function(){
+       			$(this).data('clicked',true);
+       		});
+       		
+       		$("#hide-listings").click(function(){
+       			$("#show-listing").data('clicked',false);
+       		});
+       		
+       		
+       		
+       		
+       		<% for(int i = 0; i < list.size(); i++) {%>
+	        	<% if(i < 5) { %>
+	        		
+	        		<% int idx = i + 1;%>
+	        		<% String temp = ".marketName" + idx;  %>
+	        		<% MapVo m = list.get(i);  %>
+	        		<% String marketNameTemp = m.getMarketName();	  %>
+	        		<% int marNo = m.getMarketNo(); %>
+	        		
+	        		
+	        		var tempClass = '<%=temp %>';
+	        		var tempName = '<%= marketNameTemp %>';
+	        		
+	        		$(tempClass).attr('name', <%= marNo %>);
+	        		console.log('name : ' + $(tempClass).attr('name'));
+	        		$(tempClass).attr('id',<%= i %>);
+	        		$(tempClass).text(tempName);
+	        	
+	        	<% } %>
+	        
+	        <% } %>
+	        
+	        
+	        
+	        
+	        
+	        
+	        $(".marketName").click(function(){
+	        	console.log($(this).attr('name'));
+	        	location.href = "/mwp/mapDetail.do?marNo=" + $(this).attr('name');  
+	        });
+	        
+	        
+       		
+       	});
+	    
+	    
+	    
 	</script>
 	
 	<script async defer
