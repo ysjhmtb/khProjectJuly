@@ -219,9 +219,16 @@
             //숫자가 입력되면 AC가 C로 변해야 한다.
             //C에서 버튼이 눌리면 결과창의 숫자가 0이 되어야 한다. 변수도 초기화 해야 한다.
             $(function () {
+
+                console.log($(".results").text() != '0');
+                console.log(parseInt($.trim($(".results").text())));
+                console.log(parseInt($.trim($(".results").text())) == 0);
+
+
                 if ($(".results").text() != '0') {
                     $(".ACVal").text("C");
-                } else if ($(".results").text == '0') {
+                } else if (parseInt($.trim($(".results").text())) == 0) {
+                    console.log(parseInt($.trim($(".results").text())));
                     $(".ACVal").text("AC");
                 }
 
@@ -288,7 +295,7 @@
                         //operand1의 소수점 이하가 존재하지 않는 경우.
                         if (!testRegex.test(operand1)){
 
-                           operand1 = operand1 + $(this).attr('value');
+                           operand1 = parseFloat(operand1) + 0.0;
 
                         }else{
                             //어떤 연산도 불필요.
@@ -299,7 +306,7 @@
                     else{
                         if(!testRegex.test(operand2)){
 
-                            operand2 = operand2 + $(this).attr('value');
+                            operand2 = parseFloat(operand2) + 0.0;
                         }else{
                             //어떤 연산도 불필요.
                         }
