@@ -13,7 +13,7 @@ public class AttachmentMapDao {
 			String originName, String changeName, String filePath,
 			int fileLevel, int downloadCount) {
 		
-PreparedStatement pstmt = null;
+		PreparedStatement pstmt = null;
 		
 		
 		String query = "INSERT INTO ATTACHMENTMAP(SEQ_FNO.NEXTVAL, ?, ?, ?, ?, SYSDATE, ?, ?)";

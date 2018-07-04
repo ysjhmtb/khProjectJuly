@@ -12,11 +12,11 @@ import com.kh.java.map.model.dao.MapDao;
 public class MapDaoTest {
 
 	@Test
-	public void testSelectMapList() {
+	public void testGetMapList() {
 		MapDao daoTest = new MapDao();
 		Connection con = JDBCTemplate.getConnection();
 		
-		assertNotNull(daoTest.selectMapList(con));
+		assertNotNull(daoTest.getMapList(con));
 		
 	}
 	
@@ -35,11 +35,11 @@ public class MapDaoTest {
 		String url = "www.naver.com";
 		String color = "#FFEEDD";
 		String colortext = "BLACK";
-		String attachedFile = "NONE FILE";
+		
 		
 		
 		assertNotNull(daoTest.insertMap(con, marketName, marketLat, marketLng, 
-				marketExpl, startDay, endDay, url, color, colortext, attachedFile));
+				marketExpl, startDay, endDay, url, color, colortext));
 		
 		
 		
