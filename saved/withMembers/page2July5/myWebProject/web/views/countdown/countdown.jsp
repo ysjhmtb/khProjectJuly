@@ -71,6 +71,8 @@
             document.getElementById("countDown").innerHTML = "종료된 시장";
 
         }
+        
+        
 
     }, 1000);
 

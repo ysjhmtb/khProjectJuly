@@ -20,8 +20,6 @@
 		align:center;
 		magin-top:100px;
 		margin-left:450px;
-		border:solid;
-		boder-collapse:collapse;
 		border-width:thin;
 	}
 	

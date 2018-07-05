@@ -1,5 +1,11 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="com.kh.java.map.model.vo.MapVo"%>
+<%@page import="java.sql.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+ 
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,15 +89,26 @@ body {
 		border: 1px solid black;
 	}
 	#countdown{
+	
+		padding-top:10%;
+		padding-bottom:10%;
+		background-image: url("/mwp/upload/indexImage/bokeh-2990426_1280.jpg");
+		background-size: cover;
 		width:auto;
-		height:70%;
+		height:25%;
+		font-size:45px;
 	}
 	#map{
 		height:30%;
 		background-image: url("/mwp/upload/indexImage/mapBack.jpg");
 		background-size: cover;
 		cursor: pointer;
-		font-size: 50px;
+		
+		font-size: 55px;
+	      font-family: 'Gaegu', cursive;
+	      text-align: center;
+	      padding-top: 14px;
+	      color:#FFAAAF;
 	}
 	
 	#marketCatalogArea{
@@ -218,7 +235,68 @@ body {
 <!-- //슬라이드 배너 끝 -->
 		<div id='calendar' ></div>
 		<div id="outArea">
-			<div id='countdown' >가장 임박한 countdown</div>
+			<div id='countdown'> </div>
+			<script>
+			
+			
+				
+				
+				$(function(){
+					
+					var countDownDate;
+				
+					$.ajax({
+						url:"/mwp/selectStartDayAjax.do",
+						type:"get",
+						success:function(data){
+							var result = data.startDay;
+							var mydate = new Date(result);
+							console.log(mydate);
+							//Sun Jul 15 2018 09:00:00 GMT+0900 (한국 표준시)
+							
+							countDownDate = mydate;
+							
+							console.log(mydate - new Date().getTime());
+							
+							
+							var x = setInterval(function () {
+						        var now = new Date().getTime();
+						
+						        var distance = countDownDate - now;
+						
+						        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// 						        document.getElementById("countDown").innerHTML = days + "일 " + hours + "시간 " + minutes + "분 "
+// 						                                            + seconds + "초 ";
+								console.log(days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초 ");
+								$("#countdown").html(days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초 ");
+						        if(distance < 0){
+						            clearInterval(x);
+						            document.getElementById("countdown").innerHTML = "종료된 시장";
+						
+						        }
+						        
+						        
+						
+						    }, 1000);
+						},error:function(e){
+							console.log(e);
+						}
+					});
+					});
+					
+					
+					
+
+				    
+	
+				
+			
+			</script>
+			
+			
 			<div id="map"  onclick="mapList()">프리마켓 지도 보기!</div>
 		</div>
 		
