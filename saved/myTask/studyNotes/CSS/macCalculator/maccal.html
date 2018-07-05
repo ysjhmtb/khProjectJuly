@@ -195,6 +195,9 @@
         let operator = null;
 
         function init(){
+
+            console.log("init called");
+
             //원형 아이콘의 텍스트가 처음에 보이지 않도록 설정.
             $(".dotText").hide();
 
@@ -231,6 +234,8 @@
 
         function allBtnClicked(thisObj) {
 
+            console.log("allBtnClicked called");
+
             $(thisObj).css("background-color","darkgray");
 
 
@@ -259,16 +264,22 @@
             
         }
 
-        //AC버튼이 눌리면 결과물이 0이 되어야 한다.
+        //AC버튼이 눌리면 결과물이 0이 되어야 한다. 동시에 연산자에 저장된 값도 존재하지 않아야 햔다.
         function ACBtnInit(){
+
+            console.log("ACBtnInit called");
+
             if($(".results").text() != '0' ){
                 $(".results").text('0');
                 $(".results").attr('value',0);
+                operator = null;
             }
         }
 
         //결과창의 값에 따라 AC나 C가 버튼에 나타나야 한다.
         function ACBtnChange(){
+
+            console.log("ACBtnChange called");
 
             console.log($(".results").text() != '0');
             console.log(parseInt($.trim($(".results").text())));
@@ -284,6 +295,8 @@
 
         //연산자 버튼이 눌렸는지를 기록해야 한다.
         function isOperatorNull(){
+            console.log("isOperatorNull called");
+
             if(operator == null){
                 return true;
             }else{
@@ -292,8 +305,18 @@
 
         }
 
+
+        //입력된 연산자 기록
+        function operatorClicked(thisObj){
+            console.log("operatorClicked called");
+            operator = $(thisObj).val();
+        }
+
         //소수점 이하가 존재하는지 여부
         function hasPoint(inputOperand) {
+
+            console.log("hasPoint called");
+
             let testRegex = /(\d)+[\.](\d)+/;
 
             if(!testRegex.test(inputOperand)){
@@ -306,17 +329,21 @@
         }
 
         function integerProcess(inputOperand, thisObj){
+            console.log("integerProcess called");
+
             inputOperand = (10 * parseInt(inputOperand)) + parseInt($(thisObj).attr('value'));
             return inputOperand;
         }
 
         function floatProcess(inpuutOperand, thisObj){
+            console.log("floatProcess called");
 
             inpuutOperand = (10 * parseFloat(inpuutOperand)) + parseFloat( $(thisObj).attr('value') );
             return inpuutOperand;
         }
 
         function displayResults(inputOperand){
+            console.log("displayResults called");
 
             $(".results").text(inputOperand);
             $(".results").attr('value',inputOperand);
@@ -327,7 +354,7 @@
 
         function plusMinusBtn(){
 
-            console.log("plusminus called");
+            console.log("plusMinusBtn called");
 
             if(isOperatorNull()){
 
@@ -368,6 +395,22 @@
 
         }
 
+        function percentBtn(){
+            console.log("percentBtn called");
+
+            if($(".results").text() != '0'){
+
+                var percentResult = parseFloat($(".results").text()) / 100.0;
+                $(".results").text(percentResult);
+
+            }else if(parseInt($.trim($(".results").text())) == 0){
+                $(".results").text(0);
+            }
+
+
+
+        }
+
 
 
 
@@ -388,9 +431,19 @@
 
             // +/- 버튼이 눌렸을 때
             $(".plusminus").click(function () {
-                alert("plusminus called");
                 plusMinusBtn();
             });
+
+            //퍼센트 버튼이 눌렸을 때
+            $(".percentInside").click(function(){
+               percentBtn();
+            });
+
+            //연산자 버튼이 눌렸을 때
+            $(".operatorInside").click(function () {
+                operatorClicked(this);
+            });
+
         });
 
 
@@ -434,10 +487,10 @@
             <div class="btn gray1 plusminus textCentered textBlack btnBorder">+/-</div>
         </div>
         <div class="percent">
-            <div class="btn gray1 textCentered textBlack ">%</div>
+            <div class="btn percentInside gray1 textCentered textBlack ">%</div>
         </div>
         <div class="divider  operator ">
-            <div class="btn orangeBox textCentered textWhite btnBorder">÷</div>
+            <div value="divider" class="btn operatorInside orangeBox textCentered textWhite btnBorder">÷</div>
         </div>
 
     </div>
@@ -453,7 +506,7 @@
             <div value="9" class="btn gray2 numBtn textCentered textBlack btnBorder">9</div>
         </div>
         <div class="multiplier operator  ">
-            <div class="btn orangeBox  textCentered textWhite btnBorder">x</div>
+            <div value="multiplier" class="btn operatorInside orangeBox  textCentered textWhite btnBorder">x</div>
         </div>
 
 
@@ -470,7 +523,7 @@
             <div value="6" class="btn gray2 numBtn textCentered textBlack btnBorder">6</div>
         </div>
         <div class="minus operator  ">
-            <div class="btn orangeBox  textCentered textWhite btnBorder">-</div>
+            <div value="minus" class="btn operatorInside orangeBox  textCentered textWhite btnBorder">-</div>
         </div>
 
 
@@ -487,7 +540,7 @@
             <div value="3" class="btn gray2 numBtn textCentered textBlack btnBorder">3</div>
         </div>
         <div class="plus operator  ">
-            <div class="btn orangeBox  textCentered textWhite btnBorder">+</div>
+            <div value="plus" class="btn operatorInside orangeBox  textCentered textWhite btnBorder">+</div>
         </div>
 
 
