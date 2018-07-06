@@ -273,6 +273,8 @@
                 $(".results").text('0');
                 $(".results").attr('value',0);
                 operator = null;
+                operand1 = 0;
+                operand2 = 0;
             }
         }
 
@@ -328,6 +330,7 @@
 
         }
 
+        //정수 처리
         function integerProcess(inputOperand, thisObj){
             console.log("integerProcess called");
 
@@ -335,6 +338,7 @@
             return inputOperand;
         }
 
+        //실수 처리
         function floatProcess(inpuutOperand, thisObj){
             console.log("floatProcess called");
 
@@ -342,6 +346,7 @@
             return inpuutOperand;
         }
 
+        //결과를 출력
         function displayResults(inputOperand){
             console.log("displayResults called");
 
@@ -352,6 +357,8 @@
         }
 
 
+
+        //플러스 마이너스 버튼
         function plusMinusBtn(){
 
             console.log("plusMinusBtn called");
@@ -359,14 +366,16 @@
             if(isOperatorNull()){
 
                 if(hasPoint(operand1)){
-                    operand1 = floatProcess(operand1, this);
+
+
+                    operand1 = parseFloat(operand1);
                     operand1 = -1.0 * operand1;
                     displayResults(operand1);
 
 
                 }else{
 
-                    operand1 = integerProcess(operand1, this);
+                    operand1 = parseInt(operand1);
                     operand1 = -1 * operand1;
                     displayResults(operand1);
 
@@ -375,14 +384,14 @@
             }else{
 
                 if(hasPoint(operand2)){
-                    operand2 = floatProcess(operand2, this);
+                    operand2 = parseFloat(operand2);
                     operand2 = -1.0 * operand2;
                     displayResults(operand2);
 
 
                 }else{
 
-                    operand2 = integerProcess(operand2, this);
+                    operand2 = parseInt(operand2);
                     operand2 = -1 * operand2;
                     displayResults(operand2);
 
@@ -395,6 +404,7 @@
 
         }
 
+        //퍼센트 적용 버튼
         function percentBtn(){
             console.log("percentBtn called");
 
@@ -411,12 +421,81 @@
 
         }
 
+        //숫자 버튼
+        function numberBtn(thisObj){
+            console.log("numberBtn called");
+            //피연산자에 들어있는 수가 소수점인지를 구분해야 한다.
+            //9.595 인 상태에서 2를 누르면 9.5952가 되어야 한다.
+            //2. 인 상태에서 2를 누르면 2.2가 되어야 한다.
+            //
+
+
+
+            //연산자가 널이라면 첫번째 피연산자 사용
+            if(isOperatorNull()){
+
+
+
+                //소수점 이하가 존재한다면 실수 처리
+                if(hasPoint(operand1)){
+                    operand1 = floatProcess(operand1, thisObj);
+                    displayResults(operand1);
+                }else{
+                    operand1 = integerProcess(operand1, thisObj);
+                    displayResults(operand1);
+                }
+
+            }else{
+
+
+                if(hasPoint(operand2)){
+                    operand2 = floatProcess(operand2, thisObj);
+                    displayResults(operand2);
+                }else{
+                    operand2 = integerProcess(operand2, thisObj);
+                    displayResults(operand2);
+                }
+
+
+            }
+
+
+        }
+
+        //소수점 버튼
+        function dotBtn(){
+            console.log("dotBtn clicked");
+
+            //첫번째 피연산자를 변경해야 하는지, 두번째 피연산자를 변경해야 하는지 결정해야 한다.
+
+            //첫번째 피연산자
+            if(isOperatorNull()){
+                //이미 실수라면 필요한 효과는 없다.
+                if(!hasPoint(operand1)){
+                    operand1 = parseFloat(operand1) + ".";
+                    displayResults(operand1);
+
+                }
+
+
+            }else{
+
+                if(!hasPoint(operand2)){
+                    operand2 = parseFloat(operand2) + ".";
+                    displayResults(operand2);
+
+                }
+
+            }
+
+        }
 
 
 
 
 
-        $(function () {
+
+       $(function () {
             init();
 
             //숫자가 입력되면 AC가 C로 변해야 한다.
@@ -443,6 +522,17 @@
             $(".operatorInside").click(function () {
                 operatorClicked(this);
             });
+
+            //숫자 버튼이 눌렸을 때
+            $(".numBtn").click(function () {
+                numberBtn(this);
+            });
+
+            //소수점 버튼이 눌렸을 떼
+           $(".dotBtn").click(function () {
+               dotBtn();
+           });
+
 
         });
 
@@ -552,7 +642,7 @@
         </div>
 
         <div class="dot">
-            <div value="." class="btn gray2 textCentered textBlack btnBorder
+            <div value="." class="btn gray2 dotBtn textCentered textBlack btnBorder
                                   decimalPoint">.</div>
         </div>
         <div class="equal operator  ">
