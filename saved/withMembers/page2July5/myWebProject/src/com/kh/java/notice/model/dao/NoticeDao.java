@@ -270,7 +270,7 @@ public class NoticeDao {
 		int result = 0;
 		PreparedStatement pstmt = null;
 		String query = "INSERT INTO NOTICE VALUES( "
-						+"SEQ_NNO.NEXTVAL, ?, ?, ?, DEFAULT, DEFAULT "
+						+"SEQ_MARKET.NEXTVAL, ?, ?, ?, DEFAULT, DEFAULT "
 						+") ";
 		
 		try {

@@ -77,7 +77,7 @@ public ArrayList<MapVo> getMapList(Connection con){
 		
 		
 		String query = "INSERT INTO MARLOC " + 
-				"VALUES(?,SEQ_NNO.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'),TO_DATE(?,'YYYYMMDD'),?,?,?)";
+				"VALUES(?,SEQ_MARKET.NEXTVAL,?,?,?,TO_DATE(?,'YYYYMMDD'),TO_DATE(?,'YYYYMMDD'),?,?,?)";
 		int result = -1;
 		
 		try {
