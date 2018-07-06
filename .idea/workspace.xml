@@ -19,8 +19,8 @@
       <file leaf-file-name="maccal.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="429" column="14" selection-start-line="429" selection-start-column="14" selection-end-line="429" selection-end-column="14" />
+            <state relative-caret-position="323">
+              <caret line="425" column="37" selection-start-line="425" selection-start-column="37" selection-end-line="425" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -239,11 +239,12 @@
       <workItem from="1530780954158" duration="176000" />
       <workItem from="1530791335075" duration="1579000" />
       <workItem from="1530873430968" duration="3076000" />
+      <workItem from="1530877086238" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71910000" />
+    <option name="totallyTimeSpent" value="71938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1680" height="936" extended-state="0" />
@@ -594,8 +595,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="429" column="14" selection-start-line="429" selection-start-column="14" selection-end-line="429" selection-end-column="14" />
+        <state relative-caret-position="323">
+          <caret line="425" column="37" selection-start-line="425" selection-start-column="37" selection-end-line="425" selection-end-column="37" />
         </state>
       </provider>
     </entry>
