@@ -64,7 +64,7 @@ public class InsertMapServlet extends HttpServlet {
 		double lng = Double.parseDouble(mRequest.getParameter("lng"));
 		String startDay = mRequest.getParameter("startDay");
 		String endDay = mRequest.getParameter("endDay");
-		String url = "#";
+		String url = "url";
 		String color = "#FFEEDD";
 		String colorText = "BLACK";
 		String marketExpl = mRequest.getParameter("marketExpl");

@@ -89,7 +89,7 @@ public ArrayList<MapVo> getMapList(Connection con){
 			pstmt.setString(4, marketExpl);
 			pstmt.setString(5, startDay);
 			pstmt.setString(6, endDay);
-			pstmt.setString(7, "#");
+			pstmt.setString(7, "url");
 			pstmt.setString(8, color);
 			pstmt.setString(9, colortext);
 			

@@ -92,11 +92,13 @@ body {
 	
 		padding-top:10%;
 		padding-bottom:10%;
-		background-image: url("/mwp/upload/indexImage/bokeh-2990426_1280.jpg");
+		padding-left:7%;
+		background-image: url("/mwp/upload/indexImage/1467362563486.jpg");
 		background-size: cover;
 		width:auto;
 		height:25%;
 		font-size:45px;
+		font-family:"Helvetica";
 	}
 	#map{
 		height:30%;
@@ -138,6 +140,8 @@ body {
 		width:100%;
 		margin-top: 100%;
 	}
+	
+	
 
 
 </style>
@@ -169,13 +173,20 @@ body {
     .main_slider3 .designBanner {width:100% !important; margin:0 auto !important;}
 	.main_slider3 .designBanner .anibanner_navigation_btn_prev {left:50% !important; margin-left:-500px !important;}
 	.main_slider3 .designBanner .anibanner_navigation_btn_next {left:50% !important; margin-left:430px !important;}
+
+	
+
+
 </style>
 
 <div class="main_slider">
 	<script type='text/javascript' src='/mwp/views/common/app/javascript/jquery/jquery.ui.touch-punch.min.js'></script>
 	<script type='text/javascript' src='/mwp/views/common/app/javascript/plugin/anibanner/jquery.anibanner7687.js'></script>
 	<link rel='stylesheet' type='text/css' href='/mwp/views/common/app/javascript/plugin/anibanner/anibanner.css' />
-<div class='designBanner' designElement='banner' templatePath='main/index.html' bannerSeq='1' style='height:568px;'><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/images_1.jpg" width="100%" height="568" /></div>
+<!-- <div class='designBanner' designElement='banner' templatePath='main/index.html' bannerSeq='1' style='height:568px;'><img src="/mwp/upload/indexImage/1467362563486.jpg" width="100%" height="568" /></div> -->
+
+<div class='designBanner' designElement='banner' templatePath='main/index.html' bannerSeq='1' style='height:568px;'><img src="/mwp/upload/indexImage/images_1.jpg" width="100%" height="568" /></div>
+
 <script>
 		$(function(){
 			var bannerTimer1;
@@ -207,8 +218,12 @@ body {
 				'navigation_paging_spacing' : '0',
 				'slide_event' : 'auto',
 				
+				/* 'images' : 
+				[{'image':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/images_1.jpg'},{'image':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/images_2.jpg'}], */
+				
 				'images' : 
-				[{'image':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/images_1.jpg'},{'image':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/images_2.jpg'}],
+					[{'image':'/mwp/upload/indexImage/images_1.jpg'},
+						{'image':'/mwp/upload/indexImage/images_2.jpg'}],
 				
 				'navigation_paging_custom_images' : 
 				[{'active':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/','inactive':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/'},{'active':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/','inactive':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/'}]};
@@ -233,8 +248,11 @@ body {
 </div>
 </div>	
 <!-- //슬라이드 배너 끝 -->
-		<div id='calendar' ></div>
-		<div id="outArea">
+		
+		
+		
+			<div id='calendar' ></div>
+			<div id="outArea">
 			<div id='countdown'> </div>
 			<script>
 			
@@ -312,6 +330,9 @@ body {
 				<div class = "title"></div>
 			</div>
 		</div>
+		
+		
+		
 
 
 	
