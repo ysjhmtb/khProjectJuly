@@ -101,7 +101,7 @@
 	        	
 	        </div>
 	        
-	        
+	        //멤버 세션으로 관리자만 입력 가능. 
 	        <div class="insertMapDiv">
 	        	<input type="button" class="btn_sch"  id="insertMapBtn"  value="지도 정보 입력" onclick ="insertMap()">
 	        	

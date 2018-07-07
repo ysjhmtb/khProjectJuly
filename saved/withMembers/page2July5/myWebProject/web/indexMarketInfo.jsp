@@ -155,6 +155,8 @@ body {
 </head>
 <body>
 
+	
+
 	<%@ include file = "/views/common/header.jsp" %>
 	<!-- 중앙 슬라이드 배너 시작-->
 	<div id="layout_config">

@@ -99,6 +99,8 @@
 
 		 </div>
 		 
+		 
+		 //관리자만 입력 가능 
 		 <form class="submitForm" action="/mwp/modifyMap.do">
 		 
 		 	<input type="hidden" name="marketNo" value="<%= map.getMarketNo() %>">
