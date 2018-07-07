@@ -27,27 +27,22 @@
 
         }
 
-        .exit, .dash, .expand  {
+        .exit, .dash, .expand {
             float: left;
             width: 10%;
         }
-
 
         .blankInIconsArea {
             float: left;
             width: 70%;
         }
 
-
-
         .AC, .plusminus, .percent, .divider, .seven, .eight,
         .nine, .multiplier, .four, .five, .six, .minus, .one,
-        .two, .three, .plus,  .equal
-        {
+        .two, .three, .plus, .equal {
             float: left;
             width: 25%;
         }
-
 
         .zero {
             float: left;
@@ -64,8 +59,6 @@
             font-weight: bold;
 
         }
-
-        
 
         .dotCircle {
             height: 15px;
@@ -172,14 +165,13 @@
             text-align: center;
         }
 
-        .zeroInside{
+        .zeroInside {
             padding-left: 20%;
         }
 
-
         /*.btnBorder {*/
-            /*border : 0.5px black solid;*/
-            /*border-collapse: collapse;*/
+        /*border : 0.5px black solid;*/
+        /*border-collapse: collapse;*/
 
         /*}*/
 
@@ -194,7 +186,7 @@
         let operand2 = 0;
         let operator = null;
 
-        function init(){
+        function init() {
 
             console.log("init called");
 
@@ -214,9 +206,9 @@
 
             //모든 버튼위에 마우스가 위치하면 커서 변경.
             $(".btn").mouseenter(function () {
-                $(".btn").css("cursor","pointer");
+                $(".btn").css("cursor", "pointer");
             }).mouseleave(function () {
-                $(".btn").css("cursor","default");
+                $(".btn").css("cursor", "default");
             });
 
             //버튼 눌림 효과
@@ -228,7 +220,6 @@
             })
 
 
-
         }
 
 
@@ -236,8 +227,7 @@
 
             console.log("allBtnClicked called");
 
-            $(thisObj).css("background-color","darkgray");
-
+            $(thisObj).css("background-color", "darkgray");
 
 
             let classArr = [];
@@ -245,41 +235,38 @@
 
 
             setInterval(function () {
-                if(classArr.includes('gray1')){
-                    $(thisObj).css("background-color","#dddddd");
-                    $(thisObj).css("opacity",1);
-                }else if(classArr.includes('gray2')){
-                    $(thisObj).css("background-color","#dddddd");
-                    $(thisObj).css("opacity",0.7);
-                }else if(classArr.includes('orangeBox')){
+                if (classArr.includes('gray1')) {
+                    $(thisObj).css("background-color", "#dddddd");
+                    $(thisObj).css("opacity", 1);
+                } else if (classArr.includes('gray2')) {
+                    $(thisObj).css("background-color", "#dddddd");
+                    $(thisObj).css("opacity", 0.7);
+                } else if (classArr.includes('orangeBox')) {
 
-                    $(thisObj).css("background-color","#ff8000");
-                    $(thisObj).css("opacity",0.8);
+                    $(thisObj).css("background-color", "#ff8000");
+                    $(thisObj).css("opacity", 0.8);
 
 
                 }
-            },200);
+            }, 200);
 
 
-            
         }
 
         //AC버튼이 눌리면 결과물이 0이 되어야 한다. 동시에 연산자에 저장된 값도 존재하지 않아야 햔다.
-        function ACBtnInit(){
+        function ACBtnInit() {
 
             console.log("ACBtnInit called");
 
-            if($(".results").text() != '0' ){
+            if ($(".results").text() != '0') {
                 $(".results").text('0');
-                $(".results").attr('value',0);
-                operator = null;
-                operand1 = 0;
-                operand2 = 0;
+                $(".results").attr('value', 0);
+                initOperatorOperand();
             }
         }
 
         //결과창의 값에 따라 AC나 C가 버튼에 나타나야 한다.
-        function ACBtnChange(){
+        function ACBtnChange() {
 
             console.log("ACBtnChange called");
 
@@ -287,21 +274,21 @@
             console.log(parseInt($.trim($(".results").text())));
             console.log(parseInt($.trim($(".results").text())) == 0);
 
-            if($(".results").text() != '0'){
+            if ($(".results").text() != '0') {
                 $(".ACVal").text("C");
-            }else if(parseInt($.trim($(".results").text())) == 0){
+            } else if (parseInt($.trim($(".results").text())) == 0) {
                 $(".ACVal").text("AC");
             }
 
         }
 
         //연산자 버튼이 눌렸는지를 기록해야 한다.
-        function isOperatorNull(){
+        function isOperatorNull() {
             console.log("isOperatorNull called");
 
-            if(operator == null){
+            if (operator == null) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
 
@@ -309,9 +296,10 @@
 
 
         //입력된 연산자 기록
-        function operatorClicked(thisObj){
+        function operatorClicked(thisObj) {
             console.log("operatorClicked called");
-            operator = $(thisObj).val();
+            operator = $(thisObj).attr("value");
+            console.log("입력된 연산자 : " + operator + ", " + $(thisObj).attr("value"));
         }
 
         //소수점 이하가 존재하는지 여부
@@ -321,17 +309,17 @@
 
             let testRegex = /(\d)+[\.](\d)+/;
 
-            if(!testRegex.test(inputOperand)){
+            if (!testRegex.test(inputOperand)) {
                 //소수점 이하가 존재하지 않는 경우.
                 return false;
-            }else{
+            } else {
                 return true;
             }
 
         }
 
         //정수 처리
-        function integerProcess(inputOperand, thisObj){
+        function integerProcess(inputOperand, thisObj) {
             console.log("integerProcess called");
 
             inputOperand = (10 * parseInt(inputOperand)) + parseInt($(thisObj).attr('value'));
@@ -339,33 +327,33 @@
         }
 
         //실수 처리
-        function floatProcess(inpuutOperand, thisObj){
+        function floatProcess(inputOperand, thisObj) {
             console.log("floatProcess called");
 
-            inpuutOperand = (10 * parseFloat(inpuutOperand)) + parseFloat( $(thisObj).attr('value') );
-            return inpuutOperand;
+            // inputOperand = (10 * parseFloat(inputOperand)) + parseFloat($(thisObj).attr('value'));
+            inputOperand = inputOperand + $(thisObj).attr('value');
+            return inputOperand;
         }
 
         //결과를 출력
-        function displayResults(inputOperand){
+        function displayResults(inputOperand) {
             console.log("displayResults called");
 
             $(".results").text(inputOperand);
-            $(".results").attr('value',inputOperand);
+            $(".results").attr('value', inputOperand);
 
             ACBtnChange();
         }
 
 
-
         //플러스 마이너스 버튼
-        function plusMinusBtn(){
+        function plusMinusBtn() {
 
             console.log("plusMinusBtn called");
 
-            if(isOperatorNull()){
+            if (isOperatorNull()) {
 
-                if(hasPoint(operand1)){
+                if (hasPoint(operand1)) {
 
 
                     operand1 = parseFloat(operand1);
@@ -373,7 +361,7 @@
                     displayResults(operand1);
 
 
-                }else{
+                } else {
 
                     operand1 = parseInt(operand1);
                     operand1 = -1 * operand1;
@@ -381,15 +369,15 @@
 
                 }
 
-            }else{
+            } else {
 
-                if(hasPoint(operand2)){
+                if (hasPoint(operand2)) {
                     operand2 = parseFloat(operand2);
                     operand2 = -1.0 * operand2;
                     displayResults(operand2);
 
 
-                }else{
+                } else {
 
                     operand2 = parseInt(operand2);
                     operand2 = -1 * operand2;
@@ -398,31 +386,53 @@
                 }
 
 
-
             }
 
 
         }
 
         //퍼센트 적용 버튼
-        function percentBtn(){
+        function percentBtn() {
             console.log("percentBtn called");
 
-            if($(".results").text() != '0'){
+            if ($(".results").text() != '0') {
 
                 var percentResult = parseFloat($(".results").text()) / 100.0;
                 $(".results").text(percentResult);
 
-            }else if(parseInt($.trim($(".results").text())) == 0){
+            } else if (parseInt($.trim($(".results").text())) == 0) {
                 $(".results").text(0);
             }
 
 
+        }
+
+        //dot으로 끝나는지 여부
+        function isEnddedWithDot(inputOperand) {
+            let regex = /(\d)+[.]$/;
+
+            if (regex.test(inputOperand)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        //dot으로 끝나는 경우 실수 처리
+        function floatProcessWithEnddedDot(inputOperand, thisObj) {
+
+
+            console.log("floatProcessWithEnddedDot called");
+            console.log("$(thisObj).attr('value') : " + $(thisObj).attr('value'));
+
+            inputOperand = inputOperand + $(thisObj).attr('value');
+            return inputOperand;
 
         }
 
         //숫자 버튼
-        function numberBtn(thisObj){
+        function numberBtn(thisObj) {
             console.log("numberBtn called");
             //피연산자에 들어있는 수가 소수점인지를 구분해야 한다.
             //9.595 인 상태에서 2를 누르면 9.5952가 되어야 한다.
@@ -430,28 +440,32 @@
             //let regex = /(\d)+[.]$/;  regex.test("2.");	//true
 
 
-
             //연산자가 널이라면 첫번째 피연산자 사용
-            if(isOperatorNull()){
+            if (isOperatorNull()) {
 
-
-
+                if(isEnddedWithDot(operand1)){
+                    operand1 = floatProcessWithEnddedDot(operand1, thisObj);
+                    displayResults(operand1);
+                }
                 //소수점 이하가 존재한다면 실수 처리
-                if(hasPoint(operand1)){
+                else if (hasPoint(operand1)) {
                     operand1 = floatProcess(operand1, thisObj);
                     displayResults(operand1);
-                }else{
+                } else {
                     operand1 = integerProcess(operand1, thisObj);
                     displayResults(operand1);
                 }
 
-            }else{
+            } else {
 
-
-                if(hasPoint(operand2)){
+                if(isEnddedWithDot(operand2)){
+                    operand2 = floatProcessWithEnddedDot(operand2, thisObj);
+                    displayResults(operand2);
+                }
+                else if (hasPoint(operand2)) {
                     operand2 = floatProcess(operand2, thisObj);
                     displayResults(operand2);
-                }else{
+                } else {
                     operand2 = integerProcess(operand2, thisObj);
                     displayResults(operand2);
                 }
@@ -463,25 +477,25 @@
         }
 
         //소수점 버튼
-        function dotBtn(){
+        function dotBtn() {
             console.log("dotBtn clicked");
 
             //첫번째 피연산자를 변경해야 하는지, 두번째 피연산자를 변경해야 하는지 결정해야 한다.
 
             //첫번째 피연산자
-            if(isOperatorNull()){
+            if (isOperatorNull()) {
                 //이미 실수라면 필요한 효과는 없다.
-                if(!hasPoint(operand1)){
-                    operand1 = parseFloat(operand1) + ".";
+                if (!hasPoint(operand1)) {
+                    operand1 = operand1 + ".";
                     displayResults(operand1);
 
                 }
 
 
-            }else{
+            } else {
 
-                if(!hasPoint(operand2)){
-                    operand2 = parseFloat(operand2) + ".";
+                if (!hasPoint(operand2)) {
+                    operand2 = operand2 + ".";
                     displayResults(operand2);
 
                 }
@@ -490,18 +504,66 @@
 
         }
 
+        //연산자 피연산자 초기화
+        function initOperatorOperand() {
+            operand1 = 0;
+            operand2 = 0;
+            operator = null;
+
+        }
+
+
+        //연산자에 따른 연산
+        function computeResults(){
+
+            console.log("computeResults called");
+            console.log("연산자 : " + operator);
+            console.log("피연산자 : " + operand1 + ", " + operand2);
+
+            if(operator == "divider"){
+                let result = parseFloat(operand1) / parseFloat(operand2);
+                console.log("계산 결과 : " + result);
+                initOperatorOperand();
+                return result;
+            }else if(operator == "multiplier"){
+                let result = parseFloat(operand1) * parseFloat(operand2);
+                console.log("계산 결과 : " + result);
+                initOperatorOperand();
+                return result;
+            }else if(operator == "minus"){
+                let result = parseFloat(operand1) - parseFloat(operand2);
+                console.log("계산 결과 : " + result);
+                initOperatorOperand();
+                return result;
+            }else if(operator == "plus"){
+                let result = parseFloat(operand1) + parseFloat(operand2);
+                console.log("계산 결과 : " + result);
+                initOperatorOperand();
+                return result;
+            }
+        }
+
+        //등호 버튼
+        function equalOperator(){
+
+            console.log("equalOperator called");
+
+            let result = computeResults();
+            displayResults(result);
+            ACBtnChange();
 
 
 
+        }
 
 
-       $(function () {
+        $(function () {
             init();
 
             //숫자가 입력되면 AC가 C로 변해야 한다.
             //C에서 버튼이 눌리면 결과창의 숫자가 0이 되어야 한다. 변수도 초기화 해야 한다.
 
-            $(".ACVal").click(function(){
+            $(".ACVal").click(function () {
                 ACBtnInit();
 
                 //다른 숫자 버튼이 눌렸을 때도, 이 함수가 호출되어야 한다.
@@ -514,8 +576,8 @@
             });
 
             //퍼센트 버튼이 눌렸을 때
-            $(".percentInside").click(function(){
-               percentBtn();
+            $(".percentInside").click(function () {
+                percentBtn();
             });
 
             //연산자 버튼이 눌렸을 때
@@ -528,17 +590,18 @@
                 numberBtn(this);
             });
 
-            //소수점 버튼이 눌렸을 떼
-           $(".dotBtn").click(function () {
-               dotBtn();
-           });
+            //소수점 버튼이 눌렸을 때
+            $(".dotBtn").click(function () {
+                dotBtn();
+            });
+
+            //등호 버튼이 눌렸을 때
+            $(".equalInside").click(function () {
+                equalOperator();
+            })
 
 
         });
-
-
-
-
 
 
     </script>
@@ -643,10 +706,11 @@
 
         <div class="dot">
             <div value="." class="btn gray2 dotBtn textCentered textBlack btnBorder
-                                  decimalPoint">.</div>
+                                  decimalPoint">.
+            </div>
         </div>
         <div class="equal operator  ">
-            <div class="btn orangeBox  textCentered textWhite btnBorder">=</div>
+            <div class="btn orangeBox equalInside textCentered textWhite btnBorder">=</div>
         </div>
 
 
