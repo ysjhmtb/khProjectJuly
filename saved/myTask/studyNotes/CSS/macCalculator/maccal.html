@@ -395,14 +395,31 @@
         function percentBtn() {
             console.log("percentBtn called");
 
-            if ($(".results").text() != '0') {
+            if(isOperatorNull()){
 
-                var percentResult = parseFloat($(".results").text()) / 100.0;
-                $(".results").text(percentResult);
+                if ($(".results").text() != '0') {
 
-            } else if (parseInt($.trim($(".results").text())) == 0) {
-                $(".results").text(0);
+                    let percentResult = parseFloat($(".results").text()) / 100.0;
+                    operand1 = percentResult;
+                    $(".results").text(percentResult);
+
+                } else if (parseInt($.trim($(".results").text())) == 0) {
+                    $(".results").text(0);
+                }
+                
+            }else{
+                if ($(".results").text() != '0') {
+
+                    let percentResult = parseFloat($(".results").text()) / 100.0;
+                    operand2 = percentResult;
+                    $(".results").text(percentResult);
+
+                } else if (parseInt($.trim($(".results").text())) == 0) {
+                    $(".results").text(0);
+                }
             }
+
+
 
 
         }
