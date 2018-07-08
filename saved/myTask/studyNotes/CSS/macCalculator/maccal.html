@@ -185,6 +185,7 @@
         let operand1 = 0;
         let operand2 = 0;
         let operator = null;
+        let globalResults = 0;
 
         function init() {
 
@@ -262,6 +263,7 @@
                 $(".results").text('0');
                 $(".results").attr('value', 0);
                 initOperatorOperand();
+                globalResults = 0;
             }
         }
 
@@ -566,7 +568,9 @@
             console.log("equalOperator called");
 
             let result = computeResults();
-            displayResults(result);
+            globalResults = result;
+            operand1 = globalResults;
+            displayResults(globalResults);
             ACBtnChange();
 
 
