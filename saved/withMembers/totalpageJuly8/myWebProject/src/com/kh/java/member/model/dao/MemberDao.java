@@ -23,7 +23,7 @@ public class MemberDao {
 	         //실행 할 jdbc 라이브러리 등록
 	         Class.forName("oracle.jdbc.driver.OracleDriver");
 	         //접속 정보 설정
-	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:59161:XE",
 	                                          "nyc",
 	                                          "nyc");
 	         //2. 쿼리 실행 객체 생성
@@ -77,7 +77,7 @@ public class MemberDao {
 	         //실행 할 jdbc 라이브러리 등록
 	         Class.forName("oracle.jdbc.driver.OracleDriver");
 	         //접속 정보 설정
-	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:59161:XE",
 	                                          "nyc",
 	                                          "nyc");
 	         //2. 쿼리 실행 객체 생성
@@ -131,7 +131,7 @@ public class MemberDao {
 	   
 	      try {
 	         Class.forName("oracle.jdbc.driver.OracleDriver");
-	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","nyc","nyc");
+	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:59161:XE","nyc","nyc");
 	         stmt = con.createStatement();
 	         //2. 쿼리 객체를 생성한다.
 	      
@@ -187,7 +187,7 @@ public class MemberDao {
 	         //실행 할 jdbc 라이브러리 등록
 	         Class.forName("oracle.jdbc.driver.OracleDriver");
 	         //접속 정보 설정
-	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+	         con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:59161:XE",
 	                                          "nyc",
 	                                          "nyc");
 	         //2. 쿼리 실행 객체 생성

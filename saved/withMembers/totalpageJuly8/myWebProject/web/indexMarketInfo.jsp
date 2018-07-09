@@ -214,7 +214,7 @@ body {
 	<link rel='stylesheet' type='text/css' href='/mwp/views/common/app/javascript/plugin/anibanner/anibanner.css' />
 <!-- <div class='designBanner' designElement='banner' templatePath='main/index.html' bannerSeq='1' style='height:568px;'><img src="/mwp/upload/indexImage/1467362563486.jpg" width="100%" height="568" /></div> -->
 
-<div class='designBanner' designElement='banner' templatePath='main/index.html' bannerSeq='1' style='height:568px;'><img src="/mwp/upload/indexImage/images_1.jpg" width="100%" height="568" /></div>
+<div class='designBanner' designElement='banner' templatePath='main/index.html' bannerSeq='1' style='height:568px;'><img src="/mwp/upload/indexImage/img1.jpeg" width="100%" height="568" /></div>
 
 
 <script>
@@ -236,7 +236,7 @@ body {
 				'image_opacity_percent' : '0',
 				'image_top_margin' : '0',
 				'image_side_margin' : '0',
-				'image_width' : '2000',
+				'image_width' : '1200',
 				'image_height' : '568',
 				'navigation_btn_style' : 'btn_style_2',
 				'navigation_btn_visible' : 'mouseover',
@@ -249,8 +249,8 @@ body {
 				'slide_event' : 'auto',
 				
 				'images' : 
-					[{'image':'/mwp/upload/indexImage/images_1.jpg'},
-						{'image':'/mwp/upload/indexImage/images_2.jpg'}],
+					[{'image':'/mwp/upload/indexImage/img1.jpeg'},
+						{'image':'/mwp/upload/indexImage/img2.jpeg'}],
 				
 				'navigation_paging_custom_images' : 
 				[{'active':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/','inactive':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/'},{'active':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/','inactive':'/mwp/views/common/data/skin/fruit_puro_gls/images/banner/1/'}]};

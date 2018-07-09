@@ -101,13 +101,13 @@
 	        	
 	        </div>
 	        
-	        <%if(member != null){%>
+	        <%//if(member).getM_NAME().equals('관리자'){%>
 	        <div class="insertMapDiv">
 	        	<input type="button" class="btn_sch"  id="insertMapBtn"  value="지도 정보 입력" onclick ="insertMap()">
 	        	
 	        	
 	        </div>
-	        <%} %>
+	        <%//} %>
 	        
 	        
 	    </div>

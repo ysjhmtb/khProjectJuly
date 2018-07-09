@@ -6,7 +6,7 @@
 <% MapVo map = (MapVo) request.getAttribute("MapVo"); %>
 <% AttachmentMapVo attach = (AttachmentMapVo) request.getAttribute("AttachmentMapVo"); %>
 <% String expl = map.getMarketExpl(); %>
-//헤더에 멤버 객체 존재 
+ 
 
 
 <!DOCTYPE html>
@@ -109,11 +109,11 @@
 		 
 		 	<input type="hidden" name="marketNo" value="<%= map.getMarketNo() %>">
 		 	
-		 	<%if(member != null){%>
+		 	<%//if(member).getM_NAME().equals('관리자'){%>
 		 	
 		 	<input class="btn_sch" class="submitBtn" type="submit" value="수정/삭제">
 		 	
-		 	<%} %> 
+		 	<%//} %> 
 		 
 		 </form>
 		 
