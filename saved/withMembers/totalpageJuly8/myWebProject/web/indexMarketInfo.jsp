@@ -3,6 +3,8 @@
 <%@page import="java.sql.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ page import="java.net.URLDecoder"%>
+
     
 <!DOCTYPE html>
 <html>
@@ -121,14 +123,21 @@ body {
 	
 		padding-top:10%;
 		padding-bottom:10%;
-		padding-left:7%;
-		background-image: url("/mwp/upload/indexImage/1467362563486.jpg");
+		padding-left:23%;
+		
+		background-image: url("/mwp/upload/indexImage/countdownopacity.jpg");
+		opacity:0.8;
 		background-size: cover;
 		width:auto;
-		height:25%;
+		height:25%; 
+		
 		font-size:45px;
 		font-family:"Helvetica";
 	}
+	
+	
+	
+	
 	#map{
 		height:30%;
 		background-image: url("/mwp/upload/indexImage/mapBack.jpg");
@@ -278,7 +287,10 @@ body {
 	
 		<div id='calendar' ></div>
 		<div id="outArea">
-			<div id='countdown' ></div>
+			<div id='countdown' >
+			
+			
+			</div>
 			<script>
 			
 			
@@ -296,6 +308,9 @@ body {
 							var mydate = new Date(result);
 							console.log(mydate);
 							//Sun Jul 15 2018 09:00:00 GMT+0900 (한국 표준시)
+							var marketName = data.name;
+							
+							console.log("마켓 이름 : "  + marketName);
 							
 							countDownDate = mydate;
 							
@@ -314,7 +329,10 @@ body {
 // 						        document.getElementById("countDown").innerHTML = days + "일 " + hours + "시간 " + minutes + "분 "
 // 						                                            + seconds + "초 ";
 								console.log(days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초 ");
-								$("#countdown").html(days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초 ");
+								
+								$("#countdown").html(marketName + "<br>");
+								$("#countdown").append("D-Day : " + days + "일 ");
+								
 						        if(distance < 0){
 						            clearInterval(x);
 						            document.getElementById("countdown").innerHTML = "종료된 시장";

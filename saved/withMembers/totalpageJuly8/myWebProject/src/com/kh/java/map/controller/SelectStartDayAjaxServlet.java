@@ -27,10 +27,18 @@ public class SelectStartDayAjaxServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
 		MapVo resultMapVo = new MapService().getStartDayForCountdown();
 		
 		JSONObject result = new JSONObject();
 		result.put("startDay", new SimpleDateFormat("yyyy-MM-dd").format(resultMapVo.getStartDay()));
+		
+		System.out.println("ajax 마켓 이름 : " + resultMapVo.getMarketName());
+		result.put("name", resultMapVo.getMarketName());
+		
 		System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(resultMapVo.getStartDay()));
 		response.setContentType("application/json");
 		response.getWriter().print(result.toJSONString());
