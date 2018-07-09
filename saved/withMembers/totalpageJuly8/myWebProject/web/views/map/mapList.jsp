@@ -79,9 +79,7 @@
 	      
 	        
 	        <script>
-	        
-	        	
-	        
+	             
 		        
 		        
 	        </script>
@@ -195,7 +193,7 @@
 	        ];
 	        // Constructor creates a new map - only center and zoom are required.
 	        map = new google.maps.Map(document.getElementById('map'), {
-	            center: {lat: 37.541, lng: 126.986},
+	            center: {lat: 37.55998, lng: 126.98582959999999},
 	            zoom: 13,
 	            styles: styles,
 	            mapTypeControl: false
@@ -255,18 +253,50 @@
 	               
 	            });
 	            
-	            console.log('marker : ' + marker.title + marker.id);
+	            console.log('marker : ' + marker.title + marker.id + "/" + marker);
+	            
+	            
 	            markers.push(marker);
 	            marker.addListener('click', function() {
-	                populateInfoWindow(this, largeInfowindow);
-	            });
+	            	
+	                // populateInfoWindow(this, largeInfowindow);
+	                
+	                for(var i = 0; i < markers.length; i++){
+	                	if(markers[i].title == this.title){
+	                		console.log("markers loop");
+	                		console.log(i);
+	                		
+	                		var selectorId =  '#'  + i;
+	                		console.log("selectorId : " + selectorId);
+	                		$(selectorId).click();
+	                	}
+	                }
+	                
+	                /* var tempMarId = $(this).attr('id');
+	                $(tempMarId).click(); */
+	                
+	                /* var className = "'." + this.title + "'";
+	                console.log(className);   
+	          		$(className).click(); */
+	                
+	                
+	            }); 
+	            
+	            
+	            
 	            marker.addListener('mouseover', function() {
+	            	populateInfoWindow(this, largeInfowindow);
 	                this.setIcon(highlightedIcon);
 	            });
 	            marker.addListener('mouseout', function() {
+	            	
 	                this.setIcon(defaultIcon);
+	                populateInfoWindow(this);
 	            });
 	        }
+	        
+	        
+	        
 	        document.getElementById('show-listings').addEventListener('click', showListings);
 	        document.getElementById('hide-listings').addEventListener('click', hideListings);
 	        
@@ -281,7 +311,8 @@
 	        	
 	        	if($('#show-listings').data('clicked')){
         			
-	        		var tempMarId = $(this).attr('id');	
+	        		var tempMarId = $(this).attr('id');
+	        		console.log("tempMarId : " + $(this).attr('id'));
         			markers[parseInt(tempMarId)].setIcon(highlightedIcon);
         		}
 	        	
@@ -384,6 +415,8 @@
 	        		var tempClass = '<%=temp %>';
 	        		var tempName = '<%= marketNameTemp %>';
 	        		
+	        		
+	        		console.log("class : " + tempName);
 	        		$(tempClass).attr('name', <%= marNo %>);
 	        		console.log('name : ' + $(tempClass).attr('name'));
 	        		$(tempClass).attr('id',<%= i %>);
@@ -401,11 +434,36 @@
 	        $(".marketName").click(function(){
 	        	console.log($(this).attr('name'));
 	        	location.href = "/mwp/mapDetail.do?marNo=" + $(this).attr('name');  
+	        	
 	        });
+	        
+	        
+	       
+	        
+	        
 	        
 	        
        		
        	});
+	    
+	    
+    	 $(function(){
+	        	$("#show-listings").click();	
+	        	
+	        	
+	        	
+	        	
+	        	/* for(var i = 0; i < markers.length; i++){
+	        		console.log(i);
+	        		var temp = markers[i];
+	        		populateInfoWindow(temp, largeInfowindow);
+	        	} */
+	        	
+	       
+	        	
+	        	
+	        	
+	     });  
 	    
 	    
 	    
