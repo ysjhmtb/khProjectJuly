@@ -293,6 +293,9 @@
 	                this.setIcon(defaultIcon);
 	                populateInfoWindow(this);
 	            });
+	            
+	            
+	            
 	        }
 	        
 	        
@@ -301,7 +304,17 @@
 	        document.getElementById('hide-listings').addEventListener('click', hideListings);
 	        
 	        
-	        
+
+	    	 $(function(){
+		        	$("#show-listings").click();	
+		        	
+		        	/* for(var i = 0; i < markers.length; i++){
+		        		console.log(i);
+		        		var temp = markers[i];
+		        		populateInfoWindow(temp, largeInfowindow);
+		        	} */
+		        	
+		     });  
 	        
 	        
 	        //시장목록에 대한 이벤트 
@@ -314,6 +327,9 @@
 	        		var tempMarId = $(this).attr('id');
 	        		console.log("tempMarId : " + $(this).attr('id'));
         			markers[parseInt(tempMarId)].setIcon(highlightedIcon);
+        			
+        			var markerObj = markers[parseInt(tempMarId)];
+        			populateInfoWindow(markerObj, largeInfowindow);
         		}
 	        	
 	        	
@@ -324,6 +340,9 @@
 	        	if($('#show-listings').data('clicked')){
 	        		var tempMarId = $(this).attr('id');		        		
 		        	markers[parseInt(tempMarId)].setIcon(defaultIcon);
+		        	
+		        	var markerObj = markers[parseInt(tempMarId)];
+        			populateInfoWindow(markerObj);
 	        	}
 	        	
 	        	
@@ -447,23 +466,6 @@
        	});
 	    
 	    
-    	 $(function(){
-	        	$("#show-listings").click();	
-	        	
-	        	
-	        	
-	        	
-	        	/* for(var i = 0; i < markers.length; i++){
-	        		console.log(i);
-	        		var temp = markers[i];
-	        		populateInfoWindow(temp, largeInfowindow);
-	        	} */
-	        	
-	       
-	        	
-	        	
-	        	
-	     });  
 	    
 	    
 	    
