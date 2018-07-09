@@ -123,7 +123,7 @@ body {
 	
 		padding-top:10%;
 		padding-bottom:10%;
-		padding-left:23%;
+		/* padding-left:23%; */
 		
 		background-image: url("/mwp/upload/indexImage/countdownopacity.jpg");
 		opacity:0.8;
@@ -133,6 +133,7 @@ body {
 		
 		font-size:45px;
 		font-family:"Helvetica";
+		text-align:center;
 	}
 	
 	
@@ -330,10 +331,14 @@ body {
 // 						                                            + seconds + "초 ";
 								console.log(days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "초 ");
 								
-								$("#countdown").html(marketName + "<br>");
-								$("#countdown").append("D-Day : " + days + "일 ");
 								
-						        if(distance < 0){
+								if(days>0){
+									$("#countdown").html(marketName + "<br>");
+									$("#countdown").append("D-" + days);
+								}else if(days == 0){
+									$("#countdown").html(marketName + "<br>");
+									$("#countdown").append("D-Day");
+								}else if(distance < 0){
 						            clearInterval(x);
 						            document.getElementById("countdown").innerHTML = "종료된 시장";
 						
