@@ -4,7 +4,9 @@
 
 <hr>
 
-1) 프로젝트를 진행하면서 오라클 데이터베이스를 사용하였는데, 개발과정에서 사용했던 운영체체는 macOS였다. 따라서 오라클 데이터베이스를 이용하는데 어려움이 있었고, 아래와 같이 Docker를 통해 사용하게 되었다.
+1) 
+
+프로젝트를 진행하면서 오라클 데이터베이스를 사용하였는데, 개발과정에서 사용했던 운영체체는 macOS였다. 따라서 오라클 데이터베이스를 이용하는데 어려움이 있었고, 아래와 같이 Docker를 통해 사용하게 되었다.
 
  <br>
 
@@ -14,7 +16,9 @@
 
 <hr>
 
-2) 프로젝트에서 지도 API를 사용하는 부분을 맡았는데, [Udacity](https://www.udacity.com/) 의 [Google Maps APIs](https://www.udacity.com/course/google-maps-apis--ud864) 의 일부를 수강해서 사용하는 방법을 배우고, 프로젝트를 진행하게 되었다. <br>
+2) 
+
+프로젝트에서 지도 API를 사용하는 부분을 맡았는데, [Udacity](https://www.udacity.com/) 의 [Google Maps APIs](https://www.udacity.com/course/google-maps-apis--ud864) 의 일부를 수강해서 사용하는 방법을 배우고, 프로젝트를 진행하게 되었다. <br>
 
 [마커를 지도에 나타내기](https://github.com/ysjhmtb/khProjectJuly/blob/master/saved/myTask/%EB%AC%B8%EC%84%9C/Making%20your%20Mark/%EB%A7%88%EC%BB%A4%EB%A5%BC%20%EC%A7%80%EB%8F%84%EC%97%90%20%EB%82%98%ED%83%80%EB%82%B4%EA%B8%B0.md)
 
@@ -26,7 +30,9 @@
 
 <hr>
 
-3) 수업 중 REST API를 사용할 기회가 있었는데, 그 기회를 통해 다음과 같이 배우게 되었다.
+3) 
+
+수업 중 REST API를 사용할 기회가 있었는데, 그 기회를 통해 다음과 같이 배우게 되었다.
 
 [REST API 학습](https://github.com/ysjhmtb/khProjectJuly/blob/master/saved/myTask/%EB%AC%B8%EC%84%9C/REST%20API%20%ED%95%99%EC%8A%B5.md)
 
@@ -128,7 +134,9 @@
 
 <hr>
 
-5) 개발 과정에서 일부분은 다음과 같이 테스트 케이스를 작성하면서 TDD 방식으로 진행하여 보았다. 처음 해보는 방식이다보니 미숙했지만 좋은 경험이었다.
+5) 
+
+개발 과정에서 일부분은 다음과 같이 테스트 케이스를 작성하면서 TDD 방식으로 진행하여 보았다. 처음 해보는 방식이다보니 미숙했지만 좋은 경험이었다.
 
 [JDBCTemplateTest.java](https://github.com/ysjhmtb/khProjectJuly/blob/master/saved/myTask/stepJune9/myWebProject/src/com/kh/java/common/test/JDBCTemplateTest.java)
 
@@ -141,6 +149,24 @@
 <br>
 
 <hr>
+
+6) 
+
+
+
+<img src="https://github.com/ysjhmtb/khProjectJuly/blob/master/saved/myTask/studyNotes/CSS/macCalculator/mac%20cal.png?raw=true">
+
+macOS에서 기본적으로 내장되어 있는 계산기를 다음과 같이 웹앱으로 만들어 보았다. 
+
+[maccal.html](https://github.com/ysjhmtb/khProjectJuly/blob/master/saved/myTask/studyNotes/CSS/macCalculator/maccal.html)
+
+아직 세부적으로 개선되어야 할 부분이 남아있지만, 웹앱의 프런트엔드 부분을 훈련시킬 수 있는 좋은 경험이었다.
+
+<br>
+
+<hr>
+
+
 
 
 
