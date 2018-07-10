@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"  xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" >
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/fb/website#">
@@ -12,12 +12,6 @@
 
 <title>Now You Can make this</title>
 	
-<meta name="Robots" content="index,follow">
-<meta name="title" content="" />
-<meta name="author" content="" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-
 <meta property="og:url" content="main.html" />
 <meta property="og:site_name" content="한국" />
 <meta property="og:title" content="" />
@@ -26,69 +20,8 @@
 <meta property="og:type" content="website" />
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="data/font/font.css" />
-<link rel="stylesheet" type="text/css" href="data/skin/fruit_puro_gls/css/style.css" />
-
-<!-- 파비콘 -->
-<link rel="shortcut icon" href="/mwp/views/common1Page/data/icon/favicon/favicon1497244551.html" />
-
-<!-- 자바스크립트 -->
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/jquery/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.poshytip.min.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.activity-indicator-1.0.0.min.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.cookie.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.slides.min.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.bxslider.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.placeholder.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/custom-select-box.js"></script>
-<script type="text/javascript" src="/mwp/views/common1Page/app/javascript/plugin/jquery.sprintf.js"></script>
-
-<script type="text/javascript" src="data/js/language/L10n_KR.js?dummy=20180527072837"></script>
-<!--
-<script type="text/javascript" src="data/js/language/L10n_KR0c73.js?dummy=20180525001153">
-</script>
--->
-
-<script type="text/javascript" src="app/javascript/js/front-layout0c73.js?dummy=20180525001153"></script>
-<!--
-<script type="text/javascript" src="app/javascript/js/common0c73.js?dummy=20180525001153"></script>
--->
-<script type="text/javascript" src="app/javascript/js/base64.js"></script>
-<script type="text/javascript" src="app/javascript/js/goods-display0c73.js?dummy=20180525001153"></script>
-
-<script type="text/javascript" src="data/skin/fruit_puro_gls/common/script.js"></script>
-
-<!-- 아래 스크립트 영역 추가했더니 기능 돌아감  -->
-<script type="text/javascript" src="app/javascript/js/common.js?dummy=20180527002547"></script>
-<script type="text/javascript" src="app/javascript/js/common-function.js?v=140729"></script>
-<script src="app/javascript/js/echo.js"></script>
-<!-- 위 스크립트 영역 추가했더니 기능 돌아감  -->
-
-
-
-
-<script type="text/javascript">
-	var gl_mobile_mode	= 0;
-	var gl_set_mode		= 'pc';
-	var gl_language		= 'KR';
-	var gl_basic_currency					= "KRW";
-	var gl_skin_currency					= "KRW";  
-	var gl_basic_currency_symbol			= "원";
-	var gl_basic_currency_symbol_position	= "after";
-
-	$(function(){
-
-	});
-</script>
-
-<style type="text/css">
-	/* 레이아웃설정 폰트 적용 */
-	#layout_body * {}
-
-	/* 레이아웃설정 스크롤바색상 적용 */
-</style>
-<!-- /자바스크립트 -->
+<link rel="stylesheet" type="text/css" href="/mwp/views/common/data/font/font.css" />
+<link rel="stylesheet" type="text/css" href="/mwp/views/common/data/skin/fruit_puro_gls/css/style.css" />
 
 <style>
 	body {	}
@@ -99,9 +32,8 @@
 	#layout_config_body {width:1020px;}
 	#layout_side {width:180px;}
 	.wrap_inner {width:1200px; margin:auto;}		
-</style>
 
-<style>
+
     #layout_topBar { }
 	#layout_side.flying, #layout_config_body.flying, #layout_config_full.flying {margin-top:80px;}
 	#layout_side.flying2, #layout_config_body.flying2, #layout_config_full.flying2 {margin-top:100px;}
@@ -113,7 +45,6 @@
 
 <!-- 헤드 영역 끝 -->
 
-</head>
 <body>
 <div id="layout_footer">	
 	
@@ -177,11 +108,11 @@
 					</ul>
 					<h4>SOCIAL NETWORK</h4>
 					<ul class="sns">
-						<li><a><img src="data/skin/fruit_puro_gls/images/design/ico_facebook.png" alt="페이스북" /></a></li>
-						<li><a><img src="data/skin/fruit_puro_gls/images/design/ico_twitter.png" alt="트위터" /></a></li>
-						<li><a><img src="data/skin/fruit_puro_gls/images/design/ico_instagram.png" alt="인스타그램" /></a></li>		
-						<li><a><img src="data/skin/fruit_puro_gls/images/design/ico_naverblog.png" alt="네이버블로그" /></a></li>
-						<li><a><img src="data/skin/fruit_puro_gls/images/design/ico_kakaostory.png" alt="카카오스토리" /></a></li>					
+						<li><a><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/ico_facebook.png" alt="페이스북" /></a></li>
+						<li><a><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/ico_twitter.png" alt="트위터" /></a></li>
+						<li><a><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/ico_instagram.png" alt="인스타그램" /></a></li>		
+						<li><a><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/ico_naverblog.png" alt="네이버블로그" /></a></li>
+						<li><a><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/ico_kakaostory.png" alt="카카오스토리" /></a></li>					
 					</ul>
 				</li>
 				
@@ -191,12 +122,12 @@
 				<li class="cs_menu">
 					<h4>SHOP MENU</h4>
 					<ul class="menu">
-						<li><img src="data/skin/fruit_puro_gls/images/design/cs_i01.png" alt="" /><span class="on"></span></li>	
-						<li><img src="data/skin/fruit_puro_gls/images/design/cs_i02.png" alt="" /><span class="on"></span></li>
-						<li><img src="data/skin/fruit_puro_gls/images/design/cs_i03.png" alt="" /><span class="on"></span></li>
-						<li><img src="data/skin/fruit_puro_gls/images/design/cs_i04.png" alt="" /><span class="on"></span></li>
-						<li><img src="data/skin/fruit_puro_gls/images/design/cs_i05.png" alt="" /><span class="on"></span></li>
-						<li><img src="data/skin/fruit_puro_gls/images/design/cs_i06.png" alt="" /><span class="on"></span></li>
+						<li><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/cs_i01.png" alt="" /><span class="on"></span></li>	
+						<li><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/cs_i02.png" alt="" /><span class="on"></span></li>
+						<li><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/cs_i03.png" alt="" /><span class="on"></span></li>
+						<li><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/cs_i04.png" alt="" /><span class="on"></span></li>
+						<li><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/cs_i05.png" alt="" /><span class="on"></span></li>
+						<li><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/cs_i06.png" alt="" /><span class="on"></span></li>
 					</ul>
 				</li>
 			</ul>
@@ -208,14 +139,14 @@
 	<!-- //고객센터 -->
 	<div class="copy_wrap">
 		<div class="wrap_inner relative">
-			<h1><a href="index.html" target="_top"><img src="data/skin/fruit_puro_gls/images/design/logo.png" alt="LOGO" /></a></h1>		
+			<h1><a href="index.html" target="_top"><img src="/mwp/views/common/data/skin/fruit_puro_gls/images/design/logo.png" alt="LOGO" /></a></h1>		
 			<ul class="copy">
 				<li class="first">회사명 : (주) Now You Can</li>
 				<li>대표자 : 황인선</li>			
 				<li>주소 : 서울시 강남구 테헤란로14길 6 남도빌딩 4층 </li>
 				<li>전화 : 02-235-4771</li>
 				<li>팩스 : 02-211-4771</li>
-<br />
+<br/>
 				<li class="first">사업자등록번호 : 032-66-17140 <a href="javascript:;" onclick="window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=1234567890','communicationViewPopup','width=750,height=700,scrollbars=yes')"></a></li>
 				<li>통신판매업신고번호 : 제1234-서울강남56789호</li>			
 				<li>개인정보 보호책임자 : 장건희</li>
@@ -229,7 +160,7 @@
 				</form>
 					<script type="text/javascript">function go_check() {	var status = "width=500 height=450 menubar=no,scrollbars=no,resizable=no,status=no";	var obj = window.open("", "kcp_pop", status);	document.shop_check.submit();}
 					</script>
-			<img src="data/icon/escrow_mark/kcp.png"  style="max-width:80px;" />
+			<img src="/mwp/views/common/data/icon/escrow_mark/kcp.png"  style="max-width:80px;" />
 			</span>		
 			<!-- //에스크로표기 -->
 		
@@ -241,7 +172,6 @@
 
 
 <!-- //하단영역 : 끝 -->
-</div>
 <!-- //기본형 -->
 
 
@@ -312,8 +242,8 @@
 			<span class="btn large black">&nbsp;&nbsp;<button type='button' onclick='passwordAfterUpdate();'>취소</button></span>
 		</div>
 	</form>
+	
 </div>
-
 
 </body>
 </html>

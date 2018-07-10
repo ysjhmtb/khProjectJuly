@@ -37,11 +37,11 @@ function updateP(pno){
 }
 
 function deleteP(pno){
-	if(confirm("정말 삭제하시겠습니까?")==true){
-	      location.href="/mwp/deleteProd.do?mno=<%=member.getMNO() %>&pno="+pno;
-	   }else{
-	      return;
-	   }
+// 	if(confirm("정말 삭제하시겠습니까?")==true){
+<%-- 	      location.href="/mwp/deleteProd.do?mno=<%=member.getMNO() %>&pno="+pno; --%>
+// 	   }else{
+// 	      return;
+// 	   }
 }
 </script>
    
@@ -168,7 +168,7 @@ function deleteP(pno){
          <td class="right"><%=pv.getPrice() %>원</td>
          <td>
          	<input type="button" onclick="updateP(<%=pv.getPno()%>);" value="수정"/><br/>
-         	<input type="button" onclick="deleteP(<%=pv.getPno()%>);" value="삭제"/><br/>
+<%--          	<input type="button" onclick="deleteP(<%=pv.getPno()%>);" value="삭제"/><br/> --%>
          </td>
       </tr>
       <%} %>

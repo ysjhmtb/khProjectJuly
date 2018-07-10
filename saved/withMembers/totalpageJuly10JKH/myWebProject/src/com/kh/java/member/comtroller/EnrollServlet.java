@@ -44,7 +44,7 @@ public class EnrollServlet extends HttpServlet {
 	         RequestDispatcher view = null;
 	         PrintWriter out = response.getWriter();
 	         out.println("<script>");
-	         out.println("location.href='/views/admin/member.jsp'");
+	         out.println("location.href='/mwp/views/admin/member.jsp'");
 	         out.println("</script>");
 	         out.close();
 

@@ -152,7 +152,7 @@ $(function () {
       </tr>
    </thead>
     
-   <tbody>
+   <tbody style="font-size:11px;">
   <%for(MemberVo mv:list) {%>
   <%if(mv.getM_CATEGORY().equals("일반회원")){ %>
       <tr>
@@ -174,7 +174,7 @@ $(function () {
          <%} %>
             </table>
          
-<br><br><br><br><br>
+
 <div class="h3_wrap">
    <h3>작가</h3>
 

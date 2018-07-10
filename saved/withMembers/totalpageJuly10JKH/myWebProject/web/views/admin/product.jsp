@@ -10,10 +10,10 @@
 <title>Insert title here</title>
 <style>
 .in_div{
-	float:left;
+   float:left;
 }
 .btn{
-	text-decoration:none;
+   text-decoration:none;
 }
 </style>
 </head>
@@ -30,10 +30,10 @@ if(!(member.getM_ID().equals("admin")) || member==null){%>
 // ArrayList<BuyVo> dList = null;
 // ArrayList<BuyVo> pList = null;
 // ArrayList<BuyVo> cList = null;
-	ArrayList<BuyVo> dList = new ProductService().getMBuyList(0);
-	ArrayList<BuyVo> pList = new ProductService().getMBuyList(1);
-	ArrayList<BuyVo> cList = new ProductService().getMBuyList(2);
-	System.out.println(dList.get(0).getBno()+"확인");
+   ArrayList<BuyVo> dList = new ProductService().getMBuyList(0);
+   ArrayList<BuyVo> pList = new ProductService().getMBuyList(1);
+   ArrayList<BuyVo> cList = new ProductService().getMBuyList(2);
+   System.out.println(dList.get(0).getBno()+"확인");
 %>
 
    <%if(member==null){%>
@@ -192,7 +192,7 @@ if(!(member.getM_ID().equals("admin")) || member==null){%>
                <tr>
                   <td align="center">
                      
-						<a href="/mwp/deliveryM.do?bno=<%=bv.getBno()%>" class="btn">배송완료</a>
+                  <a href="/mwp/deliveryM.do?bno=<%=bv.getBno()%>" class="btn">배송완료</a>
                   </td>
                </tr>
             </table>
@@ -283,7 +283,7 @@ if(!(member.getM_ID().equals("admin")) || member==null){%>
          </td>
       </tr>
       <%} %>
-	<%} %>
+   <%} %>
    </tbody>
 </table>
 <!-- //주문내역 테이블 -->
@@ -325,6 +325,7 @@ if(!(member.getM_ID().equals("admin")) || member==null){%>
    <tbody>
    <%if(null!=cList){ %>
    <%for(BuyVo bv:cList){ %>
+   <%System.out.println(new ProductService().selectProduct(bv.getPno()).getImg_src()+"gg"); %>
       <tr>
          <td class="left">
             <dl class="order_thumb_wrap">
