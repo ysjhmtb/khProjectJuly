@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+
+/* font */
+@import url(../fonts/notosanskr.css);
+
+/* common */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, menu, nav, section, main, summary, 
+time, mark, audio, video {margin:0;	padding:0; border:0; outline:0; box-sizing:border-box; background:transparent; font-size:100%;}
+html {height:100%;}
+body {min-width:1024px; height:100%; overflow-x:auto; color:#fff; font-size:100%; font-weight:300; font-family:"Noto Sans KR", "Malgun Gothic", Dotum, sans-serif; line-height:1;}
+a {box-sizing:border-box; color:#fff; text-decoration:none;}
+
+/* style */
+#wrapper {position:relative; padding-bottom:105px; width:100%; height:100%; box-sizing:border-box;}
+#wrapper .contents {width:100%; height:100%;}
+#wrapper .contents > div {width:100%; height:100%;}
+#wrapper .contents .half > div {position:relative; float:left; width:33.33%; height:100%; overflow:hidden; text-align:center;}
+#wrapper .contents .half > div:after {display:block; content:''; clear:both;}
+#wrapper .contents .half > div:hover .bg, 
+#wrapper .contents .half > div:focus .bg {transform: scale(1.1); transition: all .8s;}
+
+#wrapper .contents .half > div .bg{width:100%; height:100%; background-repeat:no-repeat; background-size:cover; background-position:center;}
+/* 1번 index 이미지 경로 수정 */
+#wrapper .contents .half .everland .bg {background-color: black; /* fallback color */background-image: url('../images/sell.jpg');}
+
+/* 2번 index 이미지 경로 수정 */
+#wrapper .contents .half .caribbean .bg {background-color: black; /* fallback color */background-image: url('../images/information.jpg');}
+
+/* 3번 index 이미지 경로 수정 */
+#wrapper .contents .half .lecture .bg {background-color: black; /* fallback color */background-image: url('../images/lecture.jpg');}
+
+#wrapper .contents .half .logo {position:absolute; top:91px; left:50%; margin-left:-47px; z-index:10;}
+#wrapper .contents .half .everland  .logo {width:73px; height:37px; background:url('') no-repeat;}
+#wrapper .contents .half .caribbean .logo {width:95px; height:34px; background:url('') no-repeat;}
+
+#wrapper .tit_box {background:url('../images/txt_dim_el.png') no-repeat center top;}
+#wrapper .caribbean .tit_box {background:url('') no-repeat center top;}
+#wrapper .tit_box > p {padding-top:176px; font-size:18px; color:#fff; text-shadow:1px 1px 1px rgba(72, 72, 72, 0.76)}
+#wrapper .tit_box .title {padding:35px 0 300px; line-height:1.4; font-family:'Noto Sans KR',  Dotum, sans-serif; font-size:50px; font-weight:400; color:#fff; text-shadow:1px 1px 1px rgba(72, 72, 72, 0.76)}
+#wrapper .tit_box .title > span {display:block; font-size:39px; font-weight:300; color:#ff8005;}
+#wrapper .caribbean .tit_box .title > span {display:block; font-size:39px; color:#08e5ff;}
+
+#wrapper .btn_box {display:none; position:absolute; top:120px; left:50%; margin-left:-172px; width:344px; height:342px; text-align:center; background:url('') no-repeat;}
+#wrapper .caribbean .btn_box {background:url('') no-repeat;}
+#wrapper .btn_box a {display:block; width:100%; height:100%; font-size:40px; font-weight:100; color:#fff;}
+#wrapper .btn_box .thumb {margin-top:100px; padding-top:55px; background-image:url(''); background-position:top center; background-repeat:no-repeat;}
+#wrapper .caribbean .btn_box .thumb {background-image:url('');}
+#wrapper .btn_box .arrow {display:inline-block; padding-right:46px; font-size:16px; background:url('../images/link_arrow.png') no-repeat right center;}
+#wrapper .ico_hot {position:absolute; top:50%; left:50%; margin:-260px 0 0 -240px; width:114px; height:117px; background-image:url(''); background-repeat:no-repeat:}
+#wrapper .btn_box {}
+
+#wrapper .dim {display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.6; z-index:10;}
+#wrapper .on .dim {display:block;}
+
+#wrapper .contents .half > div:hover .logo, 
+#wrapper .contents .half > div:focus .logo {display:none;}
+
+#wrapper .contents .half > div:hover .tit_box, 
+#wrapper .contents .half > div:focus .tit_box {display:none;}
+
+#wrapper .contents .half > div:hover .btn_box, 
+#wrapper .contents .half > div:focus .btn_box {display:block; z-index:10;}
+
+
+#footer {position:absolute; bottom:0; left:0; width:100%; height:105px; line-height:105px; background:#fff;}
+#footer .resort_logo {position:absolute; top:23px; left:12px; width:180px; height:60px; z-index:1;}
+#footer .resort_logo a {margin-top : 10px; display:block; height:100%; text-indent:-999em; background: url('../images/logo.jpg') no-repeat; background-size: 100% auto;}
+#footer .nyc_info {margin-top:0; display:block; height:32px; width:1100px; color:black; margin-left:400px; font-size:12px; text-align: center}
+
+
+#footer .wrap {margin:0 auto; width:810px;}
+/* #footer .wrap ul {overflow:hidden;} */
+#footer .wrap ul li {float:left; padding:0 28px; width:32%; text-align:center; list-style:none; box-sizing:border-box; background:url('../images/footer_bar01.gif') no-repeat center right; letter-spacing:-1.5px;}
+#footer .wrap ul li:last-child {background:none;}
+#footer .wrap ul li a {display:block; padding-left:111px; font-size:16px; color:#282828; background-image:url(''); background-position:9px 29px; background-repeat:no-repeat;}
+#footer .wrap ul li:first-child + li a {background-position:0px -46px;}
+#footer .wrap ul li:first-child + li + li {margin-right:18px;}
+#footer .wrap ul li:first-child + li + li a {background-position:0 -118px;}
+#footer .wrap ul li:first-child + li + li + li a {background-position:30px -221px;}
+#footer .smart {position:absolute; top:0; right:0; text-align:center;}
+#footer .smart a {display:block; width:210px; height:105px; background:url('') no-repeat center;}
+#footer .smart .ticket {display:inline-block; margin:-3px 15px; width:35px; height:20px; background:url('') no-repeat center;}

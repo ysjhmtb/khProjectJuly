@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Error 404 - Page Not Found</title>
+<script type="text/javascript">
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+</script>
+<link rel="stylesheet" type="text/css" href="/data/skin/fruit_puro_gls/css/style.css" />
+</head>
+
+<body>
+<div id="PC" style="display:none;">		
+	<div><img src="/data/skin/fruit_puro_gls/errdoc/images/pc_img_404.gif" alt="Error 404 - Page Not Found" /></div>
+	<div class="mt50 center">
+		<a href="/" class="btn_sch large">쇼핑몰 홈</a>
+	</div>	
+</div>
+<div id="MOBILE" style="display:none">
+	<div><img src="/data/skin/fruit_puro_gls/errdoc/images/m_img_404.gif" alt="Error 404 - Page Not Found" /></div>
+	<div class="mt50 center">
+		<a href="/" class="btn_sch large">쇼핑몰 홈</a>
+	</div>		
+</div>
+<script type="text/javascript">
+	if( isMobile.any() ){
+		document.getElementById('MOBILE').style.display = 'block';
+	}else{
+		document.getElementById('PC').style.display = 'block';
+	}
+</script>
+</body>
+</html>

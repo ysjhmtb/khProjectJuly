@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" beforeDir="false" afterPath="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="maccal.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+      <file leaf-file-name="mapFunctionTest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/mapFunctionTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+            <state relative-caret-position="345">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -31,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -76,6 +77,7 @@
         <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/imageUploadTest.html" />
         <option value="$PROJECT_DIR$/saved/myTask/studyNotes/graphComputer/generalCalculator.html" />
         <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" />
+        <option value="$PROJECT_DIR$/saved/myTask/studyNotes/CSS/mapFunctionTest.js" />
       </list>
     </option>
   </component>
@@ -89,7 +91,6 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
     <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="936" />
@@ -102,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,21 +142,13 @@
               <item name="saved" type="462c0819:PsiDirectoryNode" />
               <item name="myTask" type="462c0819:PsiDirectoryNode" />
               <item name="studyNotes" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="macCalculator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="khProjectJuly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="khProjectJuly" type="462c0819:PsiDirectoryNode" />
-              <item name="saved" type="462c0819:PsiDirectoryNode" />
-              <item name="myTask" type="462c0819:PsiDirectoryNode" />
-              <item name="studyNotes" type="462c0819:PsiDirectoryNode" />
               <item name="graphComputer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,26 +172,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.maccal.html">
+  <component name="RunManager" selected="Node.js.mapFunctionTest.js">
     <configuration name="countdown.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/countdown.html" />
     <configuration name="imageUploadTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/imageUploadTest.html" />
     <configuration name="li_tag_and_jQuery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/li_tag_and_jQuery.html" />
     <configuration name="maccal.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/macCalculator/maccal.html" />
-    <configuration name="menu.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/CG/menu/menu.html" />
+    <configuration name="mapFunctionTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="mapFunctionTest.js" working-dir="$PROJECT_DIR$/saved/myTask/studyNotes/CSS" />
     <list>
-      <item itemvalue="JavaScript Debug.menu.html" />
       <item itemvalue="JavaScript Debug.maccal.html" />
       <item itemvalue="JavaScript Debug.countdown.html" />
       <item itemvalue="JavaScript Debug.li_tag_and_jQuery.html" />
       <item itemvalue="JavaScript Debug.imageUploadTest.html" />
+      <item itemvalue="Node.js.mapFunctionTest.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.mapFunctionTest.js" />
         <item itemvalue="JavaScript Debug.maccal.html" />
         <item itemvalue="JavaScript Debug.imageUploadTest.html" />
         <item itemvalue="JavaScript Debug.li_tag_and_jQuery.html" />
         <item itemvalue="JavaScript Debug.countdown.html" />
-        <item itemvalue="JavaScript Debug.menu.html" />
       </list>
     </recent_temporary>
   </component>
@@ -244,22 +236,23 @@
       <workItem from="1530877086238" duration="28000" />
       <workItem from="1530957820007" duration="4225000" />
       <workItem from="1531051139446" duration="1322000" />
+      <workItem from="1531211686919" duration="2084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77485000" />
+    <option name="totallyTimeSpent" value="79569000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="22" width="1680" height="936" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -281,17 +274,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6555">
-          <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/countdown.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -600,7 +586,14 @@
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+          <caret line="392" selection-start-line="392" selection-end-line="392" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/mapFunctionTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
