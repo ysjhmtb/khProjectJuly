@@ -172,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.mapFunctionTest.js">
+  <component name="RunManager" selected="JavaScript Debug.maccal.html">
     <configuration name="countdown.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/countdown.html" />
     <configuration name="imageUploadTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/imageUploadTest.html" />
     <configuration name="li_tag_and_jQuery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/khProjectJuly/saved/myTask/studyNotes/CSS/li_tag_and_jQuery.html" />
@@ -187,8 +187,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.mapFunctionTest.js" />
         <item itemvalue="JavaScript Debug.maccal.html" />
+        <item itemvalue="Node.js.mapFunctionTest.js" />
         <item itemvalue="JavaScript Debug.imageUploadTest.html" />
         <item itemvalue="JavaScript Debug.li_tag_and_jQuery.html" />
         <item itemvalue="JavaScript Debug.countdown.html" />
