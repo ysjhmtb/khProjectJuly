@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7fde9ae3-30ec-45ac-b132-428392cdf1c3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mapFunctionTest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mapFunctionTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/mapFunctionTest.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maccal.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="362" column="45" selection-start-line="362" selection-start-column="45" selection-end-line="362" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -142,6 +149,15 @@
               <item name="saved" type="462c0819:PsiDirectoryNode" />
               <item name="myTask" type="462c0819:PsiDirectoryNode" />
               <item name="studyNotes" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS" type="462c0819:PsiDirectoryNode" />
+              <item name="macCalculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="khProjectJuly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="khProjectJuly" type="462c0819:PsiDirectoryNode" />
+              <item name="saved" type="462c0819:PsiDirectoryNode" />
+              <item name="myTask" type="462c0819:PsiDirectoryNode" />
+              <item name="studyNotes" type="462c0819:PsiDirectoryNode" />
               <item name="graphComputer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -237,17 +253,18 @@
       <workItem from="1530957820007" duration="4225000" />
       <workItem from="1531051139446" duration="1322000" />
       <workItem from="1531211686919" duration="2084000" />
+      <workItem from="1531260671635" duration="531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79569000" />
+    <option name="totallyTimeSpent" value="80100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -583,17 +600,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="392" selection-start-line="392" selection-end-line="392" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/mapFunctionTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saved/myTask/studyNotes/CSS/macCalculator/maccal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="362" column="45" selection-start-line="362" selection-start-column="45" selection-end-line="362" selection-end-column="45" />
         </state>
       </provider>
     </entry>
